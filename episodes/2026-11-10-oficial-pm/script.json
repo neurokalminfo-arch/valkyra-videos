@@ -1,0 +1,28 @@
+{
+ "account": "oficial",
+ "slot": "pm",
+ "topic": "Las ganas de fumar después de comer",
+ "scenes": [
+  {"say": "Tío, ¿a ti también te pasa? Terminas de comer y lo primero que pide el cuerpo es un cigarro.",
+   "kicker": "Si estás *dejando de fumar:*", "title": ["El cigarro", "de *después*", "de comer"],
+   "zone": {"type": "guy", "pose": "wave", "label": "14:30 · SOBREMESA"}},
+  {"say": "Yo lo tenía clavado. Plato fuera, cigarro dentro. Ni lo pensaba.",
+   "kicker": "Yo lo tenía *clavado.*", "title": ["Plato fuera,", "*cigarro* dentro"],
+   "zone": {"type": "guy", "pose": "think"}},
+  {"say": "Lo que me funcionó fue cambiar el final de la comida. Me levanto, friego mi plato y salgo a dar una vuelta corta.",
+   "kicker": "Lo que *me funcionó:*", "title": ["Cambia el *final*"],
+   "zone": {"type": "steps", "items": [
+     {"n": 1, "t": "Levántate", "s": "No te quedes en la silla", "at": "levanto"},
+     {"n": 2, "t": "Friega tu plato", "s": "Manos ocupadas", "at": "friego"},
+     {"n": 3, "t": "Vuelta de 5 minutos", "s": "Sin tabaco en el bolsillo", "at": "vuelta"}]}},
+  {"say": "Y cuando aprietan las ganas, cojo mi Valkyra y me la llevo a la boca en vez del cigarro.",
+   "kicker": "Cuando *aprietan las ganas…*", "title": ["En vez", "del *cigarro*"],
+   "zone": {"type": "guy", "pose": "breath", "at": "valkyra"}},
+  {"say": "Las ganas suben, pero también bajan. Mañana prueba esto y me cuentas.",
+   "kicker": "Las ganas *suben…*", "title": ["…y también", "*bajan*"],
+   "zone": {"type": "note", "text": "Mañana prueba esto y <em>me cuentas.</em>", "at": "mañana"}}
+ ],
+ "caption": "El cigarro de después de comer es de los más difíciles de dejar 🍽️🚭 Lo que a mí me funcionó: cambiar el final de la comida. ¿Cuál es tu cigarro más difícil? 👇",
+ "hashtags": ["#dejardefumar", "#dejarelcigarro", "#sintabaco", "#habitos", "#motivacion", "#valkyra"],
+ "tiktok_title": "El cigarro de después de comer"
+}
