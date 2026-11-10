@@ -1,24 +1,114 @@
-{"account":"oficial","slot":"pm","topic":"La cerveza del after-work y el cigarro (alcohol)",
- "scenes":[
-  {"say":"Tío, sales del curro, primera cerveza… y el cigarro te llama solo.",
-   "kicker":"Si estás *dejando de fumar:*","title":["Cerveza","y *cigarro*"],
-   "zone":{"type":"guy","pose":"wave","label":"19:30 · AFTER-WORK"}},
-  {"say":"A mí me pasaba siempre, tío. Dos cañas y adiós a no fumar.",
-   "kicker":"A mí *me pasaba:*","title":["Dos cañas","y *adiós*"],
-   "zone":{"type":"guy","pose":"think"}},
-  {"say":"Lo que me funcionó. Uno: alterna con algo sin alcohol. Dos: no lleves tabaco. Tres: siéntate lejos de los que fuman.",
-   "kicker":"Lo que *me funcionó:*","title":["*3* trucos"],
-   "zone":{"type":"steps","items":[
-     {"n":1,"t":"Alterna","s":"Una sin alcohol entre medias","at":"Uno"},
-     {"n":2,"t":"Sin tabaco encima","s":"Ni el paquete en el bolsillo","at":"Dos"},
-     {"n":3,"t":"Cambia de mesa","s":"Lejos de los que fuman","at":"Tres"}]}},
-  {"say":"Y si me rodean los pitis, saco mi Valkyra y me la llevo a la boca.",
-   "kicker":"Si me *rodean los pitis…*","title":["Valkyra en","vez del *piti*"],
-   "zone":{"type":"guy","pose":"breath","label":"21:00 · TERRAZA","at":"Valkyra"}},
-  {"say":"Síguenos para más trucos y mándaselo al colega con el que sales a fumar.",
-   "kicker":"¿Te ha *servido?*","title":["Pásaselo","al *colega*"],
-   "zone":{"type":"cta","items":[{"icon":"follow","t":"*Síguenos*","at":"Síguenos"},{"icon":"share","t":"Mándaselo al *colega*","at":"mándaselo"}]}}
+{
+ "account": "oficial",
+ "slot": "pm",
+ "topic": "La cerveza del after-work y el cigarro (alcohol)",
+ "pillar": "truco",
+ "hook": "frase-identificacion",
+ "cta": "compartir",
+ "scenes": [
+  {
+   "say": "Tío, sales del curro, primera cerveza… y el cigarro te llama solo.",
+   "kicker": "Si estás *dejando de fumar:*",
+   "title": [
+    "Cerveza",
+    "y *cigarro*"
+   ],
+   "zone": {
+    "type": "guy",
+    "pose": "wave",
+    "label": "19:30 · AFTER-WORK"
+   }
+  },
+  {
+   "say": "A mí me pasaba siempre, tío. Dos cañas y adiós a no fumar.",
+   "kicker": "A mí *me pasaba:*",
+   "title": [
+    "Dos cañas",
+    "y *adiós*"
+   ],
+   "zone": {
+    "type": "guy",
+    "pose": "think"
+   }
+  },
+  {
+   "say": "Lo que me funcionó. Uno: alterna con algo sin alcohol. Dos: no lleves tabaco. Tres: siéntate lejos de los que fuman.",
+   "kicker": "Lo que *me funcionó:*",
+   "title": [
+    "*3* trucos"
+   ],
+   "zone": {
+    "type": "steps",
+    "items": [
+     {
+      "n": 1,
+      "t": "Alterna",
+      "s": "Una sin alcohol entre medias",
+      "at": "Uno"
+     },
+     {
+      "n": 2,
+      "t": "Sin tabaco encima",
+      "s": "Ni el paquete en el bolsillo",
+      "at": "Dos"
+     },
+     {
+      "n": 3,
+      "t": "Cambia de mesa",
+      "s": "Lejos de los que fuman",
+      "at": "Tres"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Y si me rodean los pitis, saco mi Valkyra y me la llevo a la boca.",
+   "kicker": "Si me *rodean los pitis…*",
+   "title": [
+    "Valkyra en",
+    "vez del *piti*"
+   ],
+   "zone": {
+    "type": "guy",
+    "pose": "breath",
+    "label": "21:00 · TERRAZA",
+    "at": "Valkyra"
+   }
+  },
+  {
+   "say": "Síguenos para más trucos y mándaselo al colega con el que sales a fumar.",
+   "kicker": "¿Te ha *servido?*",
+   "title": [
+    "Pásaselo",
+    "al *colega*"
+   ],
+   "zone": {
+    "type": "cta",
+    "items": [
+     {
+      "icon": "follow",
+      "t": "*Síguenos*",
+      "at": "Síguenos"
+     },
+     {
+      "icon": "share",
+      "t": "Mándaselo al *colega*",
+      "at": "mándaselo"
+     }
+    ]
+   }
+  }
  ],
- "caption":"La cerveza del after-work y el cigarro van de la mano 🍺🚭 3 cosas que a mí me funcionaron para no caer. ¿Con qué bebida te cuesta más no fumar? Cuéntamelo 👇",
- "hashtags":["#dejardefumar","#dejarelcigarro","#sintabaco","#afterwork","#habitos","#motivacion","#valkyra"],
- "tiktok_title":"Cerveza y cigarro: cómo no caer","yt_title":"Cerveza y cigarro: cómo no caer"}
+ "caption": "La cerveza del after-work y el cigarro van de la mano 🍺🚭 3 cosas que a mí me funcionaron para no caer. ¿Con qué bebida te cuesta más no fumar? Cuéntamelo 👇",
+ "hashtags": [
+  "#dejardefumar",
+  "#dejarelcigarro",
+  "#sintabaco",
+  "#afterwork",
+  "#habitos",
+  "#motivacion",
+  "#valkyra"
+ ],
+ "tiktok_title": "Cerveza y cigarro: cómo no caer",
+ "yt_title": "Cerveza y cigarro: cómo no caer"
+}

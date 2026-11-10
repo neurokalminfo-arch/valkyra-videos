@@ -1,25 +1,129 @@
-{"account":"calma","slot":"pm","topic":"Miedo a engordar al dejar de fumar: el picoteo de media tarde",
- "scenes":[
-  {"say":"¿Te da miedo dejar de fumar por si engordas? No eres la única.",
-   "kicker":"Si quieres *dejar de fumar:*","title":["Miedo a","*engordar*"]},
-  {"say":"Por la tarde, sin el cigarro, la mano se va sola a la nevera. Es normal: buscas llenar ese hueco.",
-   "kicker":"Sin el cigarro, *por la tarde…*","title":["La mano va","a la *nevera*"],
-   "zone":{"type":"chips","items":[{"t":"🕔 media tarde","at":"tarde"},{"t":"🍪 picoteo","at":"nevera"},{"t":"un hueco","at":"hueco"}]}},
-  {"say":"Prueba esto. Uno: fruta cortada a la vista. Dos: agua o una infusión. Tres: lávate los dientes al merendar.",
-   "kicker":"Esta tarde *prueba esto:*","title":["*3* trucos"],
-   "zone":{"type":"steps","items":[
-     {"n":1,"t":"Fruta a la vista","s":"Ya cortada, lista para coger","at":"Uno"},
-     {"n":2,"t":"Agua o infusión","s":"Algo caliente entre las manos","at":"Dos"},
-     {"n":3,"t":"Lávate los dientes","s":"Cierra la merienda","at":"Tres"}]}},
-  {"say":"Y cuando apriete, cambia el gesto: tu Valkyra en vez del cigarro.",
-   "kicker":"Cuando *apriete…*","title":["Cambia","el *gesto*"],
-   "zone":{"type":"pendant","at":"gesto"}},
-  {"say":"Fumar no te cuida. Dejarlo, sí.",
-   "kicker":"Recuérdalo *esta tarde:*","title":["Dejarlo","también es","*cuidarte*"]},
-  {"say":"Síguenos para más trucos. Y comenta TARDE si es tu peor momento.",
-   "kicker":"¿Te ha *ayudado?*","title":["¿Tu peor","*momento?*"],
-   "zone":{"type":"cta","items":[{"icon":"follow","t":"*Síguenos*","at":"Síguenos"},{"icon":"comment","t":"Comenta *TARDE*","at":"TARDE"}]}}
+{
+ "account": "calma",
+ "slot": "pm",
+ "topic": "Miedo a engordar al dejar de fumar: el picoteo de media tarde",
+ "pillar": "truco",
+ "hook": "pregunta",
+ "cta": "comentar",
+ "scenes": [
+  {
+   "say": "¿Te da miedo dejar de fumar por si engordas? No eres la única.",
+   "kicker": "Si quieres *dejar de fumar:*",
+   "title": [
+    "Miedo a",
+    "*engordar*"
+   ]
+  },
+  {
+   "say": "Por la tarde, sin el cigarro, la mano se va sola a la nevera. Es normal: buscas llenar ese hueco.",
+   "kicker": "Sin el cigarro, *por la tarde…*",
+   "title": [
+    "La mano va",
+    "a la *nevera*"
+   ],
+   "zone": {
+    "type": "chips",
+    "items": [
+     {
+      "t": "🕔 media tarde",
+      "at": "tarde"
+     },
+     {
+      "t": "🍪 picoteo",
+      "at": "nevera"
+     },
+     {
+      "t": "un hueco",
+      "at": "hueco"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Prueba esto. Uno: fruta cortada a la vista. Dos: agua o una infusión. Tres: lávate los dientes al merendar.",
+   "kicker": "Esta tarde *prueba esto:*",
+   "title": [
+    "*3* trucos"
+   ],
+   "zone": {
+    "type": "steps",
+    "items": [
+     {
+      "n": 1,
+      "t": "Fruta a la vista",
+      "s": "Ya cortada, lista para coger",
+      "at": "Uno"
+     },
+     {
+      "n": 2,
+      "t": "Agua o infusión",
+      "s": "Algo caliente entre las manos",
+      "at": "Dos"
+     },
+     {
+      "n": 3,
+      "t": "Lávate los dientes",
+      "s": "Cierra la merienda",
+      "at": "Tres"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Y cuando apriete, cambia el gesto: tu Valkyra en vez del cigarro.",
+   "kicker": "Cuando *apriete…*",
+   "title": [
+    "Cambia",
+    "el *gesto*"
+   ],
+   "zone": {
+    "type": "pendant",
+    "at": "gesto"
+   }
+  },
+  {
+   "say": "Fumar no te cuida. Dejarlo, sí.",
+   "kicker": "Recuérdalo *esta tarde:*",
+   "title": [
+    "Dejarlo",
+    "también es",
+    "*cuidarte*"
+   ]
+  },
+  {
+   "say": "Síguenos para más trucos. Y comenta TARDE si es tu peor momento.",
+   "kicker": "¿Te ha *ayudado?*",
+   "title": [
+    "¿Tu peor",
+    "*momento?*"
+   ],
+   "zone": {
+    "type": "cta",
+    "items": [
+     {
+      "icon": "follow",
+      "t": "*Síguenos*",
+      "at": "Síguenos"
+     },
+     {
+      "icon": "comment",
+      "t": "Comenta *TARDE*",
+      "at": "TARDE"
+     }
+    ]
+   }
+  }
  ],
- "caption":"¿Miedo a engordar si dejas el tabaco? 🍪🚭 Es normal picar más por la tarde cuando quitas el cigarro. 3 trucos para ese momento + cambia el gesto. Comenta TARDE si es tu peor momento del día 👇",
- "hashtags":["#dejardefumar","#dejarelcigarro","#sintabaco","#miedoaengordar","#ansiedad","#habitos","#valkyra"],
- "tiktok_title":"Miedo a engordar al dejar de fumar","yt_title":"Miedo a engordar al dejar de fumar: 3 trucos"}
+ "caption": "¿Miedo a engordar si dejas el tabaco? 🍪🚭 Es normal picar más por la tarde cuando quitas el cigarro. 3 trucos para ese momento + cambia el gesto. Comenta TARDE si es tu peor momento del día 👇",
+ "hashtags": [
+  "#dejardefumar",
+  "#dejarelcigarro",
+  "#sintabaco",
+  "#miedoaengordar",
+  "#ansiedad",
+  "#habitos",
+  "#valkyra"
+ ],
+ "tiktok_title": "Miedo a engordar al dejar de fumar",
+ "yt_title": "Miedo a engordar al dejar de fumar: 3 trucos"
+}
