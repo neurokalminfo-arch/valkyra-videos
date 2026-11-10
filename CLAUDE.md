@@ -25,6 +25,7 @@ Cada ejecución crea 2 vídeos cortos (1080x1920, 25–35 s) y los deja programa
 - Datos solo si son ciertos y generales. Ante la duda, no pongas cifra.
 - Gancho fuerte en los 2 primeros segundos (pregunta o frase que identifique).
 - Mañana (am): tono de empezar el día. Tarde (pm): cansancio, estrés, sobremesa, after-work, noche.
+- **CTA obligatoria en TODOS los vídeos**: la última escena pide, en la voz y en pantalla, que nos sigan + una acción concreta (like, comentar algo específico, guardar o compartir). Usa `zone.type: "cta"`. Varía la frase y la petición de comentario cada vez, y que tenga que ver con el tema (p. ej. "Comenta CAFÉ si es tu cigarro más difícil", "Guárdalo para mañana", "Mándaselo a quien lo esté dejando"). El caption también termina con una pregunta o petición para comentar.
 - Cada guion: 5–6 escenas, 380–480 caracteres de voz en total (cuidado con los créditos de ElevenLabs).
 
 ## Cuentas
@@ -39,7 +40,7 @@ Cada ejecución crea 2 vídeos cortos (1080x1920, 25–35 s) y los deja programa
  "tiktok_title":"título corto","yt_title":"título de YouTube"}
 ```
 - `*palabra*` = color de acento. Títulos: 1–3 líneas, máx. ~14 caracteres por línea (Anton grande).
-- `zone.type`: `steps` (items `{n,t,s,at}`, máx. 3), `chips` (items `{t,at}`), `note` (`text`, `at`), `pendant` (collar), `vs` (items `{k:"no"|"si",t}`), `timer` (`from` en segundos, `label`), `big` (`text`, `sub`), `guy` (`pose`: wave, think, breath, coffee, phone; `label`; `at`).
+- `zone.type`: `steps` (items `{n,t,s,at}`, máx. 3), `chips` (items `{t,at}`), `note` (`text`, `at`), `pendant` (collar), `vs` (items `{k:"no"|"si",t}`), `timer` (`from` en segundos, `label`), `big` (`text`, `sub`), `guy` (`pose`: wave, think, breath, coffee, phone; `label`; `at`), `cta` (items `{icon: follow|like|comment|save|share, t, at}`, 2–3 botones; `*palabra*` resalta).
 - `at` = palabra exacta que dice la voz en esa escena; el elemento aparece justo ahí.
 - No pongas texto en pantalla que no se entienda sin la voz.
 

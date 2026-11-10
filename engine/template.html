@@ -48,6 +48,11 @@ body.oficial .note:before{background:#14171C}
 .vs .si .tag{background:var(--acc);color:#fff}
 .big{font:300px/0.9 Anton;color:var(--acc)}
 .bigsub{font:600 40px Inter;color:var(--mute)}
+.cta{display:flex;flex-direction:column;align-items:center;gap:22px;width:100%}
+.cta .btn{display:flex;align-items:center;gap:18px;font:800 44px Inter;padding:22px 40px;border-radius:999px;background:var(--card);border:4px solid var(--ink);box-shadow:6px 6px 0 var(--ink)}
+.cta .btn.on{background:var(--acc);border-color:var(--acc);color:#fff;box-shadow:6px 6px 0 var(--ink)}
+body.oficial .cta .btn.on{color:#14171C}
+.cta .ic{font-size:46px}
 svg{overflow:visible} svg.guy{overflow:hidden}
 .when{font:700 34px Inter;letter-spacing:.06em;padding:12px 26px;border-radius:999px;background:var(--acc);color:#14171C}
 </style></head>
@@ -123,6 +128,7 @@ const scenes = D.script.scenes.map((s, i) => {
     if (z.type === 'chips') h += `<div class="chips">${z.items.map(it => `<div class="chip it">${it.t}</div>`).join('')}</div>`;
     if (z.type === 'timer') h += `<div class="timer it"><b>0:00</b><small>${z.label || ''}</small></div>`;
     if (z.type === 'note') h += `<div class="note it">${em(z.text)}</div>`;
+    if (z.type === 'cta') h += `<div class="cta">${z.items.map(it => `<div class="btn it"><span class="ic">${{follow:'＋',like:'♥',comment:'💬',save:'🔖',share:'↗'}[it.icon] || ''}</span>${em(it.t)}</div>`).join('')}</div>`;
     if (z.type === 'pendant') h += `<div class="it">${pendant()}</div>`;
     if (z.type === 'guy') h += `${z.label ? `<div class="when it">${z.label}</div>` : ''}<div class="it">${guy(z.pose)}</div>`;
     if (z.type === 'vs') h += `<div class="vs">${z.items.map(it => `<div class="row it ${it.k}"><span class="tag">${it.k === 'no' ? 'ANTES' : 'AHORA'}</span>${it.t}</div>`).join('')}</div>`;
