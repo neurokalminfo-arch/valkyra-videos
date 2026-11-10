@@ -1,0 +1,107 @@
+{
+ "account": "calma",
+ "slot": "am",
+ "topic": "El primer cigarro de la mañana",
+ "scenes": [
+  {
+   "say": "¿Sabes cuál es el cigarro que más cuesta dejar? El primero de la mañana.",
+   "kicker": "Si estás *dejando de fumar:*",
+   "title": [
+    "El primer",
+    "*cigarro*",
+    "del día"
+   ]
+  },
+  {
+   "say": "No es solo la nicotina. Es que va pegado al café, al balcón… a tu rutina.",
+   "kicker": "No es solo *la nicotina.*",
+   "title": [
+    "Va pegado",
+    "a tu *rutina*"
+   ],
+   "zone": {
+    "type": "chips",
+    "items": [
+     {
+      "t": "☕ café",
+      "at": "café"
+     },
+     {
+      "t": "balcón",
+      "at": "balcón"
+     },
+     {
+      "t": "rutina",
+      "at": "rutina"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Mañana prueba esto. Uno: bebe un vaso de agua antes del café. Dos: tómate el café en otro sitio. Tres: ten algo en las manos que no sea un cigarro.",
+   "kicker": "Mañana *prueba esto:*",
+   "title": [
+    "*3* cambios"
+   ],
+   "zone": {
+    "type": "steps",
+    "items": [
+     {
+      "n": 1,
+      "t": "Agua antes del café",
+      "s": "Un vaso, nada más despertar",
+      "at": "uno"
+     },
+     {
+      "n": 2,
+      "t": "Cambia de sitio",
+      "s": "Otra silla, otra ventana",
+      "at": "dos"
+     },
+     {
+      "n": 3,
+      "t": "Algo en las manos",
+      "s": "Que no sea un cigarro",
+      "at": "tres"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Cuando cambias el gesto, fumar deja de ser automático.",
+   "kicker": "Cuando cambias *el gesto…*",
+   "title": [
+    "Fumar deja",
+    "de ser",
+    "*automático*"
+   ],
+   "zone": {
+    "type": "pendant",
+    "at": "gesto"
+   }
+  },
+  {
+   "say": "No tienes que hacerlo todo mañana. Empieza por uno. Un café sin cigarro también cuenta.",
+   "kicker": "Empieza *por uno.*",
+   "title": [
+    "Paso",
+    "a *paso*"
+   ],
+   "zone": {
+    "type": "note",
+    "text": "Un café sin cigarro también <em>cuenta.</em>",
+    "at": "café"
+   }
+  }
+ ],
+ "caption": "El primer cigarro de la mañana es el que más cuesta dejar ☕🚭 No es solo la nicotina: va pegado al café y a tu rutina. Mañana prueba UNO de estos 3 cambios y cuéntame cómo te fue 👇",
+ "hashtags": [
+  "#dejardefumar",
+  "#dejarelcigarro",
+  "#sintabaco",
+  "#ansiedad",
+  "#habitos",
+  "#calma",
+  "#valkyra"
+ ]
+}
