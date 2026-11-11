@@ -1,0 +1,54 @@
+{
+ "account": "calma",
+ "slot": "pm",
+ "topic": "Recaída: te fumaste un cigarro y sientes culpa",
+ "pillar": "emocion",
+ "hook": "contraintuitivo",
+ "cta": "compartir",
+ "scenes": [
+  {
+   "say": "Fumarte un cigarro no te devuelve al día uno de dejar el tabaco.",
+   "kicker": "Si hoy has *recaído:*",
+   "title": ["Un cigarro", "no es *volver*"],
+   "zone": {"type": "big", "text": "1 cigarro", "sub": "no borra tus días sin fumar"}
+  },
+  {
+   "say": "Ha sido un día largo, estabas cansada, y al final de la tarde encendiste uno. Y ahora llega la culpa.",
+   "kicker": "Te *entiendo:*",
+   "title": ["Y llega", "la *culpa*"],
+   "zone": {"type": "chips", "items": [
+     {"t": "😮‍💨 día largo", "at": "largo"},
+     {"t": "🚬 uno al final", "at": "encendiste"},
+     {"t": "💭 la culpa", "at": "culpa"}
+   ]}
+  },
+  {
+   "say": "La culpa es la que dice: total, ya da igual. Y ese pensamiento sí que te hace volver a fumar.",
+   "kicker": "El *peligro* de verdad:",
+   "title": ["\"Total,", "ya *da igual*\""],
+   "zone": {"type": "vs", "items": [
+     {"k": "no", "t": "Ya da igual, me fumo otro"},
+     {"k": "si", "t": "Ha sido uno. Mañana sigo"}
+   ]}
+  },
+  {
+   "say": "Pregúntate qué momento fue, y mañana prepara ese momento: otra rutina, otro gesto en la mano.",
+   "kicker": "Esta *noche:*",
+   "title": ["Aprende", "del *momento*"],
+   "zone": {"type": "note", "text": "¿Qué momento fue? Mañana, prepara ese momento.", "at": "momento"}
+  },
+  {
+   "say": "Síguenos para no sentirte sola, y mándaselo a quien hoy se siente culpable por un cigarro.",
+   "kicker": "No estás *sola:*",
+   "title": ["Pásaselo", "a *ella*"],
+   "zone": {"type": "cta", "items": [
+     {"icon": "follow", "t": "*Síguenos*", "at": "Síguenos"},
+     {"icon": "share", "t": "*Mándaselo* a ella", "at": "mándaselo"}
+   ]}
+  }
+ ],
+ "caption": "Te has fumado un cigarro y ahora te sientes fatal 🤍 Respira: un cigarro no borra todos los días que llevas sin fumar. Lo peligroso no es ese cigarro, es pensar \"total, ya da igual\". Mañana sigues. ¿Qué momento del día te hizo recaer la última vez? Cuéntalo aquí 👇",
+ "hashtags": ["#dejardefumar", "#recaida", "#sintabaco", "#dejarelcigarro", "#culpa", "#bienestar", "#valkyra"],
+ "tiktok_title": "Si hoy te has fumado un cigarro, escucha esto",
+ "yt_title": "Te fumaste un cigarro tras dejarlo: escucha esto"
+}

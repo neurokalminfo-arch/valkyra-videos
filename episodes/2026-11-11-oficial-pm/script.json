@@ -1,0 +1,50 @@
+{
+ "account": "oficial",
+ "slot": "pm",
+ "topic": "Cuando los colegas se ríen porque estás dejando de fumar",
+ "pillar": "emocion",
+ "hook": "error",
+ "cta": "compartir",
+ "scenes": [
+  {
+   "say": "Mi error al dejar de fumar: pensar que mis colegas me iban a apoyar a la primera.",
+   "kicker": "Dejar el *tabaco* con colegas:",
+   "title": ["Mi *error*"],
+   "zone": {"type": "guy", "pose": "think", "label": "19:30 · TERRAZA"}
+  },
+  {
+   "say": "Tío, salíamos de cañas y todo eran risas: venga, uno no pasa nada, si tú no aguantas ni una semana.",
+   "kicker": "Lo que *escuchaba:*",
+   "title": ["\"Venga,", "*uno*\""],
+   "zone": {"type": "chips", "items": [
+     {"t": "🍺 \"uno no pasa nada\"", "at": "uno"},
+     {"t": "😂 \"no aguantas\"", "at": "aguantas"}
+   ]}
+  },
+  {
+   "say": "Y me sentía el raro del grupo, con el paquete encima de la mesa y las ganas a tope.",
+   "kicker": "Y me *sentía:*",
+   "title": ["El *raro*", "del grupo"],
+   "zone": {"type": "guy", "pose": "phone", "label": "21:00 · CAÑAS"}
+  },
+  {
+   "say": "Hasta que entendí que no es contra ellos, es por mí. Ahora digo: estoy dejándolo, y punto. Y en la mano, mi Valkyra.",
+   "kicker": "Lo que *cambió:*",
+   "title": ["Es por *mí*"],
+   "zone": {"type": "guy", "pose": "breath", "label": "22:15 · SIN PITI", "at": "Valkyra"}
+  },
+  {
+   "say": "Síguenos para más y mándaselo a ese colega que lo está dejando, para que sepa que no es el único.",
+   "kicker": "Pásalo *al grupo:*",
+   "title": ["No es", "el *único*"],
+   "zone": {"type": "cta", "items": [
+     {"icon": "follow", "t": "*Síguenos*", "at": "Síguenos"},
+     {"icon": "share", "t": "*Mándaselo* a tu colega", "at": "mándaselo"}
+   ]}
+  }
+ ],
+ "caption": "Dejar de fumar cuando tus colegas fuman 🍺🚭 \"Venga, uno no pasa nada\"... Me sentía el raro del grupo hasta que entendí que no lo hago contra ellos, lo hago por mí. ¿Qué es lo que más te dicen tus colegas cuando dices que lo estás dejando? 👇",
+ "hashtags": ["#dejardefumar", "#sintabaco", "#dejarelcigarro", "#colegas", "#cañas", "#habitos", "#valkyra"],
+ "tiktok_title": "Dejar de fumar cuando tus colegas fuman",
+ "yt_title": "Dejar de fumar cuando tus colegas fuman"
+}
