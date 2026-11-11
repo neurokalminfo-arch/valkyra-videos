@@ -1,0 +1,53 @@
+{
+ "account": "calma",
+ "slot": "am",
+ "topic": "La pausa de media mañana en el trabajo cuando tus compañeras salen a fumar",
+ "pillar": "situacion",
+ "hook": "frase-identificacion",
+ "cta": "comentar",
+ "scenes": [
+  {
+   "say": "Si en la pausa del trabajo todas salen a fumar y tú lo estás dejando, esto es para ti.",
+   "kicker": "Si estás *dejando de fumar:*",
+   "title": ["Todas salen", "a *fumar*"]
+  },
+  {
+   "say": "Son las once. Bajan juntas, se ríen, y tú te quedas en la mesa con ganas de un cigarro.",
+   "kicker": "La pausa *de media mañana…*",
+   "title": ["Y tú te", "*quedas*"],
+   "zone": {"type": "chips", "items": [
+     {"t": "🕚 las once", "at": "once"},
+     {"t": "👭 bajan juntas", "at": "juntas"},
+     {"t": "🚬 ganas de un cigarro", "at": "cigarro"}
+   ]}
+  },
+  {
+   "say": "Y es que no echas de menos solo el tabaco. Echas de menos ese ratito con ellas.",
+   "kicker": "Lo que *de verdad* echas de menos:",
+   "title": ["No es solo", "el *tabaco*"],
+   "zone": {"type": "vs", "items": [
+     {"k": "no", "t": "Solo el cigarro"},
+     {"k": "si", "t": "El ratito con ellas"}
+   ]}
+  },
+  {
+   "say": "No tienes que aislarte. Baja con ellas con tu café y, si aprieta, tu Valkyra en la mano.",
+   "kicker": "Esta mañana *prueba:*",
+   "title": ["Baja", "con *ellas*"],
+   "zone": {"type": "pendant", "at": "Valkyra"}
+  },
+  {
+   "say": "Síguenos para sentirte acompañada. Y comenta PAUSA si este es tu momento más difícil.",
+   "kicker": "¿Te *ha pasado?*",
+   "title": ["¿Te suena", "la *pausa?*"],
+   "zone": {"type": "cta", "items": [
+     {"icon": "follow", "t": "*Síguenos*", "at": "Síguenos"},
+     {"icon": "comment", "t": "Comenta *PAUSA*", "at": "PAUSA"}
+   ]}
+  }
+ ],
+ "caption": "La pausa de las 11 en el trabajo ☕🚭 Todas bajan a fumar y tú te quedas en la mesa... No echas de menos solo el tabaco, echas de menos ese ratito con ellas. No tienes que aislarte para dejar de fumar 💛 ¿Te pasa? Comenta PAUSA 👇",
+ "hashtags": ["#dejardefumar", "#dejarelcigarro", "#sintabaco", "#trabajo", "#mujeres", "#habitos", "#valkyra"],
+ "tiktok_title": "Cuando todas salen a fumar en la pausa",
+ "yt_title": "Dejar de fumar: cuando todas salen a fumar en la pausa"
+}

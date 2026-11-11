@@ -1,0 +1,51 @@
+{
+ "account": "oficial",
+ "slot": "am",
+ "topic": "El cigarro en el coche de camino al curro",
+ "pillar": "situacion",
+ "hook": "pregunta",
+ "cta": "comentar",
+ "scenes": [
+  {
+   "say": "¿A ti también te pide un piti el coche nada más arrancar para ir al curro?",
+   "kicker": "Si estás *dejando de fumar:*",
+   "title": ["Coche", "y *cigarro*"],
+   "zone": {"type": "guy", "pose": "wave", "label": "07:45 · COCHE"}
+  },
+  {
+   "say": "Tío, a mí me pasaba cada mañana. Semáforo, radio, ventanilla abajo y el cigarro ya encendido.",
+   "kicker": "A mí *me pasaba:*",
+   "title": ["Cada", "*mañana*"],
+   "zone": {"type": "chips", "items": [
+     {"t": "🚦 semáforo", "at": "Semáforo"},
+     {"t": "📻 radio", "at": "radio"},
+     {"t": "🚬 ventanilla abajo", "at": "ventanilla"}
+   ]}
+  },
+  {
+   "say": "Y no es solo la nicotina. Es costumbre: coche y piti, siempre juntos, en automático.",
+   "kicker": "No es *solo* la nicotina:",
+   "title": ["Piloto", "*automático*"],
+   "zone": {"type": "guy", "pose": "think"}
+  },
+  {
+   "say": "Ahora no llevo tabaco en el coche, pongo un podcast y, en el atasco, me llevo mi Valkyra a la boca.",
+   "kicker": "Lo que *hago ahora:*",
+   "title": ["Sin tabaco", "en el *coche*"],
+   "zone": {"type": "guy", "pose": "breath", "label": "08:05 · ATASCO", "at": "Valkyra"}
+  },
+  {
+   "say": "Síguenos para más y comenta COCHE si también es tu cigarro más difícil.",
+   "kicker": "¿Te *pasa?*",
+   "title": ["¿Tu peor", "*piti?*"],
+   "zone": {"type": "cta", "items": [
+     {"icon": "follow", "t": "*Síguenos*", "at": "Síguenos"},
+     {"icon": "comment", "t": "Comenta *COCHE*", "at": "COCHE"}
+   ]}
+  }
+ ],
+ "caption": "El cigarro del coche de camino al curro 🚗🚭 Semáforo, radio, ventanilla abajo... y ya lo tienes encendido sin pensarlo. Es pura costumbre. ¿Te pasa? Comenta COCHE 👇",
+ "hashtags": ["#dejardefumar", "#dejarelcigarro", "#sintabaco", "#coche", "#curro", "#habitos", "#valkyra"],
+ "tiktok_title": "El piti del coche de camino al curro",
+ "yt_title": "El piti del coche de camino al curro"
+}
