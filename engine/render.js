@@ -4,8 +4,15 @@ const { spawn, execFileSync } = require('child_process');
 const fs = require('fs'), path = require('path');
 const ep = path.resolve(process.argv[2]);
 const prev = process.argv[3] === '--preview' ? process.argv[4].split(',').map(Number) : null;
-const script = JSON.parse(fs.readFileSync(path.join(ep, 'script.json')));
-const timing = JSON.parse(fs.readFileSync(path.join(ep, 'timing.json')));
+const coverMode = process.argv[3] === '--cover';
+let script = JSON.parse(fs.readFileSync(path.join(ep, 'script.json')));
+let timing = JSON.parse(fs.readFileSync(path.join(ep, 'timing.json')));
+if (coverMode) { // portada: una sola escena con el texto de 'cover' (o la primera escena)
+  const c = script.cover || script.scenes[0];
+  const zone = c.zone !== undefined ? c.zone : (script.account === 'oficial' ? { type: 'guy', pose: 'wave' } : { type: 'pendant' });
+  script = { ...script, cover: true, scenes: [{ kicker: c.kicker, title: c.title, zone }] };
+  timing = { scenes: [{ start: 0, end: 99, end_speech: 99, words: [] }], duration: 99 };
+}
 const FPS = 30, LEAD = 0.3, dur = timing.duration + LEAD;
 
 (async () => {
@@ -14,6 +21,11 @@ const FPS = 30, LEAD = 0.3, dur = timing.duration + LEAD;
   await p.addInitScript(d => { window.DATA = d; }, { script, timing });
   await p.goto('file://' + path.join(__dirname, 'template.html'));
   await p.evaluate(() => document.fonts.ready);
+  if (coverMode) {
+    await p.evaluate(() => { document.body.classList.add('cover'); render(20); });
+    await p.screenshot({ path: path.join(ep, 'cover.jpg'), type: 'jpeg', quality: 90 });
+    await b.close(); console.log('ok', path.join(ep, 'cover.jpg')); return;
+  }
   if (prev) {
     for (const t of prev) { await p.evaluate(t => render(t), t); await p.screenshot({ path: path.join(ep, `prev_${t}.jpg`), type: 'jpeg', quality: 85 }); }
     await b.close(); return;

@@ -8,13 +8,16 @@ Cada ejecución crea 2 vídeos cortos (1080x1920, 25–35 s) y los deja programa
 0. Lee `estrategia.md` (pilares, calendario semanal, ganchos, CTA) y `aprendizajes.md` (lo que ha funcionado según los datos). Mira qué pilar toca hoy en el calendario para cada cuenta y aplica los ajustes de `aprendizajes.md`.
 1. Lee los temas ya usados: `grep -h '"topic"\|"pillar"\|"hook"\|"cta"' episodes/*/script.json`. No repitas tema ni gancho de los últimos 30 días, ni el mismo tipo de gancho dos veces seguidas en la misma cuenta.
 2. Escribe `episodes/AAAA-MM-DD-calma-<slot>/script.json` y `episodes/AAAA-MM-DD-oficial-<slot>/script.json` (formato abajo).
-3. Para cada episodio: `python3 engine/tts.py <ep>` (necesita `ELEVENLABS_API_KEY`), luego `node engine/render.js <ep> --preview t1,t2,t3` y mira los fotogramas (texto completo, nada cortado, nada fuera de la zona segura). Corrige y repite. Después `node engine/render.js <ep>`.
+3. Para cada episodio: `python3 engine/tts.py <ep>` (necesita `ELEVENLABS_API_KEY`), luego `node engine/render.js <ep> --preview t1,t2,t3` y mira los fotogramas (texto completo, nada cortado, nada fuera de la zona segura). Corrige y repite. Después `node engine/render.js <ep>` y la portada: `node engine/render.js <ep> --cover` → `cover.jpg` (míralo: el texto se lee entero y se entiende que va de dejar de fumar).
 4. `git add -A && git commit && git push origin main`. URL pública del vídeo:
-   `https://raw.githubusercontent.com/neurokalminfo-arch/valkyra-videos/main/episodes/<id>/final.mp4` (comprueba con curl que da 200).
+   `https://raw.githubusercontent.com/neurokalminfo-arch/valkyra-videos/main/episodes/<id>/final.mp4` y la portada `.../episodes/<id>/cover.jpg` (comprueba con curl que las dos dan 200).
 5. Programa en Metricool (`createScheduledPost`, `draft: false`, `autoPublish: true`, zona `Europe/Madrid`):
-   - blogId **7796202** · providers `[tiktok]` · vídeo calma · `tiktokData.title` obligatorio · `isAigc: true`.
-   - blogId **7738323** · providers `[instagram, youtube]` · vídeo calma · `instagramData: {type: REEL, showReelOnFeed: true, isAiGenerated: true}` · `youtubeData: {title: "<título> #shorts", type: short, privacy: public, category: HOWTO_STYLE, madeForKids: false, isAiGeneratedContent: false, tags: [...]}`.
-   - blogId **7738323** · providers `[tiktok]` · vídeo oficial · `tiktokData.title` · `isAigc: true`.
+   - En TODOS los posts de TikTok e Instagram añade `videoThumbnailUrl` = URL raw de `cover.jpg` del episodio.
+   - blogId **7796202** · providers `[tiktok]` · vídeo calma · `tiktokData.title` obligatorio · `isAigc: true` · portada.
+   - blogId **7738323** · providers `[instagram]` · vídeo calma · `instagramData: {type: REEL, showReelOnFeed: true, isAiGenerated: true}` · portada.
+   - blogId **7738323** · providers `[youtube]` (post aparte, SIN `videoThumbnailUrl`) · vídeo calma · `youtubeData: {title: "<título> #shorts", type: short, privacy: public, category: HOWTO_STYLE, madeForKids: false, isAiGeneratedContent: false, tags: [...]}`.
+   - blogId **7738323** · providers `[tiktok]` · vídeo oficial · `tiktokData.title` · `isAigc: true` · portada.
+   - Si Metricool rechaza la portada (`VIDEO_THUMBNAIL_NOT_APPLICABLE`), vuelve a crear ese post sin `videoThumbnailUrl`.
    - Si Metricool da "internal error while storing the media", reintenta tras unos segundos (pasa a veces).
    - NO toques las marcas Fetbull, Airnaze ni La Gran Pregunta.
 
@@ -39,10 +42,12 @@ Cada ejecución crea 2 vídeos cortos (1080x1920, 25–35 s) y los deja programa
 {"account":"calma|oficial","slot":"am|pm","topic":"...","pillar":"truco|situacion|mito|emocion|comunidad|producto","hook":"pregunta|frase-identificacion|contraintuitivo|error|lista","cta":"guardar|compartir|comentar|perfil",
  "scenes":[{"say":"texto que dice la voz","kicker":"frase pequeña con *acento en cursiva*","title":["LÍNEA 1","línea *acento*"],"zone":{...}}],
  "caption":"texto del post con emojis y pregunta final","hashtags":["#dejardefumar","..."],
+ "cover":{"kicker":"frase pequeña","title":["2–3 líneas","con *acento*"]},
  "tiktok_title":"título corto","yt_title":"título de YouTube"}
 ```
 - `*palabra*` = color de acento. Títulos: 1–3 líneas, máx. ~14 caracteres por línea (Anton grande).
 - `zone.type`: `steps` (items `{n,t,s,at}`, máx. 3), `chips` (items `{t,at}`), `note` (`text`, `at`), `pendant` (collar), `vs` (items `{k:"no"|"si",t}`), `timer` (`from` en segundos, `label`), `big` (`text`, `sub`), `guy` (`pose`: wave, think, breath, coffee, phone; `label`; `at`), `cta` (items `{icon: follow|like|comment|save|share, t, at}`, 2–3 botones; `*palabra*` resalta).
+- `cover` = texto de la portada: el gancho del vídeo en grande, que despierte curiosidad y se entienda solo (tiene que salir fumar/cigarro/piti/tabaco en el kicker o el título). Máx. ~12 caracteres por línea. Sin `zone`: en calma sale el collar y en oficial el chico saludando (puedes poner `"zone": {"type":"guy","pose":"coffee"}` u otra pose).
 - `at` = palabra exacta que dice la voz en esa escena; el elemento aparece justo ahí.
 - No pongas texto en pantalla que no se entienda sin la voz.
 
