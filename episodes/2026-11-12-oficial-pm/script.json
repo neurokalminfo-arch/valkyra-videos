@@ -1,0 +1,56 @@
+{
+ "account": "oficial",
+ "slot": "pm",
+ "topic": "El piti entre partidas de la Play por la noche: el gesto con Valkyra",
+ "pillar": "producto",
+ "hook": "frase-identificacion",
+ "cta": "perfil",
+ "scenes": [
+  {
+   "say": "Tío, si fumas un piti en cada partida de la Play por la noche, mira lo que hago ahora.",
+   "kicker": "Si estás *dejando de fumar:*",
+   "title": ["Play", "y *piti*"],
+   "zone": {"type": "guy", "pose": "phone", "label": "23:10 · PLAY"}
+  },
+  {
+   "say": "A mí me pasaba. Pierdes, cigarro. Ganas, cigarro. Y el cenicero, a reventar.",
+   "kicker": "A mí *me pasaba:*",
+   "title": ["Cada", "*partida*"],
+   "zone": {"type": "guy", "pose": "think"}
+  },
+  {
+   "say": "Ahora, entre partida y partida, me llevo mi Valkyra a la boca. Mismo gesto, sin humo.",
+   "kicker": "Lo que *hago ahora:*",
+   "title": ["Mismo", "*gesto*"],
+   "zone": {"type": "guy", "pose": "breath", "label": "23:40 · OTRA PARTIDA", "at": "Valkyra"}
+  },
+  {
+   "say": "Y no, no es un vapeador. Es un collar de acero: sin nicotina y sin batería.",
+   "kicker": "¿Un *vapeador?*",
+   "title": ["*No.*"],
+   "zone": {"type": "pendant"}
+  },
+  {
+   "say": "La mano sigue ocupada, pero la habitación ya no huele a tabaco.",
+   "kicker": "La *diferencia:*",
+   "title": ["Cero", "*humo*"],
+   "zone": {"type": "vs", "items": [
+     {"k": "no", "t": "Cuarto a tabaco"},
+     {"k": "si", "t": "Cero humo"}
+   ]}
+  },
+  {
+   "say": "Síguenos para más. Y si la quieres probar, la tienes en el enlace del perfil.",
+   "kicker": "¿Te *mola?*",
+   "title": ["Enlace", "del *perfil*"],
+   "zone": {"type": "cta", "items": [
+     {"icon": "follow", "t": "*Síguenos*", "at": "Síguenos"},
+     {"icon": "share", "t": "Enlace *del perfil*", "at": "enlace"}
+   ]}
+  }
+ ],
+ "caption": "Pierdes, piti. Ganas, piti 🎮🚬 A mí me pasaba con la Play cada noche. Ahora entre partida y partida me llevo mi Valkyra a la boca: mismo gesto, cero humo, sin nicotina. La tienes en el enlace del perfil 🔗 ¿Y tú, con qué juego te fumabas más? 👇",
+ "hashtags": ["#dejardefumar", "#dejarelcigarro", "#sintabaco", "#gaming", "#play", "#habitos", "#valkyra"],
+ "tiktok_title": "El piti en cada partida de la Play",
+ "yt_title": "El piti en cada partida de la Play"
+}

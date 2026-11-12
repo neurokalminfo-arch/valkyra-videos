@@ -1,0 +1,59 @@
+{
+ "account": "calma",
+ "slot": "pm",
+ "topic": "¿Por qué un collar para dejar de fumar? El gesto en el sofá después de cenar",
+ "pillar": "producto",
+ "hook": "pregunta",
+ "cta": "perfil",
+ "scenes": [
+  {
+   "say": "¿Por qué llevo un collar para dejar de fumar? Te lo enseño en mi momento más difícil: después de cenar.",
+   "kicker": "Si estás *dejando de fumar:*",
+   "title": ["¿Un *collar*", "para dejar", "de fumar?"]
+  },
+  {
+   "say": "Recoges la cocina, te sientas en el sofá, y la mano busca el cigarro sola.",
+   "kicker": "Después *de cenar:*",
+   "title": ["La mano", "busca el", "*cigarro*"],
+   "zone": {"type": "chips", "items": [
+     {"t": "🍽️ la cocina", "at": "cocina"},
+     {"t": "🛋️ el sofá", "at": "sofá"},
+     {"t": "✋ la mano sola", "at": "mano"}
+   ]}
+  },
+  {
+   "say": "Ahí entra Valkyra: te la llevas a los labios, como el cigarro, y sueltas el aire despacio.",
+   "kicker": "Ahí entra *Valkyra:*",
+   "title": ["Mismo", "*gesto*"],
+   "zone": {"type": "pendant"}
+  },
+  {
+   "say": "No es un vapeador: sin nicotina, sin humo y sin batería. Solo cambias el gesto.",
+   "kicker": "¿Es un *vapeador?*",
+   "title": ["*No.*"],
+   "zone": {"type": "chips", "items": [
+     {"t": "🚭 sin nicotina", "at": "nicotina"},
+     {"t": "☁️ sin humo", "at": "humo"},
+     {"t": "🔌 sin batería", "at": "batería"}
+   ]}
+  },
+  {
+   "say": "El paso lo das tú. Pero ya no estás sola con las ganas.",
+   "kicker": "Esta *noche:*",
+   "title": ["No estás", "*sola*"]
+  },
+  {
+   "say": "Síguenos para más, y si quieres verla, la tienes en el enlace del perfil.",
+   "kicker": "¿Quieres *verla?*",
+   "title": ["Enlace", "del *perfil*"],
+   "zone": {"type": "cta", "items": [
+     {"icon": "follow", "t": "*Síguenos*", "at": "Síguenos"},
+     {"icon": "share", "t": "Enlace *del perfil*", "at": "enlace"}
+   ]}
+  }
+ ],
+ "caption": "Después de cenar, sofá... y la mano buscando el cigarro sola 🛋️🚭 Por eso llevo Valkyra al cuello: no es un vapeador, sin nicotina, sin humo, sin batería. Solo cambias el gesto. La tienes en el enlace del perfil ✨ ¿Cuál es tu momento más difícil para no fumar? Cuéntamelo 👇",
+ "hashtags": ["#dejardefumar", "#dejarelcigarro", "#sintabaco", "#exfumadora", "#habitos", "#valkyra"],
+ "tiktok_title": "¿Por qué un collar para dejar de fumar?",
+ "yt_title": "¿Por qué llevo un collar para dejar de fumar?"
+}
