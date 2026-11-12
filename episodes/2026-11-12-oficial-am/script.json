@@ -1,0 +1,51 @@
+{
+ "account": "oficial",
+ "slot": "am",
+ "topic": "El piti al salir del gimnasio por la mañana",
+ "pillar": "truco",
+ "hook": "pregunta",
+ "cta": "guardar",
+ "scenes": [
+  {
+   "say": "Tío, ¿sales del gimnasio y lo primero que te pide el cuerpo es un piti?",
+   "kicker": "Si estás *dejando de fumar:*",
+   "title": ["Gym", "y *piti*"],
+   "zone": {"type": "guy", "pose": "wave", "label": "09:30 · GYM"}
+  },
+  {
+   "say": "A mí me pasaba. Una hora entrenando y, al salir, cigarro en la puerta. Sin sentido, pero en automático.",
+   "kicker": "A mí *me pasaba:*",
+   "title": ["Cigarro", "en la *puerta*"],
+   "zone": {"type": "guy", "pose": "think"}
+  },
+  {
+   "say": "Tres cosas que me funcionan. Uno: batido o agua nada más salir. Dos: la mochila, sin tabaco. Tres: estira fuera cinco minutos.",
+   "kicker": "Lo que *me funciona:*",
+   "title": ["*3* trucos"],
+   "zone": {"type": "steps", "items": [
+     {"n": 1, "t": "Batido o agua", "s": "Nada más salir", "at": "Uno"},
+     {"n": 2, "t": "Mochila sin tabaco", "s": "Si no lo llevas, no lo enciendes", "at": "Dos"},
+     {"n": 3, "t": "Estira fuera", "s": "5 minutos, manos ocupadas", "at": "Tres"}
+   ]}
+  },
+  {
+   "say": "Y si aprieta, me llevo mi Valkyra a la boca. Mismo gesto, cero humo.",
+   "kicker": "Si *aprieta:*",
+   "title": ["Mismo", "*gesto*"],
+   "zone": {"type": "guy", "pose": "breath", "label": "10:40 · SALIDA", "at": "Valkyra"}
+  },
+  {
+   "say": "Síguenos para más, y guárdalo para tu próximo día de gym.",
+   "kicker": "¿Te *sirve?*",
+   "title": ["Para tu", "próximo *gym*"],
+   "zone": {"type": "cta", "items": [
+     {"icon": "follow", "t": "*Síguenos*", "at": "Síguenos"},
+     {"icon": "save", "t": "Guárdalo *para el gym*", "at": "guárdalo"}
+   ]}
+  }
+ ],
+ "caption": "Entrenas una hora y al salir... piti en la puerta 🏋️🚬 A mí me pasaba, pura costumbre. 3 cosas que me funcionan para dejar de fumar después del gym. Guárdalo 📌 ¿Y tú, cuál es tu piti más tonto del día? 👇",
+ "hashtags": ["#dejardefumar", "#dejarelcigarro", "#sintabaco", "#gym", "#gimnasio", "#habitos", "#valkyra"],
+ "tiktok_title": "El piti al salir del gym",
+ "yt_title": "El piti al salir del gym: 3 trucos"
+}

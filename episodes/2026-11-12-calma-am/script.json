@@ -1,0 +1,53 @@
+{
+ "account": "calma",
+ "slot": "am",
+ "topic": "El cigarro después de dejar a los niños en el cole",
+ "pillar": "truco",
+ "hook": "lista",
+ "cta": "guardar",
+ "scenes": [
+  {
+   "say": "Tres cosas para no encender un cigarro después de dejar a los niños en el cole.",
+   "kicker": "Si estás *dejando de fumar:*",
+   "title": ["El cole", "y el *cigarro*"]
+  },
+  {
+   "say": "Es tu primer ratito sola del día. Silencio, la calle, el mechero en el bolso. Te entiendo.",
+   "kicker": "Tu primer *ratito sola:*",
+   "title": ["Y ahí", "llega el *piti*"],
+   "zone": {"type": "chips", "items": [
+     {"t": "🤫 silencio", "at": "Silencio"},
+     {"t": "🚶‍♀️ la calle", "at": "calle"},
+     {"t": "🔥 el mechero", "at": "mechero"}
+   ]}
+  },
+  {
+   "say": "Uno: vuelve por otra calle. Dos: lleva las manos ocupadas, con agua o con tu Valkyra. Tres: ponte tu canción favorita y camina.",
+   "kicker": "Mañana *prueba esto:*",
+   "title": ["*3* trucos"],
+   "zone": {"type": "steps", "items": [
+     {"n": 1, "t": "Otra calle", "s": "Cambia el camino de vuelta", "at": "Uno"},
+     {"n": 2, "t": "Manos ocupadas", "s": "Agua o tu Valkyra", "at": "Dos"},
+     {"n": 3, "t": "Tu canción", "s": "Y a caminar", "at": "Tres"}
+   ]}
+  },
+  {
+   "say": "Ese ratito sigue siendo tuyo. Solo que ahora, sin tabaco.",
+   "kicker": "Recuérdalo *mañana:*",
+   "title": ["Tu ratito,", "*sin tabaco*"]
+  },
+  {
+   "say": "Síguenos para más, y guárdalo para mañana a la salida del cole.",
+   "kicker": "¿Te ha *ayudado?*",
+   "title": ["Para", "*mañana*"],
+   "zone": {"type": "cta", "items": [
+     {"icon": "follow", "t": "*Síguenos*", "at": "Síguenos"},
+     {"icon": "save", "t": "Guárdalo *para mañana*", "at": "guárdalo"}
+   ]}
+  }
+ ],
+ "caption": "Dejas a los niños en el cole y... ahí está el cigarro 🏫🚭 Es tu primer ratito sola del día y el tabaco se ha colado en él. 3 trucos para mañana: otra calle, manos ocupadas y tu canción. Guárdalo 📌 ¿Cuál es tu primer cigarro del día? Cuéntamelo 👇",
+ "hashtags": ["#dejardefumar", "#dejarelcigarro", "#sintabaco", "#mamas", "#rutinademañana", "#habitos", "#valkyra"],
+ "tiktok_title": "El cigarro después de dejar a los niños en el cole",
+ "yt_title": "Dejar de fumar: el cigarro después del cole (3 trucos)"
+}
