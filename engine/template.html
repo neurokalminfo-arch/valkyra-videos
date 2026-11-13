@@ -9,7 +9,8 @@
 @font-face{font-family:Inter;src:url(fonts/inter-700.woff2);font-weight:700}
 @font-face{font-family:Inter;src:url(fonts/inter-800.woff2);font-weight:800}
 :root{--bg:#F3EDE3;--dot:#DDD3C4;--ink:#2B2723;--mute:#8F857A;--acc:#B85C3A;--acc2:#7E9270;--gold:#C49A4E;--card:#FFFDF9;--note:#E3E8D6;--blob1:#E9D3C2;--blob2:#D8E0CC}
-body.oficial{--bg:#14171C;--dot:#262B33;--ink:#F3F0E8;--mute:#8A919C;--acc:#F2A93B;--acc2:#58C4A7;--gold:#E8C27A;--card:#1E232B;--note:#F2A93B;--blob1:#1F2A33;--blob2:#2A2420}
+:root{--cacc:#FFB48A}
+body.oficial{--cacc:#F2A93B;--bg:#14171C;--dot:#262B33;--ink:#F3F0E8;--mute:#8A919C;--acc:#F2A93B;--acc2:#58C4A7;--gold:#E8C27A;--card:#1E232B;--note:#F2A93B;--blob1:#1F2A33;--blob2:#2A2420}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:1080px;height:1920px;overflow:hidden}
 body{background:var(--bg);font-family:Inter;color:var(--ink);position:relative}
@@ -56,6 +57,19 @@ body.oficial .cta .btn.on{color:#14171C}
 body.cover .title{font-size:168px;line-height:.95}
 body.cover .kicker{font-size:56px}
 body.cover .scene{top:300px;bottom:300px}
+#cine{position:absolute;inset:0;width:1080px;height:1920px}
+body.oncine #brand{color:rgba(255,255,255,.75)} body.oncine #brand i{color:var(--cacc)} body.oncine #prog{background:rgba(255,255,255,.22)} body.oncine #prog i{background:var(--cacc)}
+.scene.cine{color:#FFFFFF;--ink:#FFFFFF;--card:rgba(10,10,24,.55);--mute:#E2DAD2;--acc:var(--cacc);--note:#FFF4E2;top:640px}
+.scene.cine .title{font-size:118px;text-shadow:0 8px 40px rgba(0,0,0,.55)}
+.scene.cine .kicker{text-shadow:0 4px 20px rgba(0,0,0,.6)}
+.scene.cine.capon .kicker{display:none}
+.scene.cine .card,.scene.cine .chip,.scene.cine .cta .btn,.scene.cine .vs .row{box-shadow:0 10px 40px rgba(0,0,0,.35);border-color:rgba(255,255,255,.85)}
+.scene.cine .card.on,.scene.cine .chip.on,.scene.cine .cta .btn.on{border-color:var(--acc)}
+.scene.cine .card .n{color:#14171C} .scene.cine .chip.on,.scene.cine .cta .btn.on,.scene.cine .card.on .n{color:#14171C}
+#cap{position:absolute;top:390px;left:80px;right:80px;text-align:center;font:700 60px/1.28 Inter;color:#fff;text-shadow:0 4px 24px rgba(0,0,0,.6);display:none}
+#cap span{display:inline-block;margin:0 .14em;padding:0 .12em;border-radius:10px;transition:none}
+#cap .f{opacity:.38;font-weight:500} #cap .p{opacity:.95} #cap .c{opacity:1;font-weight:800;outline:4px solid var(--cacc);outline-offset:2px}
+body:not(.oncine) #cap{color:var(--ink);text-shadow:none}
 #prog{position:absolute;top:226px;left:300px;right:300px;height:6px;border-radius:3px;background:var(--dot);overflow:hidden}
 #prog i{display:block;height:100%;width:0;background:var(--acc)}
 body.cover #prog{display:none}
@@ -66,9 +80,12 @@ svg{overflow:visible} svg.guy{overflow:hidden}
 <div id="dots"></div>
 <div class="blob" id="b1" style="width:700px;height:700px;background:var(--blob1)"></div>
 <div class="blob" id="b2" style="width:640px;height:640px;background:var(--blob2)"></div>
+<canvas id="cine" width="1080" height="1920"></canvas>
 <div id="brand"></div>
 <div id="prog"><i></i></div>
 <div id="stage"></div>
+<div id="cap"></div>
+<script src="cine.js"></script>
 <script>
 const D = window.DATA;
 document.body.className = D.script.account;
@@ -78,6 +95,9 @@ const clamp = x => Math.max(0, Math.min(1, x));
 const ease = x => 1 - Math.pow(1 - clamp(x), 3);
 const back = x => { x = clamp(x); const c = 1.6; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
 
+// subtítulos palabra a palabra (estilo cinemático): por defecto en las escenas con fondo "bg"; "captions":"all" los pone en todas, false los quita
+const capOn = s => D.script.captions !== false && !D.script.cover && (D.script.captions === 'all' || !!s.bg);
+function chunks(words) { const out = []; let cur = []; words.forEach((w, k) => { if (cur.length && (cur.length >= 4 || w[1] - words[k - 1][1] > 0.55)) { out.push(cur); cur = []; } cur.push(w); }); if (cur.length) out.push(cur); return out; }
 let PID = 0;
 function pendant() {
   const pid = 'pg' + (PID++); // collar Valkyra dibujado (cadena + tubo)
@@ -124,7 +144,7 @@ function guy(pose) {
 // ---- construir escenas ----
 const scenes = D.script.scenes.map((s, i) => {
   const T = D.timing.scenes[i];
-  const el = document.createElement('div'); el.className = 'scene'; el.style.opacity = 0;
+  const el = document.createElement('div'); el.className = 'scene' + (s.bg ? ' cine' : '') + (capOn(s) ? ' capon' : ''); el.style.opacity = 0;
   let h = '';
   if (s.kicker) h += `<div class="kicker">${em(s.kicker).split(/(<em>.*?<\/em>|\s+)/).filter(x=>x&&x.trim()).map(w=>`<span>${w} </span>`).join('')}</div>`;
   if (s.title) h += `<div class="title">${s.title.map(l => `<div>${em(l)}</div>`).join('')}</div>`;
@@ -137,7 +157,8 @@ const scenes = D.script.scenes.map((s, i) => {
     if (z.type === 'note') h += `<div class="note it">${em(z.text)}</div>`;
     if (z.type === 'cta') h += `<div class="cta">${z.items.map(it => `<div class="btn it"><span class="ic">${{follow:'＋',like:'♥',comment:'💬',save:'🔖',share:'↗'}[it.icon] || ''}</span>${em(it.t)}</div>`).join('')}</div>`;
     if (z.type === 'pendant') h += `<div class="it">${pendant()}</div>`;
-    if (z.type === 'guy') h += `${z.label ? `<div class="when it">${z.label}</div>` : ''}<div class="it">${guy(z.pose)}</div>`;
+    // el avatar se ha retirado (13-11-2026): 'guy' y 'moment' solo muestran la etiqueta del momento del día
+    if (z.type === 'guy' || z.type === 'moment') h += z.label ? `<div class="when it">${z.label}</div>` : '';
     if (z.type === 'vs') h += `<div class="vs">${z.items.map(it => `<div class="row it ${it.k}"><span class="tag">${it.k === 'no' ? 'ANTES' : 'AHORA'}</span>${it.t}</div>`).join('')}</div>`;
     if (z.type === 'big') h += `<div class="big it">${z.text}</div><div class="bigsub it">${z.sub || ''}</div>`;
     h += '</div>';
@@ -154,10 +175,22 @@ const scenes = D.script.scenes.map((s, i) => {
     return T.start + 0.7 + k * 0.45;
   });
   for (let k = 1; k < times.length; k++) if (times[k] === null) times[k] = times[0] + 0.15 * k;
-  return { el, s, T, its, times, kick: [...el.querySelectorAll('.kicker span')], lines: [...el.querySelectorAll('.title div')] };
+  return { el, s, T, its, times, ch: chunks(T.words || []), kick: [...el.querySelectorAll('.kicker span')], lines: [...el.querySelectorAll('.title div')] };
 });
 
+// tramos de fondo: escenas seguidas con el mismo tipo de fondo comparten un solo plano continuo
+const RUNS = [];
+D.script.scenes.forEach((s, i) => { const T = D.timing.scenes[i]; if (!s.bg) return; const L = RUNS[RUNS.length - 1];
+  if (L && L.last === i - 1 && L.bg.type === s.bg.type) { L.last = i; L.end = T.end; } else RUNS.push({ bg: s.bg, first: i, last: i, start: T.start, end: T.end }); });
+const cineCv = document.getElementById('cine'), capEl = document.getElementById('cap'); let capKey = '';
 window.render = function (t) {
+  const nS = D.script.scenes.length;
+  RUNS.forEach(R => { const fin = R.last === nS - 1, ini = R.first === 0;
+    R.alpha = (ini ? 1 : clamp((t - R.start + 0.1) / 0.45)) * (fin ? 1 : clamp((R.end - t) / 0.35)) * ((ini || t >= R.start - 0.1) && (fin || t < R.end) ? 1 : 0);
+    R.lt = Math.max(0, t - R.start); R.zoom = 1 + 0.07 * clamp(R.lt / Math.max(2, R.end - R.start)); });
+  CINE.draw(cineCv, Math.max(0, t), RUNS);
+  document.body.classList.toggle('oncine', RUNS.some(R => R.alpha > 0.5));
+  let capShown = false;
   document.getElementById('b1').style.transform = `translate(${-180 + 60 * Math.sin(t * .25)}px,${180 + 50 * Math.cos(t * .2)}px)`;
   document.getElementById('b2').style.transform = `translate(${560 + 50 * Math.cos(t * .22)}px,${1180 + 60 * Math.sin(t * .18)}px)`;
   document.querySelectorAll('.guy').forEach(g => {
@@ -174,6 +207,12 @@ window.render = function (t) {
     const a = i === 0 ? Math.max(t, 0) + 1.2 : t - start, out = last ? 0 : clamp((t - (end - 0.22)) / 0.22);
     const vis = (i === 0 || t >= start - 0.05) && (t < end || last);
     S.el.style.display = vis ? 'flex' : 'none'; if (!vis) return;
+    if (capOn(S.s) && S.ch.length && t < end) { capShown = true;
+      let ci = 0; S.ch.forEach((c, k) => { if (t >= c[0][1] - 0.05) ci = k; });
+      const c = S.ch[ci], key = i + ':' + ci + ':' + c.filter(w => t >= w[1] - 0.03).length;
+      if (key !== capKey) { capKey = key; let cur = -1; c.forEach((w, k) => { if (t >= w[1] - 0.03) cur = k; });
+        capEl.innerHTML = c.map((w, k) => `<span class="${k === cur ? 'c' : k < cur ? 'p' : 'f'}">${w[0]}</span>`).join(' '); }
+      capEl.style.opacity = 1 - out; }
     S.el.style.opacity = 1 - out; S.el.style.transform = `translateY(${-40 * ease(out)}px) scale(${1 + 0.035 * clamp((t - start) / Math.max(1, end - start))})`;
     S.kick.forEach((w, k) => { const p = clamp((a - k * 0.07) / 0.25); w.style.opacity = 0.15 + 0.85 * p; w.style.transform = `translateY(${12 * (1 - ease(p))}px)`; });
     const k0 = S.kick.length * 0.07;
@@ -186,6 +225,7 @@ window.render = function (t) {
       if (S.s.zone.type === 'timer') { const left = Math.max(0, (S.s.zone.from || 300) - Math.max(0, t - S.times[k]) * (S.s.zone.speed || 20)); it.querySelector('b').textContent = Math.floor(left / 60) + ':' + String(Math.floor(left % 60)).padStart(2, '0'); }
     });
   });
+  capEl.style.display = capShown ? 'block' : 'none';
 };
 window.render(0);
 </script></body></html>

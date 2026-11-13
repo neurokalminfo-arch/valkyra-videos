@@ -9,8 +9,8 @@ let script = JSON.parse(fs.readFileSync(path.join(ep, 'script.json')));
 let timing = JSON.parse(fs.readFileSync(path.join(ep, 'timing.json')));
 if (coverMode) { // portada: una sola escena con el texto de 'cover' (o la primera escena)
   const c = script.cover || script.scenes[0];
-  const zone = c.zone !== undefined ? c.zone : (script.account === 'oficial' ? { type: 'guy', pose: 'wave' } : { type: 'pendant' });
-  script = { ...script, cover: true, scenes: [{ kicker: c.kicker, title: c.title, zone }] };
+  const zone = c.zone !== undefined ? c.zone : { type: 'pendant' };
+  script = { ...script, cover: true, scenes: [{ kicker: c.kicker, title: c.title, zone, bg: c.bg !== undefined ? c.bg : (script.account === 'oficial' ? { type: 'night' } : undefined) }] };
   timing = { scenes: [{ start: 0, end: 99, end_speech: 99, words: [] }], duration: 99 };
 }
 const FPS = 30, LEAD = 0.3, dur = timing.duration + LEAD;

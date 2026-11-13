@@ -37,7 +37,7 @@ Cada ejecución crea 2 vídeos cortos (1080x1920, 25–35 s) y los deja programa
 
 ## Cuentas
 - **calma** (`"account": "calma"`): mujeres 30–60 que quieren dejar de fumar; ya lo intentaron, miedo a engordar, a recaer, a que las juzguen, van a mil. Tono cálido, cercano, de apoyo, frases bonitas que inspiren. Voz Eva Dorado. Paleta crema/terracota/salvia.
-- **oficial** (`"account": "oficial"`): protagonista chico joven que usa Valkyra en distintos momentos del día; consejos, inspiración y entretenimiento; tono informal y cercano, en primera persona ("tío", "a mí me pasaba"). Voz Carlos. Paleta oscura con ámbar. Usa el personaje (`zone.type: "guy"`) en 2–3 escenas, con una etiqueta de momento del día (`"label": "08:10 · CAFÉ"`).
+- **oficial** (`"account": "oficial"`): protagonista chico joven que usa Valkyra en distintos momentos del día; consejos, inspiración y entretenimiento; tono informal y cercano, en primera persona ("tío", "a mí me pasaba"). Voz Carlos. Paleta oscura con ámbar. **Sin avatar ni personaje dibujado** (se retiró el 13-11-2026: quedaba infantil). Sitúa la historia con 1–2 etiquetas de momento del día (`zone.type: "moment"`, `"label": "08:10 · CAFÉ"`) y apóyate en las escenas de cine.
 
 ## Formato de script.json
 ```json
@@ -48,13 +48,23 @@ Cada ejecución crea 2 vídeos cortos (1080x1920, 25–35 s) y los deja programa
  "tiktok_title":"título corto","yt_title":"título de YouTube"}
 ```
 - `*palabra*` = color de acento. Títulos: 1–3 líneas, máx. ~14 caracteres por línea (Anton grande).
-- `zone.type`: `steps` (items `{n,t,s,at}`, máx. 3), `chips` (items `{t,at}`), `note` (`text`, `at`), `pendant` (collar), `vs` (items `{k:"no"|"si",t}`), `timer` (`from` en segundos, `label`), `big` (`text`, `sub`), `guy` (`pose`: wave, think, breath, coffee, phone; `label`; `at`), `cta` (items `{icon: follow|like|comment|save|share, t, at}`, 2–3 botones; `*palabra*` resalta).
-- `cover` = texto de la portada: el gancho del vídeo en grande, que despierte curiosidad y se entienda solo (tiene que salir fumar/cigarro/piti/tabaco en el kicker o el título). Máx. ~12 caracteres por línea. Sin `zone`: en calma sale el collar y en oficial el chico saludando (puedes poner `"zone": {"type":"guy","pose":"coffee"}` u otra pose).
+- `zone.type`: `steps` (items `{n,t,s,at}`, máx. 3), `chips` (items `{t,at}`), `note` (`text`, `at`), `pendant` (collar), `vs` (items `{k:"no"|"si",t}`), `timer` (`from` en segundos, `label`), `big` (`text`, `sub`), `moment` (`label`: etiqueta del momento del día, p. ej. "23:10 · PLAY"), `cta` (items `{icon: follow|like|comment|save|share, t, at}`, 2–3 botones; `*palabra*` resalta).
+- `cover` = texto de la portada: el gancho del vídeo en grande, que despierte curiosidad y se entienda solo (tiene que salir fumar/cigarro/piti/tabaco en el kicker o el título). Máx. ~12 caracteres por línea. Sin `zone` sale el collar. Puedes añadir `"bg"` a la portada (en oficial, si no hay `bg`, sale la noche).
 - `at` = palabra exacta que dice la voz en esa escena; el elemento aparece justo ahí.
+
+## Escenas de cine (estilo mixto, aprobado el 13-11-2026)
+Cada vídeo mezcla nuestras escenas tipográficas con **2–3 escenas "de cine"**: fondo animado a pantalla completa + subtítulos palabra a palabra arriba (la palabra que se dice va enmarcada, las siguientes atenuadas) + título grande encima. Se activan con `"bg"` en la escena:
+- `"bg": {"type": "smoke"}` humo de cigarro (ganchos, ganas, recaída) · `"night"` ciudad de noche con luna (noche, after-work, insomnio) · `"sunrise"` amanecer en el mar con sol y palmera (mañana, empezar, pequeñas victorias) · `"sunset"` atardecer (sobremesa, final del día) · `"rain"` lluvia con luces (estrés, días grises) · `"glow"` luces cálidas (calma, apoyo, el gesto con el collar) · `"space"` cielo estrellado (datos, "¿qué pasa en tu cuerpo…?"; opciones `"warp": true` para el efecto de velocidad al entrar y `"orb": true` para una bola de luz).
+- Opciones: `"palm": false` quita la palmera; `"embers": false` quita la brasa del humo.
+- Escenas seguidas con el mismo `bg` forman un solo plano continuo (la cámara sigue acercándose); entre fondos distintos hay fundido.
+- En una escena de cine el `kicker` no se muestra (lo sustituyen los subtítulos): pon lo importante en el `title` y en la voz.
+- Elige el fondo por el momento del que habla la escena. No pongas `bg` en la escena CTA. El gancho puede ser de cine (p. ej. `smoke`).
+- `"captions": "all"` en el script pone subtítulos en todas las escenas; `"captions": false` los quita.
 - No pongas texto en pantalla que no se entienda sin la voz.
 
 ## Motor
 - `engine/tts.py`: voz por API con tiempos por carácter → `voice.mp3` + `timing.json`.
+- `engine/cine.js`: fondos animados de las escenas de cine (canvas).
 - `engine/render.js`: dibuja `engine/template.html` fotograma a fotograma con Playwright y monta con ffmpeg (-14 LUFS) → `final.mp4`.
 - Nunca subas claves a este repositorio (es público).
 
