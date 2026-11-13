@@ -1,0 +1,141 @@
+{
+ "account": "oficial",
+ "slot": "pm",
+ "topic": "Te ofrecen un piti en la fiesta del sábado: qué decir y qué hacer",
+ "pillar": "kit",
+ "series": "pov-dias-sin-fumar-1",
+ "hook": "pov",
+ "cta": "comentar",
+ "scenes": [
+  {
+   "say": "POV: cinco días sin fumar y te ofrecen un piti.",
+   "title": [
+    "Te ofrecen",
+    "un *piti*"
+   ],
+   "bg": {
+    "type": "night"
+   },
+   "zone": {
+    "type": "moment",
+    "label": "SÁB · 01:30 · FIESTA"
+   }
+  },
+  {
+   "say": "Tío, no digas «no puedo». Di «no fumo». Y punto.",
+   "kicker": "Qué *decir:*",
+   "title": [
+    "Di:",
+    "*NO FUMO*"
+   ],
+   "zone": {
+    "type": "vs",
+    "items": [
+     {
+      "k": "no",
+      "t": "«No puedo»"
+     },
+     {
+      "k": "si",
+      "t": "«No fumo»"
+     }
+    ]
+   }
+  },
+  {
+   "say": "«No puedo» suena a que quieres. «No fumo» lo cierra.",
+   "kicker": "Por *qué:*",
+   "title": [
+    "Cierra",
+    "el *tema*"
+   ],
+   "zone": {
+    "type": "note",
+    "text": "Nadie insiste a quien *no fuma*",
+    "at": "cierra"
+   }
+  },
+  {
+   "say": "Cuando salgan todos al balcón, no salgas con ellos.",
+   "title": [
+    "No vayas",
+    "al *balcón*"
+   ],
+   "bg": {
+    "type": "smoke"
+   },
+   "zone": {
+    "type": "moment",
+    "label": "01:45 · BALCÓN"
+   }
+  },
+  {
+   "say": "A mí me salva la mano ocupada: mi Valkyra, sin humo.",
+   "title": [
+    "Mano",
+    "*ocupada*"
+   ],
+   "bg": {
+    "type": "glow"
+   }
+  },
+  {
+   "say": "Si te pica, las ganas duran unos quince minutos.",
+   "kicker": "Según el *NHS:*",
+   "title": [
+    "Aguanta",
+    "*el rato*"
+   ],
+   "zone": {
+    "type": "big",
+    "text": "15 MIN",
+    "sub": "y las ganas bajan"
+   }
+  },
+  {
+   "say": "Síguenos y comenta FIESTA si es tu momento más chungo.",
+   "kicker": "¿Te *pasa?*",
+   "title": [
+    "Comenta",
+    "*FIESTA*"
+   ],
+   "zone": {
+    "type": "cta",
+    "items": [
+     {
+      "icon": "follow",
+      "t": "*Síguenos*",
+      "at": "Síguenos"
+     },
+     {
+      "icon": "comment",
+      "t": "Comenta *FIESTA*",
+      "at": "FIESTA"
+     }
+    ]
+   }
+  }
+ ],
+ "caption": "POV: llevas 5 días sin fumar y en la fiesta te ofrecen un piti 🎉🚬 Mi plan: no digas «no puedo», di «no fumo» (cierra el tema). Cuando salgan al balcón, no salgas con ellos. Y si te pica, según el NHS las ganas fuertes duran como mucho unos 15 minutos y luego bajan. ¿Cuál es tu momento más chungo del finde? Comenta FIESTA si es este 👇",
+ "hashtags": [
+  "#dejardefumar",
+  "#dejarelpiti",
+  "#sintabaco",
+  "#fiesta",
+  "#findesemana",
+  "#pov",
+  "#valkyra"
+ ],
+ "cover": {
+  "kicker": "POV: 5 días *sin fumar*",
+  "title": [
+   "Te ofrecen",
+   "un *piti*"
+  ],
+  "bg": {
+   "type": "night"
+  }
+ },
+ "tiktok_title": "POV: 5 días sin fumar y te ofrecen un piti",
+ "yt_title": "POV: te ofrecen un piti en la fiesta"
+}

@@ -1,0 +1,158 @@
+{
+ "account": "calma",
+ "slot": "pm",
+ "topic": "La copa de vino del viernes y las ganas de fumar: 3 trucos para la cena del finde",
+ "pillar": "kit",
+ "series": "kit-anti-ganas-1",
+ "hook": "lista",
+ "cta": "guardar",
+ "scenes": [
+  {
+   "say": "Tres trucos para que el vino no acabe en cigarro.",
+   "kicker": "Kit anti-ganas *#1*",
+   "title": [
+    "Vino sin",
+    "*cigarro*"
+   ],
+   "zone": {
+    "type": "moment",
+    "label": "VIERNES · 21:30 · CENA"
+   }
+  },
+  {
+   "say": "Con una copa, bajas la guardia y el cigarro llama.",
+   "title": [
+    "La copa",
+    "*despierta*",
+    "las ganas"
+   ],
+   "bg": {
+    "type": "smoke"
+   }
+  },
+  {
+   "say": "Uno: sal de casa con tu frase lista. Lo estoy dejando.",
+   "kicker": "Antes de *salir:*",
+   "title": [
+    "Frase",
+    "*preparada*"
+   ],
+   "zone": {
+    "type": "steps",
+    "items": [
+     {
+      "n": "1",
+      "t": "Tu frase lista",
+      "s": "«Lo estoy dejando»",
+      "at": "frase"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Dos: entre copa y copa, pide un vaso de agua.",
+   "kicker": "En la *mesa:*",
+   "title": [
+    "Copa",
+    "y *agua*"
+   ],
+   "zone": {
+    "type": "steps",
+    "items": [
+     {
+      "n": "1",
+      "t": "Tu frase lista"
+     },
+     {
+      "n": "2",
+      "t": "Copa + agua",
+      "s": "Alterna siempre",
+      "at": "agua"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Tres: cuando salgan a fumar, quédate dentro charlando.",
+   "kicker": "A la hora del *pitillo:*",
+   "title": [
+    "Tú, *dentro*"
+   ],
+   "zone": {
+    "type": "steps",
+    "items": [
+     {
+      "n": "1",
+      "t": "Tu frase lista"
+     },
+     {
+      "n": "2",
+      "t": "Copa + agua"
+     },
+     {
+      "n": "3",
+      "t": "Quédate dentro",
+      "s": "Con quien no fuma",
+      "at": "quédate"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Si aprietan, las ganas duran unos quince minutos.",
+   "title": [
+    "Solo",
+    "*15 minutos*"
+   ],
+   "bg": {
+    "type": "glow"
+   },
+   "zone": {
+    "type": "timer",
+    "from": 900,
+    "label": "y bajan (NHS)"
+   }
+  },
+  {
+   "say": "Síguenos y guárdalo para este viernes por la noche.",
+   "kicker": "Para *este finde:*",
+   "title": [
+    "*Guárdalo*"
+   ],
+   "zone": {
+    "type": "cta",
+    "items": [
+     {
+      "icon": "follow",
+      "t": "*Síguenos*",
+      "at": "Síguenos"
+     },
+     {
+      "icon": "save",
+      "t": "*Guárdalo* para el viernes",
+      "at": "guárdalo"
+     }
+    ]
+   }
+  }
+ ],
+ "caption": "El vino del viernes y las ganas de fumar 🍷🚬 Kit anti-ganas #1 para la cena del finde: 1) sal de casa con tu frase decidida («lo estoy dejando»), 2) entre copa y copa, un vaso de agua, 3) cuando salgan a fumar, quédate dentro charlando. Y si aprieta: según el NHS, las ganas fuertes duran como mucho unos 15 minutos y luego bajan 💛 Guárdalo para el viernes. ¿Qué momento del finde te cuesta más sin cigarro? 👇",
+ "hashtags": [
+  "#dejardefumar",
+  "#dejarelcigarro",
+  "#sintabaco",
+  "#findesemana",
+  "#ansiedadporfumar",
+  "#mujeres",
+  "#valkyra"
+ ],
+ "cover": {
+  "kicker": "Kit anti-ganas *#1*",
+  "title": [
+   "Vino sin",
+   "*cigarro*"
+  ]
+ },
+ "tiktok_title": "3 trucos para que el vino no acabe en cigarro",
+ "yt_title": "Vino sin cigarro: 3 trucos para el finde"
+}
