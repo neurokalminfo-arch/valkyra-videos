@@ -1,20 +1,24 @@
 # Aprendizajes (lo actualiza el análisis semanal; léelo antes de escribir cada guion)
 
-Última actualización: 2026-11-10 · base: publicaciones del 10-10 al 10-11-2026 (antes de la fábrica automática)
+Última actualización: 2026-11-13 · base: 18 vídeos de la fábrica automática (10–12 nov) + publicaciones del mes anterior
 
 ## Reglas que ya sabemos (con su prueba)
-1. **El valor gana al producto por goleada.** Los dos vídeos con más alcance del mes fueron consejos prácticos sin enseñar el collar como protagonista:
-   - TikTok @calma.valkyra, 26-10: "3 formas de superar esos momentos sin volver a encender uno", con 96.025 visualizaciones, 1.144 likes, 134 comentarios y 336 compartidos.
-   - Instagram @neurokalm, 06-11: "Cuando vuelven las ganas… Guarda este vídeo para esos momentos", con 87.348 visualizaciones, 1.360 guardados y 933 compartidos.
-   Los vídeos tipo "ves esta cosita, parece un collar, se llama Valkyra…" se quedan casi siempre entre 300 y 1.500 visualizaciones. → El collar, de pasada; el protagonista es el consejo.
-2. **"Guárdalo" funciona.** El reel del 06-11 pedía guardarlo y consiguió 1 guardado cada 64 visualizaciones. → En los `truco`, la CTA por defecto es guardar.
-3. **El gancho decide.** En Instagram los reels con más visualizaciones tienen menos salto en los 3 primeros segundos (19,6k con 23,7 %, 12,7k con 26 %), y los que se quedan en ~100 tienen más del 60 %. → Gancho directo, con el cigarro nombrado y una situación concreta en la primera frase.
-4. **Listas de 3 = formato ganador.** Los dos virales eran "3 cosas/formas" o un plan concreto.
-5. **TikTok @valkyra.oficial está flojo** (casi todo entre 160 y 1.500 visualizaciones, casi sin compartidos). Hay que probar ganchos y temas más de chico joven (curro, colegas, fiesta, gimnasio, coche, dinero).
-6. Los carruseles de fotos en TikTok @calma.valkyra (duración 0) consiguen 650–2.900 visualizaciones: un formato a probar más adelante.
+1. **Emoción y momentos universales ganan; nicho y producto pierden.**
+   - Mejores de la fábrica: "El primer cigarro del día" (TikTok calma 2.639 · IG 2.315 visualizaciones, 72 likes, 12 guardados, 14 compartidos) y "Si hoy has recaído: un cigarro no es volver" (TikTok calma 1.820 · IG 1.800, 13 compartidos).
+   - Peores: los de `producto` (TikTok calma 359 · oficial 437 · IG 441) y momentos de nicho (salir del cole 767/415, gym 668, Play 437).
+   - → Priorizar `emocion`, `kit` y momentos que tenga todo el mundo.
+2. **El valor gana al producto por goleada** (mes anterior): el reel del 06-11 "Cuando vuelven las ganas… guarda este vídeo" llegó a 107.005 visualizaciones, 1.728 guardados y 1.137 compartidos. Era una herramienta para EL momento de las ganas. → Pilar `kit`.
+3. **El gancho falla.** En IG la mitad se va en 3 s (salto 49–59 % en todos los vídeos de la fábrica) y el tiempo medio visto es 6,5–10 s en vídeos de ~30 s. El viral de 107k retenía 19,8 s. → Gancho visible desde el primer fotograma (ya corregido en el motor), distinto en cada vídeo, y lo útil antes del segundo 8.
+4. **TikTok @valkyra.oficial está plano**: los 6 vídeos entre 437 y 773 visualizaciones, ninguno despega, 0 compartidos. → Probar formato POV y series, y temas `proceso`/`kit` contados en primera persona.
+5. **TikTok casi no da compartidos** (0 en 11 de 12 vídeos de la fábrica). IG sí (13–14 en los buenos). → No basar la CTA de TikTok en compartir.
+6. Listas de 3 y "guárdalo" siguen funcionando cuando el tema es universal.
 
-## Pruebas en curso
-- Fábrica automática (vídeo de plantilla + voz IA) desde el 10-11-2026: comparar con los vídeos grabados anteriores.
+## Pruebas en curso (desde el 13-11)
+- Motor nuevo: gancho visible en el fotograma 0, barra de progreso arriba, zoom lento por escena, portada propia.
+- Pilares nuevos `kit`, `proceso` y `apoyo` + series con número.
+- Escenas más cortas (≤ 4 s de voz) y 22–30 s en total.
 
 ## Ajustes para esta semana
-- Priorizar `truco` con lista de 3 y CTA guardar en las dos cuentas.
+- Al menos 1 `emocion` y 1 `kit` al día entre las dos cuentas.
+- Nada de momentos de nicho (gym, Play, cole). Momentos universales.
+- oficial: empezar la serie "POV: llevas N días sin fumar…".

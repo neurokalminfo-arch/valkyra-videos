@@ -5,7 +5,7 @@ Cada ejecución crea 2 vídeos cortos (1080x1920, 25–35 s) y los deja programa
 - **oficial**: TikTok @valkyra.oficial.
 
 ## Pasos de cada ejecución (slot `am` = 09:00, slot `pm` = 18:00, hora de Madrid)
-0. Lee `estrategia.md` (pilares, calendario semanal, ganchos, CTA) y `aprendizajes.md` (lo que ha funcionado según los datos). Mira qué pilar toca hoy en el calendario para cada cuenta y aplica los ajustes de `aprendizajes.md`.
+0. Lee `estrategia.md` (pilares, calendario semanal, series, ganchos, CTA, ritmo), `datos.md` (los únicos números permitidos) y `aprendizajes.md` (lo que ha funcionado según los datos). Mira qué pilar toca hoy en el calendario para cada cuenta y aplica los ajustes de `aprendizajes.md`.
 1. Lee los temas ya usados: `grep -h '"topic"\|"pillar"\|"hook"\|"cta"' episodes/*/script.json`. No repitas tema ni gancho de los últimos 30 días, ni el mismo tipo de gancho dos veces seguidas en la misma cuenta.
 2. Escribe `episodes/AAAA-MM-DD-calma-<slot>/script.json` y `episodes/AAAA-MM-DD-oficial-<slot>/script.json` (formato abajo).
 3. Para cada episodio: `python3 engine/tts.py <ep>` (necesita `ELEVENLABS_API_KEY`), luego `node engine/render.js <ep> --preview t1,t2,t3` y mira los fotogramas (texto completo, nada cortado, nada fuera de la zona segura). Corrige y repite. Después `node engine/render.js <ep>` y la portada: `node engine/render.js <ep> --cover` → `cover.jpg` (míralo: el texto se lee entero y se entiende que va de dejar de fumar).
@@ -27,11 +27,13 @@ Cada ejecución crea 2 vídeos cortos (1080x1920, 25–35 s) y los deja programa
 - **Muy poco** de respiración consciente (como mucho una frase de pasada, no en todos los vídeos).
 - Excepción: en el pilar `producto` (1 por cuenta y semana, ver `estrategia.md`) Valkyra es protagonista, pero mostrando el gesto en un momento real, y la CTA lleva al enlace del perfil.
 - Valkyra aparece poco y de forma natural (el gesto de cambiar el cigarro por el collar), nunca como anuncio. Sin precio, sin promesas ("deja de fumar en X días"), sin claims médicos. Valkyra NO es un producto médico.
-- Datos solo si son ciertos y generales. Ante la duda, no pongas cifra.
-- Gancho fuerte en los 2 primeros segundos (pregunta o frase que identifique).
+- Cifras y datos de salud: SOLO los de `datos.md`, citando la fuente. Nada más.
+- Gancho fuerte: la primera escena ES el gancho, se ve completa desde el fotograma 0, nombra el tabaco y promete algo concreto. Distinto en cada vídeo (no empieces siempre con "Si estás dejando de fumar:").
+- Cada vídeo tiene que dejar algo útil que se pueda aplicar hoy (ver la pregunta de `estrategia.md`). Un vídeo que solo describe un momento sin dar nada no vale.
+- Momentos universales (café, primer cigarro, sobremesa, estrés, alcohol, noche, recaída); evita los de nicho.
 - Mañana (am): tono de empezar el día. Tarde (pm): cansancio, estrés, sobremesa, after-work, noche.
 - **CTA obligatoria en TODOS los vídeos**: la última escena pide, en la voz y en pantalla, que nos sigan + una acción concreta (like, comentar algo específico, guardar o compartir). Usa `zone.type: "cta"`. Varía la frase y la petición de comentario cada vez, y que tenga que ver con el tema (p. ej. "Comenta CAFÉ si es tu cigarro más difícil", "Guárdalo para mañana", "Mándaselo a quien lo esté dejando"). El caption también termina con una pregunta o petición para comentar.
-- Cada guion: 5–6 escenas, 380–480 caracteres de voz en total (cuidado con los créditos de ElevenLabs).
+- Cada guion: 6–8 escenas cortas (≤ 55 caracteres de voz cada una), 22–30 s, 350–450 caracteres de voz en total (cuidado con los créditos de ElevenLabs). Lo útil antes del segundo 8. Nunca dos escenas seguidas sin `zone`.
 
 ## Cuentas
 - **calma** (`"account": "calma"`): mujeres 30–60 que quieren dejar de fumar; ya lo intentaron, miedo a engordar, a recaer, a que las juzguen, van a mil. Tono cálido, cercano, de apoyo, frases bonitas que inspiren. Voz Eva Dorado. Paleta crema/terracota/salvia.
@@ -39,7 +41,7 @@ Cada ejecución crea 2 vídeos cortos (1080x1920, 25–35 s) y los deja programa
 
 ## Formato de script.json
 ```json
-{"account":"calma|oficial","slot":"am|pm","topic":"...","pillar":"truco|situacion|mito|emocion|comunidad|producto","hook":"pregunta|frase-identificacion|contraintuitivo|error|lista","cta":"guardar|compartir|comentar|perfil",
+{"account":"calma|oficial","slot":"am|pm","topic":"...","pillar":"kit|emocion|proceso|truco|mito|apoyo|producto","series":"kit-anti-ganas-3 (opcional)","hook":"pregunta|frase-identificacion|contraintuitivo|error|lista|dato|pov","cta":"guardar|compartir|comentar|perfil",
  "scenes":[{"say":"texto que dice la voz","kicker":"frase pequeña con *acento en cursiva*","title":["LÍNEA 1","línea *acento*"],"zone":{...}}],
  "caption":"texto del post con emojis y pregunta final","hashtags":["#dejardefumar","..."],
  "cover":{"kicker":"frase pequeña","title":["2–3 líneas","con *acento*"]},

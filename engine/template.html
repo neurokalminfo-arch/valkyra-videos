@@ -56,6 +56,9 @@ body.oficial .cta .btn.on{color:#14171C}
 body.cover .title{font-size:168px;line-height:.95}
 body.cover .kicker{font-size:56px}
 body.cover .scene{top:300px;bottom:300px}
+#prog{position:absolute;top:226px;left:300px;right:300px;height:6px;border-radius:3px;background:var(--dot);overflow:hidden}
+#prog i{display:block;height:100%;width:0;background:var(--acc)}
+body.cover #prog{display:none}
 svg{overflow:visible} svg.guy{overflow:hidden}
 .when{font:700 34px Inter;letter-spacing:.06em;padding:12px 26px;border-radius:999px;background:var(--acc);color:#14171C}
 </style></head>
@@ -64,6 +67,7 @@ svg{overflow:visible} svg.guy{overflow:hidden}
 <div class="blob" id="b1" style="width:700px;height:700px;background:var(--blob1)"></div>
 <div class="blob" id="b2" style="width:640px;height:640px;background:var(--blob2)"></div>
 <div id="brand"></div>
+<div id="prog"><i></i></div>
 <div id="stage"></div>
 <script>
 const D = window.DATA;
@@ -163,12 +167,14 @@ window.render = function (t) {
     if (bl) g.querySelector('.eyes').style.transform = 'scaleY(.1)';
     const w = g.querySelector('.wv'); if (w) { w.style.transformOrigin = '338px 300px'; w.style.transformBox = 'view-box'; w.style.transform = `rotate(${14 * Math.sin(t * 7)}deg)`; }
   });
+  document.querySelector('#prog i').style.width = (100 * clamp(t / D.timing.duration)) + '%';
   scenes.forEach((S, i) => {
     const { start, end } = S.T; const last = i === scenes.length - 1;
-    const a = t - start, out = last ? 0 : clamp((t - (end - 0.22)) / 0.22);
-    const vis = t >= start - 0.05 && (t < end || last);
+    // la primera escena se ve completa desde el primer fotograma (el gancho no puede tardar en aparecer)
+    const a = i === 0 ? Math.max(t, 0) + 1.2 : t - start, out = last ? 0 : clamp((t - (end - 0.22)) / 0.22);
+    const vis = (i === 0 || t >= start - 0.05) && (t < end || last);
     S.el.style.display = vis ? 'flex' : 'none'; if (!vis) return;
-    S.el.style.opacity = 1 - out; S.el.style.transform = `translateY(${-40 * ease(out)}px)`;
+    S.el.style.opacity = 1 - out; S.el.style.transform = `translateY(${-40 * ease(out)}px) scale(${1 + 0.035 * clamp((t - start) / Math.max(1, end - start))})`;
     S.kick.forEach((w, k) => { const p = clamp((a - k * 0.07) / 0.25); w.style.opacity = 0.15 + 0.85 * p; w.style.transform = `translateY(${12 * (1 - ease(p))}px)`; });
     const k0 = S.kick.length * 0.07;
     S.lines.forEach((l, k) => { const p = clamp((a - k0 - k * 0.12) / 0.4); l.style.opacity = clamp(p * 2); l.style.transform = `translateY(${50 * (1 - ease(p))}px) scale(${0.9 + 0.1 * back(p)})`; });
