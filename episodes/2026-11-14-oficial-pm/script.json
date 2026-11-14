@@ -1,0 +1,149 @@
+{
+ "account": "oficial",
+ "slot": "pm",
+ "topic": "Estás borde e irritable desde que dejaste el piti: es temporal y qué hacer con la mala leche",
+ "pillar": "emocion",
+ "hook": "pregunta",
+ "cta": "comentar",
+ "scenes": [
+  {
+   "say": "¿Borde desde que dejaste el piti? Tío, es normal.",
+   "title": [
+    "¿Borde",
+    "sin *piti*?"
+   ],
+   "bg": {
+    "type": "smoke"
+   },
+   "zone": {
+    "type": "moment",
+    "label": "SÁB · 19:00 · CASA"
+   }
+  },
+  {
+   "say": "Según el NHS, la irritabilidad al dejarlo es temporal.",
+   "kicker": "Lo que *nadie te dice:*",
+   "title": [
+    "Es",
+    "*temporal*"
+   ],
+   "zone": {
+    "type": "note",
+    "text": "Irritabilidad, ansiedad, hambre: *se pasan*",
+    "at": "temporal"
+   }
+  },
+  {
+   "say": "A mí me pasaba: saltaba con mi novia por nada.",
+   "title": [
+    "Saltaba",
+    "por *nada*"
+   ],
+   "bg": {
+    "type": "rain"
+   }
+  },
+  {
+   "say": "Lo que me ayudó: avisar. «Si salto, no es contigo.»",
+   "kicker": "Paso *uno:*",
+   "title": [
+    "*Avisa*",
+    "antes"
+   ],
+   "zone": {
+    "type": "note",
+    "text": "«Estoy dejando el tabaco. Si salto, *no es contigo*.»",
+    "at": "avisar"
+   }
+  },
+  {
+   "say": "Cuando sube la mala leche: calle, agua y algo de comer.",
+   "kicker": "Cuando *salta:*",
+   "title": [
+    "Plan",
+    "*anti-bordes*"
+   ],
+   "zone": {
+    "type": "steps",
+    "items": [
+     {
+      "n": "1",
+      "t": "Sal 10 min",
+      "s": "A la calle, a andar",
+      "at": "calle"
+     },
+     {
+      "n": "2",
+      "t": "Agua",
+      "s": "Un vaso grande",
+      "at": "agua"
+     },
+     {
+      "n": "3",
+      "t": "Algo de comer",
+      "s": "Que el hambre suma",
+      "at": "comer"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Y la mano, ocupada con mi Valkyra. Ni humo ni bronca.",
+   "title": [
+    "Ni humo",
+    "ni *bronca*"
+   ],
+   "bg": {
+    "type": "night"
+   },
+   "zone": {
+    "type": "moment",
+    "label": "21:30 · SOFÁ"
+   }
+  },
+  {
+   "say": "Síguenos y comenta BORDE si te está pasando a ti.",
+   "kicker": "¿Te *pasa?*",
+   "title": [
+    "Comenta",
+    "*BORDE*"
+   ],
+   "zone": {
+    "type": "cta",
+    "items": [
+     {
+      "icon": "follow",
+      "t": "*Síguenos*",
+      "at": "Síguenos"
+     },
+     {
+      "icon": "comment",
+      "t": "Comenta *BORDE*",
+      "at": "BORDE"
+     }
+    ]
+   }
+  }
+ ],
+ "caption": "¿Estás borde desde que dejaste el piti? Tío, es normal 😤🚬 Según el NHS, la irritabilidad, la ansiedad y el hambre al dejarlo son temporales. A mí me ayudó: 1) avisar a los míos («si salto, no es contigo»), 2) cuando sube la mala leche, calle 10 min, agua y algo de comer, 3) la mano ocupada con mi Valkyra. Ni humo ni bronca. ¿Te está pasando? Comenta BORDE 👇",
+ "hashtags": [
+  "#dejardefumar",
+  "#dejarelpiti",
+  "#sintabaco",
+  "#ansiedad",
+  "#malhumor",
+  "#valkyra"
+ ],
+ "cover": {
+  "kicker": "Dejar el *piti* y estar borde",
+  "title": [
+   "¿Borde",
+   "sin *piti*?"
+  ],
+  "bg": {
+   "type": "rain"
+  }
+ },
+ "tiktok_title": "¿Borde desde que dejaste el piti? Es normal",
+ "yt_title": "¿Irritable desde que dejaste de fumar? Es temporal"
+}

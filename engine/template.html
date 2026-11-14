@@ -96,7 +96,7 @@ const ease = x => 1 - Math.pow(1 - clamp(x), 3);
 const back = x => { x = clamp(x); const c = 1.6; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
 
 // subtítulos palabra a palabra (estilo cinemático): por defecto en las escenas con fondo "bg"; "captions":"all" los pone en todas, false los quita
-const capOn = s => D.script.captions !== false && !D.script.cover && (D.script.captions === 'all' || !!s.bg);
+const capOn = s => D.script.captions !== false && D.script.cover !== true && (D.script.captions === 'all' || !!s.bg);
 function chunks(words) { const out = []; let cur = []; words.forEach((w, k) => { if (cur.length && (cur.length >= 4 || w[1] - words[k - 1][1] > 0.55)) { out.push(cur); cur = []; } cur.push(w); }); if (cur.length) out.push(cur); return out; }
 let PID = 0;
 function pendant() {
