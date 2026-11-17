@@ -7,7 +7,7 @@ const prev = process.argv[3] === '--preview' ? process.argv[4].split(',').map(Nu
 const coverMode = process.argv[3] === '--cover';
 let script = JSON.parse(fs.readFileSync(path.join(ep, 'script.json')));
 let timing = JSON.parse(fs.readFileSync(path.join(ep, 'timing.json')));
-if (coverMode) { // portada: una sola escena con el texto de 'cover' (o la primera escena)
+if (coverMode && script.style !== 'collage') { // portada: una sola escena con el texto de 'cover' (o la primera escena)
   const c = script.cover || script.scenes[0];
   const zone = c.zone !== undefined ? c.zone : { type: 'pendant' };
   script = { ...script, cover: true, scenes: [{ kicker: c.kicker, title: c.title, zone, bg: c.bg !== undefined ? c.bg : (script.account === 'oficial' ? { type: 'night' } : undefined) }] };
@@ -19,10 +19,12 @@ const FPS = 30, LEAD = 0.3, dur = timing.duration + LEAD;
   const b = await chromium.launch();
   const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
   await p.addInitScript(d => { window.DATA = d; }, { script, timing });
-  await p.goto('file://' + path.join(__dirname, 'template.html'));
+  const collage = script.style === 'collage';
+  await p.goto('file://' + path.join(__dirname, collage ? 'collage/template.html' : 'template.html'));
   await p.evaluate(() => document.fonts.ready);
+  if (collage) { await p.evaluate(() => window.READY); fs.writeFileSync(path.join(ep, 'events.json'), JSON.stringify(await p.evaluate(() => window.EVENTS))); }
   if (coverMode) {
-    await p.evaluate(() => { document.body.classList.add('cover'); render(20); });
+    await p.evaluate(c => { document.body.classList.add('cover'); render(c ? 3.6 : 20); }, collage);
     await p.screenshot({ path: path.join(ep, 'cover.jpg'), type: 'jpeg', quality: 90 });
     await b.close(); console.log('ok', path.join(ep, 'cover.jpg')); return;
   }
@@ -40,8 +42,10 @@ const FPS = 30, LEAD = 0.3, dur = timing.duration + LEAD;
     if (!ff.stdin.write(buf)) await new Promise(r => ff.stdin.once('drain', r));
   }
   ff.stdin.end(); await new Promise(r => ff.on('close', r)); await b.close();
-  execFileSync('ffmpeg', ['-y', '-v', 'error', '-i', silent, '-i', path.join(ep, 'voice.mp3'), '-map', '0:v', '-map', '1:a', '-c:v', 'copy',
-    '-af', `adelay=${LEAD * 1000}|${LEAD * 1000},apad,loudnorm=I=-14:TP=-1.5:LRA=11`, '-ar', '44100', '-c:a', 'aac', '-b:a', '192k', '-shortest', tmp]);
-  fs.renameSync(tmp, path.join(ep, 'final.mp4')); fs.unlinkSync(silent);
+  let voice = path.join(ep, 'voice.mp3');
+  if (collage) { execFileSync('python3', [path.join(__dirname, 'collage', 'audio.py'), ep, String(LEAD)], { stdio: 'inherit' }); voice = path.join(ep, 'mix_tmp.wav'); }
+  execFileSync('ffmpeg', ['-y', '-v', 'error', '-i', silent, '-i', voice, '-map', '0:v', '-map', '1:a', '-c:v', 'copy',
+    '-af', collage ? 'apad,loudnorm=I=-14:TP=-1.5:LRA=11' : `adelay=${LEAD * 1000}|${LEAD * 1000},apad,loudnorm=I=-14:TP=-1.5:LRA=11`, '-ar', '44100', '-c:a', 'aac', '-b:a', '192k', '-shortest', tmp]);
+  fs.renameSync(tmp, path.join(ep, 'final.mp4')); fs.unlinkSync(silent); if (collage) fs.unlinkSync(voice);
   console.log('ok', path.join(ep, 'final.mp4'), dur.toFixed(1) + 's');
 })();

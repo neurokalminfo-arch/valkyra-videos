@@ -1,0 +1,479 @@
+{
+ "account": "calma",
+ "style": "collage",
+ "slot": "pm",
+ "topic": "Los 15 minutos de las ganas de fumar: qué hacer en el minuto 1, 5, 10 y 15",
+ "pillar": "kit",
+ "series": "kit-anti-ganas-2",
+ "hook": "dato",
+ "cta": "guardar",
+ "scenes": [
+  {
+   "say": "Las ganas de fumar duran unos quince minutos. Te enseño a ganarlos.",
+   "bg": "terra",
+   "els": [
+    {
+     "t": "strip",
+     "text": "LAS GANAS DE *FUMAR*",
+     "x": 540,
+     "y": 320,
+     "rot": -3,
+     "size": 74,
+     "color": "paper"
+    },
+    {
+     "t": "strip",
+     "text": "DURAN",
+     "x": 780,
+     "y": 450,
+     "rot": 5,
+     "size": 60,
+     "color": "ink"
+    },
+    {
+     "t": "big",
+     "text": "15",
+     "x": 470,
+     "y": 760,
+     "size": 520,
+     "rot": -4,
+     "color": "paper"
+    },
+    {
+     "t": "big",
+     "text": "MIN",
+     "x": 800,
+     "y": 820,
+     "size": 190,
+     "rot": 8,
+     "color": "mustard"
+    },
+    {
+     "t": "scribble",
+     "shape": "circle",
+     "x": 470,
+     "y": 745,
+     "w": 560,
+     "h": 470,
+     "color": "ink",
+     "at": "quince",
+     "dur": 0.6
+    },
+    {
+     "t": "sticker",
+     "obj": "cigarro",
+     "x": 560,
+     "y": 1190,
+     "s": 1.25,
+     "rot": -14,
+     "anim": "smoke"
+    },
+    {
+     "t": "note",
+     "text": "te enseño a ganarlos →",
+     "x": 540,
+     "y": 1330,
+     "rot": -3,
+     "size": 62,
+     "color": "paper",
+     "at": "enseño"
+    }
+   ]
+  },
+  {
+   "say": "Según el NHS, luego bajan. Tu único objetivo: llegar al minuto quince.",
+   "bg": "paper",
+   "min": 0,
+   "els": [
+    {
+     "t": "sticker",
+     "obj": "reloj",
+     "x": 300,
+     "y": 700,
+     "s": 0.95,
+     "rot": -8,
+     "anim": "tick"
+    },
+    {
+     "t": "big",
+     "text": "Y *BAJAN*",
+     "x": 790,
+     "y": 520,
+     "size": 130,
+     "rot": 5,
+     "color": "ink",
+     "at": "bajan"
+    },
+    {
+     "t": "scribble",
+     "shape": "arrow-down",
+     "x": 820,
+     "y": 760,
+     "w": 140,
+     "h": 280,
+     "color": "terra",
+     "at": "bajan",
+     "dur": 0.5
+    },
+    {
+     "t": "tag",
+     "text": "Fuente: NHS (Reino Unido)",
+     "x": 740,
+     "y": 990,
+     "rot": 2,
+     "at": "NHS"
+    },
+    {
+     "t": "strip",
+     "text": "TU ÚNICO OBJETIVO:",
+     "x": 540,
+     "y": 1090,
+     "rot": -2,
+     "size": 60,
+     "color": "ink",
+     "at": "objetivo"
+    },
+    {
+     "t": "strip",
+     "text": "LLEGAR AL *MINUTO 15*",
+     "x": 540,
+     "y": 1210,
+     "rot": 2,
+     "size": 74,
+     "color": "terra",
+     "at": "llegar"
+    }
+   ]
+  },
+  {
+   "say": "Minuto uno: muévete. Levántate y cambia de habitación.",
+   "bg": "sage",
+   "min": 1,
+   "els": [
+    {
+     "t": "num",
+     "text": "01",
+     "x": 250,
+     "y": 520,
+     "rot": -6
+    },
+    {
+     "t": "big",
+     "text": "MUÉVETE",
+     "x": 670,
+     "y": 520,
+     "size": 150,
+     "rot": 3,
+     "color": "ink",
+     "at": "muévete"
+    },
+    {
+     "t": "sticker",
+     "obj": "huellas",
+     "x": 540,
+     "y": 860,
+     "s": 1.0,
+     "rot": 0,
+     "anim": "walk",
+     "at": "Levántate"
+    },
+    {
+     "t": "note",
+     "text": "cambia de habitación",
+     "x": 540,
+     "y": 1210,
+     "rot": -2,
+     "size": 70,
+     "color": "ink",
+     "at": "cambia"
+    },
+    {
+     "t": "scribble",
+     "shape": "underline",
+     "x": 540,
+     "y": 1265,
+     "w": 620,
+     "h": 30,
+     "color": "terra",
+     "at": "habitación",
+     "dur": 0.4
+    }
+   ]
+  },
+  {
+   "say": "Minuto cinco: algo frío. Agua con hielo, a sorbos lentos.",
+   "bg": "mustard",
+   "min": 5,
+   "els": [
+    {
+     "t": "num",
+     "text": "05",
+     "x": 250,
+     "y": 520,
+     "rot": 5
+    },
+    {
+     "t": "big",
+     "text": "ALGO *FRÍO*",
+     "x": 670,
+     "y": 520,
+     "size": 125,
+     "rot": -3,
+     "color": "ink",
+     "at": "frío"
+    },
+    {
+     "t": "sticker",
+     "obj": "vaso",
+     "x": 540,
+     "y": 900,
+     "s": 1.15,
+     "rot": 6,
+     "anim": "bob",
+     "at": "Agua"
+    },
+    {
+     "t": "strip",
+     "text": "A SORBOS *LENTOS*",
+     "x": 540,
+     "y": 1240,
+     "rot": -3,
+     "size": 66,
+     "color": "paper",
+     "at": "sorbos"
+    }
+   ]
+  },
+  {
+   "say": "Minuto diez: manos ocupadas. Apunta cómo te sientes, o juega con tu collar.",
+   "bg": "ink",
+   "min": 10,
+   "els": [
+    {
+     "t": "num",
+     "text": "10",
+     "x": 250,
+     "y": 520,
+     "rot": -4
+    },
+    {
+     "t": "big",
+     "text": "MANOS",
+     "x": 650,
+     "y": 470,
+     "size": 150,
+     "rot": 2,
+     "color": "paper",
+     "at": "manos"
+    },
+    {
+     "t": "big",
+     "text": "*OCUPADAS*",
+     "x": 640,
+     "y": 620,
+     "size": 130,
+     "rot": -2,
+     "color": "paper",
+     "at": "ocupadas"
+    },
+    {
+     "t": "sticker",
+     "obj": "libreta",
+     "x": 320,
+     "y": 940,
+     "s": 1.0,
+     "rot": -10,
+     "anim": "write",
+     "at": "Apunta"
+    },
+    {
+     "t": "sticker",
+     "obj": "collar",
+     "x": 850,
+     "y": 980,
+     "s": 1.25,
+     "rot": 0,
+     "anim": "swing",
+     "at": "juega"
+    },
+    {
+     "t": "note",
+     "text": "¿cómo te sientes?",
+     "x": 400,
+     "y": 1240,
+     "rot": -4,
+     "size": 58,
+     "color": "mustard",
+     "at": "sientes"
+    }
+   ]
+  },
+  {
+   "say": "Minuto quince. Mira: ya ha bajado. Y no has fumado.",
+   "bg": "paper",
+   "min": 15,
+   "transition": "tear",
+   "els": [
+    {
+     "t": "big",
+     "text": "15:00",
+     "x": 540,
+     "y": 430,
+     "size": 220,
+     "rot": -2,
+     "color": "terra"
+    },
+    {
+     "t": "sticker",
+     "obj": "roto",
+     "x": 540,
+     "y": 790,
+     "s": 1.25,
+     "rot": -6,
+     "anim": "snap",
+     "at": "bajado"
+    },
+    {
+     "t": "strip",
+     "text": "YA HA *BAJADO*",
+     "x": 540,
+     "y": 1060,
+     "rot": 3,
+     "size": 76,
+     "color": "ink",
+     "at": "bajado"
+    },
+    {
+     "t": "note",
+     "text": "y no has fumado",
+     "x": 500,
+     "y": 1220,
+     "rot": -3,
+     "size": 72,
+     "color": "terra",
+     "at": "fumado"
+    },
+    {
+     "t": "scribble",
+     "shape": "check",
+     "x": 900,
+     "y": 1190,
+     "w": 130,
+     "h": 120,
+     "color": "sage",
+     "at": "fumado",
+     "dur": 0.35
+    }
+   ]
+  },
+  {
+   "say": "Eso no es suerte. Es una victoria. Apúntala.",
+   "bg": "terra",
+   "els": [
+    {
+     "t": "strip",
+     "text": "NO ES SUERTE",
+     "x": 540,
+     "y": 400,
+     "rot": -2,
+     "size": 70,
+     "color": "paper",
+     "strike": "victoria"
+    },
+    {
+     "t": "stamp",
+     "text": "VICTORIA",
+     "x": 540,
+     "y": 720,
+     "rot": -9,
+     "at": "victoria"
+    },
+    {
+     "t": "note",
+     "text": "apúntala:",
+     "x": 360,
+     "y": 1010,
+     "rot": -4,
+     "size": 70,
+     "color": "paper",
+     "at": "Apúntala"
+    },
+    {
+     "t": "scribble",
+     "shape": "tally",
+     "x": 560,
+     "y": 1180,
+     "w": 420,
+     "h": 170,
+     "color": "paper",
+     "at": "Apúntala",
+     "dur": 1.0
+    }
+   ]
+  },
+  {
+   "say": "Síguenos y guarda este vídeo para tus próximas ganas.",
+   "bg": "paper",
+   "cta": true,
+   "els": [
+    {
+     "t": "strip",
+     "text": "PARA TUS PRÓXIMAS *GANAS*",
+     "x": 540,
+     "y": 430,
+     "rot": -2,
+     "size": 60,
+     "color": "ink"
+    },
+    {
+     "t": "cta",
+     "items": [
+      {
+       "icon": "follow",
+       "text": "SÍGUENOS",
+       "at": "Síguenos"
+      },
+      {
+       "icon": "save",
+       "text": "GUÁRDALO",
+       "at": "guarda"
+      }
+     ],
+     "x": 540,
+     "y": 760
+    },
+    {
+     "t": "scribble",
+     "shape": "arrow-right",
+     "x": 780,
+     "y": 1130,
+     "w": 300,
+     "h": 160,
+     "color": "terra",
+     "at": "vídeo",
+     "dur": 0.5
+    },
+    {
+     "t": "note",
+     "text": "kit anti-ganas #2",
+     "x": 330,
+     "y": 1250,
+     "rot": -3,
+     "size": 56,
+     "color": "ink"
+    }
+   ]
+  }
+ ],
+ "caption": "Las ganas de fumar duran unos 15 minutos y luego bajan (según el NHS) ⏱️🚬 Tu único objetivo es llegar al minuto 15: minuto 1, muévete y cambia de habitación. Minuto 5, algo frío: agua con hielo a sorbos lentos. Minuto 10, manos ocupadas: apunta cómo te sientes o juega con tu collar. Minuto 15: ya ha bajado y no has fumado. Eso no es suerte, es una victoria 💛 Guárdalo para tus próximas ganas. ¿Cuál de los cuatro minutos te cuesta más? 👇",
+ "hashtags": [
+  "#dejardefumar",
+  "#dejarelcigarro",
+  "#sintabaco",
+  "#ganasdefumar",
+  "#kitantiganas",
+  "#valkyra"
+ ],
+ "tiktok_title": "Las ganas de fumar duran 15 minutos: así las ganas",
+ "yt_title": "Ganas de fumar: qué hacer en los 15 minutos"
+}
