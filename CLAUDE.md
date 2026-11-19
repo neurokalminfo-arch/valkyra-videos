@@ -1,7 +1,7 @@
 # Fábrica diaria de vídeos Valkyra
 
 Cada ejecución crea 2 vídeos cortos (1080x1920, 25–35 s) y los deja programados en Metricool:
-- **calma**: TikTok @calma.valkyra + Instagram @neurokalm (Reel) + YouTube (Short).
+- **calma**: TikTok @calma.valkyra + Instagram @neurokalm (Reel). (YouTube Shorts: NO se publica desde el 19-11-2026, decisión del usuario.)
 - **oficial**: TikTok @valkyra.oficial.
 
 ## Pasos de cada ejecución (slot `am` = 09:00, slot `pm` = 18:00, hora de Madrid)
@@ -15,7 +15,7 @@ Cada ejecución crea 2 vídeos cortos (1080x1920, 25–35 s) y los deja programa
    - En TODOS los posts de TikTok e Instagram añade `videoThumbnailUrl` = URL raw de `cover.jpg` del episodio.
    - blogId **7796202** · providers `[tiktok]` · vídeo calma · `tiktokData.title` obligatorio · `isAigc: true` · portada.
    - blogId **7738323** · providers `[instagram]` · vídeo calma · `instagramData: {type: REEL, showReelOnFeed: true, isAiGenerated: true}` · portada.
-   - blogId **7738323** · providers `[youtube]` (post aparte, SIN `videoThumbnailUrl`) · vídeo calma · `youtubeData: {title: "<título> #shorts", type: short, privacy: public, category: HOWTO_STYLE, madeForKids: false, isAiGeneratedContent: false, tags: [...]}`.
+   - YouTube Shorts: NO publicar (decisión del usuario, 19-11-2026).
    - blogId **7738323** · providers `[tiktok]` · vídeo oficial · `tiktokData.title` · `isAigc: true` · portada.
    - Si Metricool rechaza la portada (`VIDEO_THUMBNAIL_NOT_APPLICABLE`), vuelve a crear ese post sin `videoThumbnailUrl`.
    - Si Metricool da "internal error while storing the media", reintenta tras unos segundos (pasa a veces).
