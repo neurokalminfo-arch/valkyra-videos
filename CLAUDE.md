@@ -1,7 +1,7 @@
 # Fábrica diaria de vídeos Valkyra
 
 Cada ejecución crea 2 vídeos cortos (1080x1920, 25–35 s) y los deja programados en Metricool:
-- **calma**: TikTok @calma.valkyra + Instagram @neurokalm (Reel). (YouTube Shorts: NO se publica desde el 19-11-2026, decisión del usuario.)
+- **calma**: TikTok @neurokalm.oficial + Instagram @neurokalm (Reel). (YouTube Shorts: NO se publica desde el 19-11-2026, decisión del usuario.)
 - **oficial**: TikTok @valkyra.oficial.
 
 ## Pasos de cada ejecución (slot `am` = 09:00, slot `pm` = 18:00, hora de Madrid)
@@ -72,7 +72,7 @@ Cada vídeo mezcla nuestras escenas tipográficas con **2–3 escenas "de cine"*
 1. Lee `estrategia.md`, `aprendizajes.md` y los `script.json` de los últimos 14 días.
 2. Saca de Metricool (`getAnalyticsDataByMetrics`) los últimos 14 días:
    - blogId 7738323: Instagram reels (`IGRE02,IGRE03,IGRE23,IGRE11,IGRE10,IGRE07,IGRE12,IGRE21,IGRE30`), TikTok @valkyra.oficial (`TKPO02,TKPO05,TKPO06,TKPO07,TKPO08,TKPO09,TKPO10,TKPO15`) y YouTube si hay datos.
-   - blogId 7796202: TikTok @calma.valkyra (mismas métricas TKPO).
+   - blogId 7796202: TikTok @neurokalm.oficial (mismas métricas TKPO).
 3. Empareja cada publicación con su episodio (fecha + hora 09:00/18:00 + caption) y guarda la tabla en `analytics/AAAA-MM-DD.csv` (episodio, red, pilar, gancho, cta, duración, visualizaciones, likes, comentarios, guardados, compartidos, salto 3 s / tiempo medio visto).
 4. Compara por pilar, tipo de gancho, CTA, cuenta, slot y duración. Usa medianas, no medias (un viral distorsiona). Con menos de 3 vídeos por grupo, apúntalo como indicio, no como regla.
 5. Reescribe `aprendizajes.md` (máx. ~40 líneas): reglas con su prueba, pruebas en curso y "Ajustes para esta semana" (qué pilar o gancho reforzar o abandonar, ideas de temas a partir de lo que mejor funcionó). NO cambies `estrategia.md` ni este archivo: si crees que hay que cambiarlos, propónlo en el resumen.
