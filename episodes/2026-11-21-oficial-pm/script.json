@@ -1,0 +1,154 @@
+{
+ "account": "oficial",
+ "slot": "pm",
+ "topic": "POV: llevas 5 días sin fumar y echas de menos el piti como a una ex: no lo idealices; apunta lo que NO echas de menos y léelo cuando te acuerdes del bueno",
+ "pillar": "emocion",
+ "series": "pov-dias-sin-fumar-3",
+ "hook": "pov",
+ "cta": "comentar",
+ "scenes": [
+  {
+   "say": "POV: cinco días sin piti y lo extrañas como a una ex.",
+   "title": [
+    "Echas de",
+    "menos el *piti*",
+    "como a una ex"
+   ],
+   "bg": {
+    "type": "night"
+   },
+   "zone": {
+    "type": "moment",
+    "label": "SÁBADO · 21:40"
+   }
+  },
+  {
+   "say": "Tío, a mí me pasaba. Solo me acordaba del bueno.",
+   "kicker": "A mí me *pasaba:*",
+   "title": [
+    "Solo te",
+    "acuerdas",
+    "del *bueno*"
+   ],
+   "zone": {
+    "type": "note",
+    "text": "La mente *idealiza* el cigarro",
+    "at": "bueno"
+   }
+  },
+  {
+   "say": "El truco: escribe lo que NO echas de menos del tabaco.",
+   "kicker": "Mi *truco:*",
+   "title": [
+    "Lo que *NO*",
+    "echas de",
+    "menos"
+   ],
+   "zone": {
+    "type": "chips",
+    "items": [
+     {
+      "t": "El olor en la ropa",
+      "at": "escribe"
+     },
+     {
+      "t": "Salir con frío",
+      "at": "echas"
+     },
+     {
+      "t": "La pasta del paquete",
+      "at": "tabaco"
+     }
+    ]
+   }
+  },
+  {
+   "say": "El olor en la ropa, salir con frío, la tos de la mañana.",
+   "title": [
+    "Ni el olor",
+    "ni el *frío*",
+    "ni la tos"
+   ],
+   "bg": {
+    "type": "rain"
+   }
+  },
+  {
+   "say": "Guárdalo en el móvil y léelo cuando te dé el bajón.",
+   "kicker": "Y *después:*",
+   "title": [
+    "Léelo en",
+    "el *bajón*"
+   ],
+   "zone": {
+    "type": "vs",
+    "items": [
+     {
+      "k": "no",
+      "t": "Recordar solo el bueno"
+     },
+     {
+      "k": "si",
+      "t": "Leer tu lista"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Como con una ex: no vuelves por un buen recuerdo.",
+   "title": [
+    "No *vuelves*",
+    "por un buen",
+    "recuerdo"
+   ],
+   "bg": {
+    "type": "night"
+   }
+  },
+  {
+   "say": "Síguenos y comenta qué no echas de menos del piti.",
+   "kicker": "Te *leo:*",
+   "title": [
+    "¿Qué *NO*",
+    "echas de menos?"
+   ],
+   "zone": {
+    "type": "cta",
+    "items": [
+     {
+      "icon": "follow",
+      "t": "*Síguenos*",
+      "at": "Síguenos"
+     },
+     {
+      "icon": "comment",
+      "t": "Comenta *tu lista*",
+      "at": "comenta"
+     }
+    ]
+   }
+  }
+ ],
+ "caption": "POV: llevas 5 días sin piti y lo echas de menos como a una ex 🚬💔 A mí me pasaba: solo me acordaba del bueno, el de la terraza, el de después de cenar. Mi truco: escribe en el móvil todo lo que NO echas de menos del tabaco (el olor en la ropa, salir con frío a la puerta, la tos de la mañana, la pasta del paquete) y léelo cuando te dé el bajón. Como con una ex: no vuelves por un buen recuerdo 💪 ¿Qué es lo que MENOS echas de menos del piti? Te leo en comentarios 👇",
+ "hashtags": [
+  "#dejardefumar",
+  "#dejarelpiti",
+  "#sintabaco",
+  "#pov",
+  "#ganasdefumar",
+  "#valkyra"
+ ],
+ "cover": {
+  "kicker": "POV: *5 días* sin fumar",
+  "title": [
+   "Echas de",
+   "menos el",
+   "*piti*"
+  ],
+  "bg": {
+   "type": "night"
+  }
+ },
+ "tiktok_title": "POV: echas de menos el piti como a una ex",
+ "yt_title": "Echas de menos fumar como a una ex: el truco de la lista"
+}

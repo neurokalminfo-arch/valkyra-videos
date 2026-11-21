@@ -1,0 +1,169 @@
+{
+ "account": "calma",
+ "slot": "pm",
+ "topic": "Miedo a engordar si dejas de fumar: es normal tener más hambre y es temporal (NHS); un objetivo cada vez y 3 pasos para la tarde (kit de picoteo sano, agua, no hacer dieta a la vez)",
+ "pillar": "emocion",
+ "hook": "pregunta",
+ "cta": "compartir",
+ "scenes": [
+  {
+   "say": "¿No dejas el tabaco por miedo a engordar?",
+   "title": [
+    "¿Miedo a",
+    "*engordar*",
+    "sin tabaco?"
+   ],
+   "bg": {
+    "type": "smoke"
+   },
+   "zone": {
+    "type": "moment",
+    "label": "SÁBADO · 18:00"
+   }
+  },
+  {
+   "say": "Tranquila: tener más hambre al dejarlo es normal.",
+   "kicker": "Primero, *respira:*",
+   "title": [
+    "Más hambre",
+    "es *normal*"
+   ],
+   "zone": {
+    "type": "note",
+    "text": "Al dejarlo, *es normal*",
+    "at": "normal"
+   }
+  },
+  {
+   "say": "Y según el NHS, es temporal. Pasa.",
+   "title": [
+    "Es",
+    "*temporal*"
+   ],
+   "bg": {
+    "type": "sunset",
+    "palm": false
+   }
+  },
+  {
+   "say": "Uno: ten a mano algo sano para picar.",
+   "kicker": "Para *esta tarde:*",
+   "title": [
+    "Picoteo",
+    "*preparado*"
+   ],
+   "zone": {
+    "type": "steps",
+    "items": [
+     {
+      "n": "1",
+      "t": "Algo sano para picar",
+      "s": "Fruta, zanahoria, pepinillos",
+      "at": "picar"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Dos: agua siempre cerca, a sorbos cuando aprieten.",
+   "kicker": "Para *esta tarde:*",
+   "title": [
+    "*Agua*",
+    "a sorbos"
+   ],
+   "zone": {
+    "type": "steps",
+    "items": [
+     {
+      "n": "1",
+      "t": "Algo sano para picar"
+     },
+     {
+      "n": "2",
+      "t": "Agua siempre cerca",
+      "s": "A sorbos cuando aprieten",
+      "at": "agua"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Tres: ahora no hagas dieta. Primero el cigarro.",
+   "kicker": "Para *esta tarde:*",
+   "title": [
+    "Un reto",
+    "*cada vez*"
+   ],
+   "zone": {
+    "type": "steps",
+    "items": [
+     {
+      "n": "1",
+      "t": "Algo sano para picar"
+     },
+     {
+      "n": "2",
+      "t": "Agua siempre cerca"
+     },
+     {
+      "n": "3",
+      "t": "Sin dieta por ahora",
+      "s": "Primero el cigarro",
+      "at": "dieta"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Tu cuerpo se está colocando. Dale tiempo y cariño.",
+   "title": [
+    "Dale tiempo",
+    "y *cariño*"
+   ],
+   "bg": {
+    "type": "glow"
+   }
+  },
+  {
+   "say": "Síguenos y mándaselo a quien no lo deja por esto.",
+   "kicker": "Para *ella:*",
+   "title": [
+    "*Compártelo*"
+   ],
+   "zone": {
+    "type": "cta",
+    "items": [
+     {
+      "icon": "follow",
+      "t": "*Síguenos*",
+      "at": "Síguenos"
+     },
+     {
+      "icon": "share",
+      "t": "Mándaselo a *tu amiga*",
+      "at": "mándaselo"
+     }
+    ]
+   }
+  }
+ ],
+ "caption": "¿No dejas el tabaco por miedo a engordar? 🚬⚖️ No eres la única. Tener más hambre al dejar de fumar es normal y, según el NHS, es un síntoma temporal. Para esta tarde: 1) ten a mano algo sano para picar (fruta, zanahoria, pepinillos), 2) agua siempre cerca, a sorbos cuando lleguen las ganas, 3) no te pongas a dieta ahora: primero el cigarro, un reto cada vez. Tu cuerpo se está colocando: dale tiempo y cariño 💛 Mándaselo a la amiga que no lo deja por esto. ¿Y a ti, qué te da más miedo al dejarlo? Te leo 👇",
+ "hashtags": [
+  "#dejardefumar",
+  "#dejarelcigarro",
+  "#sintabaco",
+  "#miedoaengordar",
+  "#ansiedadporfumar",
+  "#mujeres",
+  "#valkyra"
+ ],
+ "cover": {
+  "kicker": "Dejar de *fumar*",
+  "title": [
+   "¿Y si",
+   "*engordo*?"
+  ]
+ },
+ "tiktok_title": "¿Miedo a engordar si dejas de fumar?",
+ "yt_title": "Miedo a engordar al dejar de fumar: qué hacer esta tarde"
+}
