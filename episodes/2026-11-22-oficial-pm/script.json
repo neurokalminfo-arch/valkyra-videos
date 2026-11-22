@@ -1,0 +1,177 @@
+{
+ "account": "oficial",
+ "slot": "pm",
+ "topic": "El piti del bajón de domingo por la tarde: no son ganas, es la pereza del lunes; mi plan de 3 pasos (ponerle nombre, salir 10 minutos a la calle, temporizador de 15 minutos porque las ganas bajan según el NHS)",
+ "pillar": "truco",
+ "series": "plan-para-3",
+ "hook": "frase-identificacion",
+ "cta": "guardar",
+ "scenes": [
+  {
+   "say": "Si el domingo por la tarde te pide un piti, escucha.",
+   "kicker": "Plan para *el domingo*",
+   "title": [
+    "Domingo,",
+    "*bajón* y",
+    "ganas de piti"
+   ],
+   "zone": {
+    "type": "moment",
+    "label": "DOM · 18:30 · SOFÁ"
+   }
+  },
+  {
+   "say": "Tío, no era el piti: era el bajón del lunes.",
+   "title": [
+    "No es el",
+    "*piti*"
+   ],
+   "bg": {
+    "type": "rain"
+   }
+  },
+  {
+   "say": "Mi plan. Uno: le pongo nombre: es pereza, no ganas.",
+   "kicker": "Mi *plan:*",
+   "title": [
+    "Ponle",
+    "*nombre*"
+   ],
+   "zone": {
+    "type": "steps",
+    "items": [
+     {
+      "n": "1",
+      "t": "Le pongo nombre",
+      "s": "Es el bajón, no ganas",
+      "at": "nombre"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Dos: bajo diez minutos a la calle, aunque sea al súper.",
+   "kicker": "Mi *plan:*",
+   "title": [
+    "Bajo a la",
+    "*calle*"
+   ],
+   "zone": {
+    "type": "steps",
+    "items": [
+     {
+      "n": "1",
+      "t": "Le pongo nombre"
+     },
+     {
+      "n": "2",
+      "t": "Bajo 10 min a la calle",
+      "s": "Aunque sea al súper",
+      "at": "bajo"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Tres: me pongo un temporizador de quince minutos.",
+   "kicker": "Mi *plan:*",
+   "title": [
+    "*Temporizador*"
+   ],
+   "zone": {
+    "type": "steps",
+    "items": [
+     {
+      "n": "1",
+      "t": "Le pongo nombre"
+     },
+     {
+      "n": "2",
+      "t": "Bajo 10 min a la calle"
+     },
+     {
+      "n": "3",
+      "t": "Temporizador de 15 min",
+      "s": "Y espero a que bajen",
+      "at": "temporizador"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Según el NHS, las ganas duran unos quince minutos.",
+   "title": [
+    "*15* minutos",
+    "y bajan"
+   ],
+   "bg": {
+    "type": "night"
+   },
+   "zone": {
+    "type": "timer",
+    "from": 900,
+    "label": "y bajan (NHS)"
+   }
+  },
+  {
+   "say": "Y el domingo vuelve a ser tuyo, no del tabaco.",
+   "title": [
+    "Domingo",
+    "sin *tabaco*"
+   ],
+   "bg": {
+    "type": "sunset",
+    "palm": false
+   },
+   "zone": {
+    "type": "moment",
+    "label": "DOM · 19:00 · CALLE"
+   }
+  },
+  {
+   "say": "Síguenos y guárdalo para el próximo domingo.",
+   "kicker": "Para *el domingo:*",
+   "title": [
+    "Guárdalo",
+    "*ya*"
+   ],
+   "zone": {
+    "type": "cta",
+    "items": [
+     {
+      "icon": "follow",
+      "t": "*Síguenos*",
+      "at": "Síguenos"
+     },
+     {
+      "icon": "save",
+      "t": "Guárdalo para *el domingo*",
+      "at": "guárdalo"
+     }
+    ]
+   }
+  }
+ ],
+ "caption": "Domingo por la tarde, bajón y ganas de piti 🌧️🚬 Tío, a mí me pasaba cada semana: no era el piti, era el bajón de que llega el lunes. Mi plan: 1) le pongo nombre: es pereza, no ganas, 2) bajo 10 minutos a la calle, aunque sea al súper, 3) me pongo un temporizador de 15 minutos. Según el NHS, las ganas fuertes de fumar duran como mucho unos 15 minutos y luego bajan. Y el domingo vuelve a ser tuyo 💪 ¿A ti el domingo te pide más piti o menos? Dímelo en comentarios 👇",
+ "hashtags": [
+  "#dejardefumar",
+  "#dejarelpiti",
+  "#sintabaco",
+  "#domingo",
+  "#ansiedad",
+  "#valkyra"
+ ],
+ "cover": {
+  "kicker": "Plan para *el domingo*",
+  "title": [
+   "Domingo",
+   "y ganas",
+   "de *piti*"
+  ],
+  "bg": {
+   "type": "rain"
+  }
+ },
+ "tiktok_title": "El piti del bajón de domingo: mi plan",
+ "yt_title": "Ganas de fumar el domingo por la tarde: mi plan de 3 pasos"
+}

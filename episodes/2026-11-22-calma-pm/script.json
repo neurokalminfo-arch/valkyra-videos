@@ -1,0 +1,178 @@
+{
+ "account": "calma",
+ "slot": "pm",
+ "topic": "El lunes sin tabaco se prepara el domingo por la tarde: 3 pasos con calma (piensa en tu cigarro más difícil de mañana, decide por escrito qué harás en su lugar, déjalo listo esta noche); las ganas duran unos 15 minutos (NHS)",
+ "pillar": "truco",
+ "hook": "contraintuitivo",
+ "cta": "guardar",
+ "scenes": [
+  {
+   "say": "El lunes sin tabaco se gana el domingo por la tarde.",
+   "title": [
+    "El lunes",
+    "sin *tabaco*",
+    "se gana hoy"
+   ],
+   "bg": {
+    "type": "smoke"
+   },
+   "zone": {
+    "type": "moment",
+    "label": "DOMINGO · 18:00"
+   }
+  },
+  {
+   "say": "Mañana las ganas te pillan con prisa. Hoy, con calma.",
+   "kicker": "¿Por *qué hoy?*",
+   "title": [
+    "Hoy tienes",
+    "*calma*"
+   ],
+   "zone": {
+    "type": "note",
+    "text": "Mañana, *prisa*. Hoy, *calma*.",
+    "at": "Hoy"
+   }
+  },
+  {
+   "say": "Uno: piensa en tu cigarro más difícil del lunes.",
+   "kicker": "Esta *tarde:*",
+   "title": [
+    "Tu cigarro",
+    "más *difícil*"
+   ],
+   "zone": {
+    "type": "steps",
+    "items": [
+     {
+      "n": "1",
+      "t": "Tu cigarro más difícil",
+      "s": "¿El del café? ¿El del coche?",
+      "at": "piensa"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Dos: decide ya qué harás en su lugar. Por escrito.",
+   "kicker": "Esta *tarde:*",
+   "title": [
+    "Decídelo",
+    "*ya*"
+   ],
+   "zone": {
+    "type": "steps",
+    "items": [
+     {
+      "n": "1",
+      "t": "Tu cigarro más difícil"
+     },
+     {
+      "n": "2",
+      "t": "Qué harás en su lugar",
+      "s": "Por escrito",
+      "at": "decide"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Tres: déjalo listo esta noche, junto a las llaves.",
+   "kicker": "Esta *tarde:*",
+   "title": [
+    "Déjalo",
+    "*listo*"
+   ],
+   "zone": {
+    "type": "steps",
+    "items": [
+     {
+      "n": "1",
+      "t": "Tu cigarro más difícil"
+     },
+     {
+      "n": "2",
+      "t": "Qué harás en su lugar"
+     },
+     {
+      "n": "3",
+      "t": "Déjalo listo esta noche",
+      "s": "Junto a las llaves",
+      "at": "listo"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Así mañana no decides con ganas: ya está decidido.",
+   "title": [
+    "Ya está",
+    "*decidido*"
+   ],
+   "bg": {
+    "type": "sunrise"
+   },
+   "zone": {
+    "type": "moment",
+    "label": "LUNES · 08:00"
+   }
+  },
+  {
+   "say": "Según el NHS, las ganas duran unos quince minutos.",
+   "title": [
+    "*15* minutos",
+    "y bajan"
+   ],
+   "bg": {
+    "type": "glow"
+   },
+   "zone": {
+    "type": "timer",
+    "from": 900,
+    "label": "y bajan (NHS)"
+   }
+  },
+  {
+   "say": "Síguenos y guárdalo para leerlo mañana con el café.",
+   "kicker": "Para *mañana:*",
+   "title": [
+    "*Guárdalo*"
+   ],
+   "zone": {
+    "type": "cta",
+    "items": [
+     {
+      "icon": "follow",
+      "t": "*Síguenos*",
+      "at": "Síguenos"
+     },
+     {
+      "icon": "save",
+      "t": "Guárdalo para *mañana*",
+      "at": "guárdalo"
+     }
+    ]
+   }
+  }
+ ],
+ "caption": "El lunes sin tabaco se gana el domingo por la tarde 🌅🚬 Mañana las ganas de fumar te pillan con prisa; hoy tienes calma para prepararte. 3 pasos para esta tarde: 1) piensa en tu cigarro más difícil del lunes (¿el del café?, ¿el del coche?), 2) decide ya qué harás en su lugar y escríbelo, 3) déjalo listo esta noche, junto a las llaves. Así mañana no decides con ganas: ya está decidido. Y recuerda: según el NHS, las ganas fuertes duran unos 15 minutos y luego bajan 💛 ¿Cuál es tu cigarro más difícil del lunes? Cuéntamelo 👇",
+ "hashtags": [
+  "#dejardefumar",
+  "#dejarelcigarro",
+  "#sintabaco",
+  "#lunes",
+  "#ansiedadporfumar",
+  "#mujeres",
+  "#valkyra"
+ ],
+ "cover": {
+  "kicker": "Dejar de *fumar*",
+  "title": [
+   "El lunes",
+   "se gana",
+   "*hoy*"
+  ]
+ },
+ "tiktok_title": "El lunes sin tabaco se prepara hoy",
+ "yt_title": "Dejar de fumar: prepara el lunes el domingo por la tarde"
+}
