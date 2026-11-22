@@ -1,33 +1,34 @@
 # Aprendizajes (lo actualiza el análisis semanal; léelo antes de escribir cada guion)
 
-Última actualización: 2026-11-15 · base: 14 vídeos de la fábrica publicados (10–14 nov) + 32 publicaciones manuales del equipo (1–13 nov). Tabla: `analytics/2026-11-15.csv`. Medianas, no medias.
-Ojo: lo del 14-11 tiene 1 día de vida (cifras aún bajas). El 13-11 pm NO se publicó (quedó en borrador en Metricool) y no hubo vídeos am el 13, 14 y 15 ni pm el 15: el motor nuevo (cine, fotograma 0) casi no tiene datos todavía.
+Última actualización: 2026-11-22 · base: 12 reels de la fábrica en IG con ≥2 días (10–19 nov), 10 TikTok @valkyra.oficial, 1 TikTok calma, 16 publicaciones del equipo. Tabla: `analytics/2026-11-22.csv`. Medianas, no medias.
+Huecos: 20-11 pm (las 2 cuentas), 19-11 TikTok calma y 19-11 TikTok oficial NO se publicaron (borrador en Metricool). TikTok calma: al pasar la cuenta a @neurokalm.oficial (20-11) Metricool perdió los datos de los vídeos anteriores → solo hay 1 dato de TikTok calma. Los del 21-11 tienen 1 día y los del 22-11 ninguno.
 
 ## Reglas que ya sabemos (con su prueba)
-1. **Lo universal + quitar culpa es lo único que despega.** Los 2 únicos vídeos de la fábrica que pasan de ~900 visualizaciones:
-   - "El primer cigarro de la mañana" (pregunta, truco): TikTok calma 2.930 · IG 2.501 (15 guardados, 14 compartidos, salto 3 s 48 %, 10,6 s vistos).
-   - "Recaída: te fumaste uno y sientes culpa" (contraintuitivo, emocion): TikTok calma 2.884 · IG 1.961 (13 compartidos).
-   - El resto, 550–880. Mediana fábrica: IG 679 · TikTok calma 756 · TikTok oficial 737.
-2. **El valor para guardar gana a todo** (equipo, 06-11): reel "Cuando vuelven las ganas… guarda este vídeo" = 111.663 visualizaciones, 1.808 guardados (16/1.000), 1.165 compartidos, 19,9 s vistos. Ningún vídeo de la fábrica pasa de 6 guardados/1.000.
-3. **El gancho sigue fallando en IG**: salto 3 s mediana 56,6 % en la fábrica (48–59 %) frente a 49 % en los reels del equipo (los mejores del equipo: 30–41 %). Tiempo medio visto mediana 8,5 s en vídeos de 26–37 s.
-4. **TikTok @valkyra.oficial tiene techo de cuenta, no de formato**: 17 de 17 vídeos (fábrica y equipo) entre 338 y 777. Ni pilar, ni gancho, ni slot lo mueven. 0 compartidos en todos los de la fábrica.
-5. **Pedir comentarios no da comentarios**: 0–4 por vídeo en todas las redes aunque la CTA diga "Comenta X". Compartidos solo llegan en los vídeos de emoción/primer cigarro.
-6. **Corrección de la semana pasada**: `producto` y los momentos de nicho no rinden peor con los datos maduros (producto: TK calma 692, TK oficial 737, IG 620; cole: TK calma 883, IG 567; gym 676; Play 737). Todos están en la mediana. Lo que separa es universal+emoción vs. todo lo demás, no producto vs. no producto.
+1. **`emocion` + gancho `contraintuitivo` es lo más fiable de la fábrica.** IG: emocion mediana 1.502 (4 vídeos) frente a truco 761 (3) y producto 698 (2). Contraintuitivo 1.602 (3: recaída 2.177, pausa 1.602, "no se lo cuentes a todos" 1.402) frente a pregunta 867 (3) y frase-identificación 815 (3).
+2. **El valor para guardar viene del formato "plan paso a paso con tiempos", no de pedirlo.** La muestra collage "Las ganas duran 15 min: minuto 1, 5, 10, 15" (kit, gancho dato, 39 s): IG 4.450 visualizaciones, 65 guardados (14,6/1.000), 40 compartidos (9/1.000), 12,3 s vistos. El resto de la fábrica: 2,5–9 guardados/1.000.
+3. **El gancho sigue flojo en IG**: salto 3 s mediana 53,8 % (46–58 %). El mejor reel del equipo esta semana: 28,1 %.
+4. **CORRECCIÓN: @valkyra.oficial NO tiene techo de cuenta; el techo es de nuestro formato.** Fábrica: 10 de 10 entre 696 y 824 (mediana 751), haga lo que haga. Equipo en la misma cuenta: 5.811 (20-11, relato de 40 s) y 2.379 (15-11, 10 s). TikTok no empuja nuestros vídeos más allá del primer grupo de prueba.
+5. **Lo que rompe techo esta semana es un relato en 1ª persona, no una lista.** Equipo 20-11 "Todo el mundo te dice que lo dejes; nadie te explica qué hacer en ese momento" → IG 10.002 (salto 3 s 28 %, 15,8 s vistos, 26 compartidos, 11 comentarios), TikTok oficial 5.811, TikTok neurokalm 1.852. Tensión ("todos dicen X, nadie dice Y"), momentos concretos (café, salir del curro, día de mierda), el producto al final como "otra opción", sin pasos numerados.
+6. **Pedir comentarios sigue sin dar comentarios**: fábrica 0–1 por vídeo (12-11 am: 4). El relato del equipo sacó 11 sin pedirlo con palabra clave.
+7. `producto` de la fábrica rinde por debajo (IG 867 y 528). El del equipo (relato + producto al final) es el más visto de la semana: el problema es cómo lo contamos, no el producto.
 
 ## Indicios (menos de 3 vídeos por grupo, no son reglas)
-- Gancho `contraintuitivo` (2 vídeos): mediana TK calma 1.734 · IG 1.361. `pregunta` (3): 742 · 670. Prometedor.
-- am vs pm: sin diferencia clara (IG am 623 vs pm 716; TK calma am 820 vs pm 717).
-- Duración (26–37 s): sin efecto visible; el más corto (14-11, 27 s) tuvo el peor tiempo visto en IG (6,4 s), pero con 1 día.
-- YouTube Shorts: solo hay datos de 2 (66 y 120 visualizaciones). Muy pequeño.
+- Motor de cine (16–19): IG mediana 1.033 frente a 867 en 10–14; salto 3 s 53,8 % frente a 55,4 %. Mejora pequeña.
+- Duración: los 2 mejores (collage 39 s, equipo 40 s) son más largos que la fábrica (25–32 s) y retienen más segundos. No parece que 35–40 s castigue.
+- Estilo collage: 1 solo vídeo, pero el mejor de la fábrica en todas las métricas de valor.
+- TikTok calma (@neurokalm.oficial): 21-11 = 448 con 1 día. Sin base.
+- am vs pm: desde el 13-11 solo hay pm. Sin datos nuevos.
 
 ## Pruebas en curso
-- Motor nuevo (cine + subtítulos, desde el 13-11): solo 2 vídeos publicados; el 14-11 calma salió con salto 3 s 59 % (peor que la mediana). Medirlo la semana que viene antes de concluir.
-- Serie "Kit anti-ganas" y "POV": el #1 y el primer POV (13-11) no llegaron a publicarse. Sin datos.
+- Estilo collage frente a cine: repetir collage al menos 2 veces esta semana (kit y emocion) y comparar guardados/1.000 y salto 3 s.
+- Formato relato (ver regla 5) en @valkyra.oficial: ¿rompe el techo de ~750 hecho por la fábrica?
+- Series: kit-anti-ganas #1–#3, POV #1–#3, plan-para #1–#3. #3 de kit y #2 de plan no se publicaron. Sin efecto medible aún.
 
 ## Ajustes para esta semana
-- Reforzar `emocion` (recaída, culpa, "un cigarro no es volver") y `kit` para guardar: pueden ocupar 2 huecos de `mito`/`truco` (permitido por estrategia).
-- Temas a partir de lo que funcionó: "Si hoy has fumado…" (serie), "el primer cigarro con el café: plan para mañana", "las ganas duran unos minutos: qué hacer mientras" (dato de `datos.md`), "el miedo a fallar otra vez".
-- Gancho: probar más `contraintuitivo` en las dos cuentas y pocas `pregunta`.
-- CTA: en `kit`/`truco` pedir GUARDAR (no comentar). Comentar solo con palabra muy fácil y cuando el tema invita a contar algo propio.
-- oficial: cambiar algo grande (ver propuesta en el resumen); mientras, emoción y kit en primera persona, no momentos sueltos.
-- Comprobar cada día que los posts quedan `draft: false` y PUBLICADOS.
+- calma: 2 `kit` con tiempos/pasos muy concretos ("minuto 1, 5, 10", "las 3 primeras horas del día") en estilo collage, CTA guardar. Ideas: el cigarro del café minuto a minuto, la primera noche sin tabaco, qué hacer en los 15 min si estás en el trabajo.
+- calma: `emocion` con gancho contraintuitivo ("Recaer no es empezar de cero", "El miedo a engordar no es por la comida"). Usa el hueco de `mito` del miércoles para emocion.
+- oficial: dejar las listas de 3 pasos. Probar relato en 1ª persona con tensión al principio ("Todos me decían déjalo. Nadie me dijo qué hacer a las 6 de la tarde"), 30–40 s, un solo consejo dentro del relato.
+- `producto`: contarlo como relato (equipo 20-11), no como "llevo Valkyra al cuello".
+- Gancho: más `contraintuitivo` y "todos dicen X / nadie dice Y"; menos `pregunta` y `frase-identificacion`.
+- CTA: guardar en kit; compartir en emocion; comentar solo si el tema invita a contar algo propio.
+- ANTES DE CERRAR CADA EJECUCIÓN: comprobar con getScheduledPosts que todos los posts están `draft: false` (19 y 20-11 se quedaron en borrador).
