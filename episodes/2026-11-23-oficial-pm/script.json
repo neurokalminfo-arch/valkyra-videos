@@ -1,0 +1,155 @@
+{
+ "account": "oficial",
+ "slot": "pm",
+ "topic": "Tener ganas de un piti no significa que vayas a fallar: relato en 1ª persona (me decían «si tienes ganas es que no quieres dejarlo» y me sentía un flojo); las ganas duran unos 15 minutos (NHS); mi truco: decir «son ganas, no órdenes», poner un temporizador y agarrarme al collar",
+ "pillar": "emocion",
+ "hook": "contraintuitivo",
+ "cta": "compartir",
+ "scenes": [
+  {
+   "say": "Tener ganas de un piti no significa que vayas a fallar.",
+   "title": [
+    "Tener ganas",
+    "de un *piti*",
+    "no es fallar"
+   ],
+   "bg": {
+    "type": "smoke"
+   },
+   "zone": {
+    "type": "moment",
+    "label": "LUNES · 18:30"
+   }
+  },
+  {
+   "say": "Me decían: si tienes ganas, es que no quieres dejarlo.",
+   "kicker": "Lo que me *decían:*",
+   "title": [
+    "Ganas es",
+    "no *querer*"
+   ],
+   "zone": {
+    "type": "note",
+    "text": "Si tienes ganas, *no quieres dejarlo*",
+    "at": "ganas"
+   }
+  },
+  {
+   "say": "Y cada vez que me apetecía uno, me sentía un flojo.",
+   "title": [
+    "Me sentía",
+    "un *flojo*"
+   ],
+   "bg": {
+    "type": "rain"
+   },
+   "zone": {
+    "type": "moment",
+    "label": "18:40 · SALGO DEL CURRO"
+   }
+  },
+  {
+   "say": "Nadie me dijo que las ganas duran unos quince minutos.",
+   "kicker": "Lo que *nadie* me dijo:",
+   "title": [
+    "Duran unos",
+    "*15 minutos*"
+   ],
+   "zone": {
+    "type": "timer",
+    "from": 900,
+    "label": "y bajan"
+   }
+  },
+  {
+   "say": "Lo dice el NHS. Ahora, cuando llegan, digo: son ganas.",
+   "kicker": "Mi *truco:*",
+   "title": [
+    "Son *ganas*,",
+    "no órdenes"
+   ],
+   "zone": {
+    "type": "note",
+    "text": "Dilo en voz alta: *son ganas, no órdenes*",
+    "at": "digo"
+   }
+  },
+  {
+   "say": "No órdenes. Pongo quince minutos y me agarro al collar.",
+   "title": [
+    "15 minutos",
+    "y el *collar*"
+   ],
+   "bg": {
+    "type": "glow"
+   },
+   "zone": {
+    "type": "pendant"
+   }
+  },
+  {
+   "say": "Al sonar, ya han bajado. No he fallado: he ganado una.",
+   "kicker": "Al *sonar:*",
+   "title": [
+    "He ganado",
+    "*una*"
+   ],
+   "zone": {
+    "type": "vs",
+    "items": [
+     {
+      "k": "no",
+      "t": "Tener ganas = fallar"
+     },
+     {
+      "k": "si",
+      "t": "Aguantar 15 min = ganar una"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Síguenos y mándaselo al colega que se siente un flojo.",
+   "kicker": "Para tu *colega:*",
+   "title": [
+    "*Mándaselo*"
+   ],
+   "zone": {
+    "type": "cta",
+    "items": [
+     {
+      "icon": "follow",
+      "t": "*Síguenos*",
+      "at": "Síguenos"
+     },
+     {
+      "icon": "share",
+      "t": "Mándaselo a *tu colega*",
+      "at": "mándaselo"
+     }
+    ]
+   }
+  }
+ ],
+ "caption": "Tener ganas de un piti no significa que vayas a fallar 🚬 A mí me decían «si tienes ganas, es que no quieres dejarlo» y cada vez que me apetecía uno me sentía un flojo. Nadie me dijo que, según el NHS, las ganas fuertes de fumar duran unos 15 minutos y luego bajan. Ahora, cuando llegan, digo en voz alta: «son ganas, no órdenes». Pongo un temporizador de 15 minutos y me agarro al collar. Al sonar ya han bajado: no he fallado, he ganado una 💪 ¿Quién te dijo a ti que tener ganas era fallar? Cuéntamelo 👇",
+ "hashtags": [
+  "#dejardefumar",
+  "#dejarelpiti",
+  "#sintabaco",
+  "#ganasdefumar",
+  "#valkyra"
+ ],
+ "cover": {
+  "kicker": "Ganas de *fumar*",
+  "title": [
+   "Tener ganas",
+   "no es",
+   "*fallar*"
+  ],
+  "bg": {
+   "type": "smoke"
+  }
+ },
+ "tiktok_title": "Tener ganas de un piti no es fallar",
+ "yt_title": "Ganas de fumar: tener ganas no significa fallar"
+}

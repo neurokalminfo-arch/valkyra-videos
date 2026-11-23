@@ -24,7 +24,7 @@ const FPS = 30, LEAD = 0.3, dur = timing.duration + LEAD;
   await p.evaluate(() => document.fonts.ready);
   if (collage) { await p.evaluate(() => window.READY); fs.writeFileSync(path.join(ep, 'events.json'), JSON.stringify(await p.evaluate(() => window.EVENTS))); }
   if (coverMode) {
-    await p.evaluate(c => { document.body.classList.add('cover'); render(c ? 3.6 : 20); }, collage);
+    await p.evaluate(c => { document.body.classList.add('cover'); render(c ? c : 20); }, collage ? Math.min(3.6, timing.scenes[0].end_speech - 0.2) : 0);
     await p.screenshot({ path: path.join(ep, 'cover.jpg'), type: 'jpeg', quality: 90 });
     await b.close(); console.log('ok', path.join(ep, 'cover.jpg')); return;
   }

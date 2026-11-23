@@ -1,0 +1,465 @@
+{
+ "account": "calma",
+ "style": "collage",
+ "slot": "pm",
+ "topic": "Creer que ya es tarde para dejar de fumar después de muchos años: no es un dato, es miedo; a los 20 minutos bajan pulso y tensión y a las 12 horas el monóxido en sangre es normal (Sociedad Americana del Cáncer); esta noche apunta la hora de tu último cigarro",
+ "pillar": "emocion",
+ "hook": "dato",
+ "cta": "compartir",
+ "scenes": [
+  {
+   "say": "A los veinte minutos sin cigarro, tu cuerpo ya lo nota.",
+   "bg": "terra",
+   "els": [
+    {
+     "t": "strip",
+     "text": "¿YA ES TARDE PARA",
+     "x": 520,
+     "y": 300,
+     "rot": -3,
+     "size": 62,
+     "color": "ink"
+    },
+    {
+     "t": "strip",
+     "text": "DEJAR DE *FUMAR*?",
+     "x": 560,
+     "y": 420,
+     "rot": 3,
+     "size": 74,
+     "color": "paper"
+    },
+    {
+     "t": "big",
+     "text": "20",
+     "x": 400,
+     "y": 780,
+     "size": 460,
+     "rot": -4,
+     "color": "paper"
+    },
+    {
+     "t": "big",
+     "text": "MIN",
+     "x": 760,
+     "y": 830,
+     "size": 180,
+     "rot": 7,
+     "color": "mustard"
+    },
+    {
+     "t": "scribble",
+     "shape": "circle",
+     "x": 400,
+     "y": 765,
+     "w": 500,
+     "h": 430,
+     "color": "ink",
+     "at": "veinte",
+     "dur": 0.6
+    },
+    {
+     "t": "sticker",
+     "obj": "cigarro",
+     "x": 520,
+     "y": 1140,
+     "s": 1.1,
+     "rot": -12,
+     "anim": "smoke"
+    },
+    {
+     "t": "note",
+     "text": "sin cigarro, tu cuerpo ya lo nota",
+     "x": 500,
+     "y": 1310,
+     "rot": -3,
+     "size": 52,
+     "color": "paper",
+     "at": "cuerpo"
+    }
+   ]
+  },
+  {
+   "say": "Bajan tu pulso y tu tensión, aunque lleves media vida fumando.",
+   "bg": "paper",
+   "els": [
+    {
+     "t": "big",
+     "text": "PULSO",
+     "x": 400,
+     "y": 440,
+     "size": 150,
+     "rot": -3,
+     "color": "ink",
+     "at": "pulso"
+    },
+    {
+     "t": "big",
+     "text": "*TENSIÓN*",
+     "x": 480,
+     "y": 640,
+     "size": 140,
+     "rot": 2,
+     "color": "ink",
+     "at": "tensión"
+    },
+    {
+     "t": "scribble",
+     "shape": "arrow-down",
+     "x": 820,
+     "y": 520,
+     "w": 130,
+     "h": 260,
+     "color": "terra",
+     "at": "Bajan",
+     "dur": 0.5
+    },
+    {
+     "t": "tag",
+     "text": "Fuente: Sociedad Americana del Cáncer",
+     "x": 500,
+     "y": 840,
+     "rot": 2,
+     "at": "tensión"
+    },
+    {
+     "t": "strip",
+     "text": "AUNQUE LLEVES",
+     "x": 500,
+     "y": 1050,
+     "rot": -2,
+     "size": 64,
+     "color": "ink",
+     "at": "aunque"
+    },
+    {
+     "t": "strip",
+     "text": "MEDIA *VIDA* FUMANDO",
+     "x": 520,
+     "y": 1180,
+     "rot": 2,
+     "size": 66,
+     "color": "terra",
+     "at": "media"
+    }
+   ]
+  },
+  {
+   "say": "«Ya es tarde» no es un dato. Es el miedo hablando.",
+   "bg": "sage",
+   "els": [
+    {
+     "t": "strip",
+     "text": "YA ES TARDE",
+     "x": 500,
+     "y": 420,
+     "rot": -3,
+     "size": 92,
+     "color": "paper",
+     "strike": "dato"
+    },
+    {
+     "t": "note",
+     "text": "no es un dato",
+     "x": 520,
+     "y": 620,
+     "rot": 2,
+     "size": 70,
+     "color": "ink",
+     "at": "dato"
+    },
+    {
+     "t": "big",
+     "text": "ES *MIEDO*",
+     "x": 500,
+     "y": 900,
+     "size": 170,
+     "rot": -2,
+     "color": "ink",
+     "at": "miedo"
+    },
+    {
+     "t": "scribble",
+     "shape": "underline",
+     "x": 500,
+     "y": 1010,
+     "w": 640,
+     "h": 30,
+     "color": "terra",
+     "at": "hablando",
+     "dur": 0.4
+    }
+   ]
+  },
+  {
+   "say": "A las doce horas, el monóxido de tu sangre ya es normal.",
+   "bg": "mustard",
+   "els": [
+    {
+     "t": "big",
+     "text": "12 H",
+     "x": 640,
+     "y": 500,
+     "size": 230,
+     "rot": 3,
+     "color": "ink",
+     "at": "doce"
+    },
+    {
+     "t": "sticker",
+     "obj": "reloj",
+     "x": 250,
+     "y": 560,
+     "s": 0.75,
+     "rot": -8,
+     "anim": "tick"
+    },
+    {
+     "t": "strip",
+     "text": "MONÓXIDO EN *SANGRE*",
+     "x": 500,
+     "y": 860,
+     "rot": -2,
+     "size": 66,
+     "color": "paper",
+     "at": "monóxido"
+    },
+    {
+     "t": "note",
+     "text": "ya es normal",
+     "x": 500,
+     "y": 1040,
+     "rot": -3,
+     "size": 78,
+     "color": "ink",
+     "at": "normal"
+    },
+    {
+     "t": "scribble",
+     "shape": "check",
+     "x": 820,
+     "y": 1020,
+     "w": 120,
+     "h": 110,
+     "color": "terra",
+     "at": "normal",
+     "dur": 0.35
+    },
+    {
+     "t": "tag",
+     "text": "Sociedad Americana del Cáncer",
+     "x": 520,
+     "y": 1230,
+     "rot": 2
+    }
+   ]
+  },
+  {
+   "say": "Esta noche, apunta la hora de tu último cigarro.",
+   "bg": "ink",
+   "els": [
+    {
+     "t": "strip",
+     "text": "ESTA *NOCHE*",
+     "x": 480,
+     "y": 330,
+     "rot": -3,
+     "size": 66,
+     "color": "mustard"
+    },
+    {
+     "t": "big",
+     "text": "APÚNTALO",
+     "x": 500,
+     "y": 540,
+     "size": 170,
+     "rot": 2,
+     "color": "paper",
+     "at": "apunta"
+    },
+    {
+     "t": "sticker",
+     "obj": "libreta",
+     "x": 500,
+     "y": 880,
+     "s": 1.0,
+     "rot": -8,
+     "anim": "write",
+     "at": "apunta"
+    },
+    {
+     "t": "note",
+     "text": "la hora de tu último cigarro",
+     "x": 500,
+     "y": 1200,
+     "rot": -3,
+     "size": 58,
+     "color": "mustard",
+     "at": "hora"
+    }
+   ]
+  },
+  {
+   "say": "Mañana a esa hora llevarás doce horas sin fumar.",
+   "bg": "paper",
+   "transition": "tear",
+   "els": [
+    {
+     "t": "strip",
+     "text": "MAÑANA A ESA HORA",
+     "x": 500,
+     "y": 330,
+     "rot": -2,
+     "size": 62,
+     "color": "ink"
+    },
+    {
+     "t": "big",
+     "text": "+12 H",
+     "x": 500,
+     "y": 560,
+     "size": 220,
+     "rot": -3,
+     "color": "terra",
+     "at": "llevarás"
+    },
+    {
+     "t": "sticker",
+     "obj": "roto",
+     "x": 500,
+     "y": 880,
+     "s": 1.15,
+     "rot": -6,
+     "anim": "snap",
+     "at": "doce"
+    },
+    {
+     "t": "strip",
+     "text": "SIN *FUMAR*",
+     "x": 480,
+     "y": 1130,
+     "rot": 3,
+     "size": 80,
+     "color": "ink",
+     "at": "fumar"
+    },
+    {
+     "t": "scribble",
+     "shape": "check",
+     "x": 820,
+     "y": 1110,
+     "w": 130,
+     "h": 120,
+     "color": "sage",
+     "at": "fumar",
+     "dur": 0.35
+    }
+   ]
+  },
+  {
+   "say": "No llegas tarde. Llegas hoy.",
+   "bg": "terra",
+   "els": [
+    {
+     "t": "strip",
+     "text": "NO LLEGAS TARDE",
+     "x": 500,
+     "y": 420,
+     "rot": -2,
+     "size": 76,
+     "color": "paper",
+     "strike": "hoy"
+    },
+    {
+     "t": "stamp",
+     "text": "HOY",
+     "x": 500,
+     "y": 780,
+     "rot": -9,
+     "at": "hoy"
+    },
+    {
+     "t": "note",
+     "text": "llegas hoy",
+     "x": 500,
+     "y": 1100,
+     "rot": -3,
+     "size": 84,
+     "color": "paper",
+     "at": "hoy"
+    }
+   ]
+  },
+  {
+   "say": "Síguenos y mándaselo a quien cree que ya es tarde.",
+   "bg": "sage",
+   "cta": true,
+   "els": [
+    {
+     "t": "strip",
+     "text": "PARA QUIEN CREE",
+     "x": 500,
+     "y": 340,
+     "rot": -2,
+     "size": 58,
+     "color": "ink"
+    },
+    {
+     "t": "strip",
+     "text": "QUE YA ES *TARDE*",
+     "x": 520,
+     "y": 450,
+     "rot": 2,
+     "size": 62,
+     "color": "paper"
+    },
+    {
+     "t": "cta",
+     "items": [
+      {
+       "icon": "follow",
+       "text": "SÍGUENOS",
+       "at": "Síguenos"
+      },
+      {
+       "icon": "share",
+       "text": "MÁNDASELO",
+       "at": "mándaselo"
+      }
+     ],
+     "x": 500,
+     "y": 740
+    },
+    {
+     "t": "scribble",
+     "shape": "arrow-right",
+     "x": 770,
+     "y": 1130,
+     "w": 280,
+     "h": 150,
+     "color": "terra",
+     "at": "tarde",
+     "dur": 0.5
+    }
+   ]
+  }
+ ],
+ "caption": "¿Llevas media vida fumando y crees que ya es tarde para dejarlo? 🚬💛 «Ya es tarde» no es un dato: es el miedo hablando. Según la Sociedad Americana del Cáncer, a los 20 minutos sin fumar bajan el pulso y la tensión, y a las 12 horas el monóxido de carbono en sangre vuelve a su nivel normal. Para hoy: esta noche apunta la hora de tu último cigarro. Mañana a esa hora llevarás 12 horas sin fumar. No llegas tarde: llegas hoy. ¿Cuántos años llevas fumando? Te leo 👇 Y mándaselo a quien crea que ya es tarde.",
+ "hashtags": [
+  "#dejardefumar",
+  "#dejarelcigarro",
+  "#sintabaco",
+  "#nuncaestarde",
+  "#mujeres",
+  "#valkyra"
+ ],
+ "cover": {
+  "kicker": "Dejar de *fumar*",
+  "title": [
+   "¿Ya es",
+   "*tarde*?"
+  ]
+ },
+ "tiktok_title": "¿Ya es tarde para dejar de fumar?",
+ "yt_title": "¿Es tarde para dejar de fumar después de muchos años?"
+}
