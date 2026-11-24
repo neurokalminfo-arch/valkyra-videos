@@ -1,5 +1,63 @@
 # Estrategia de contenido orgánico · Valkyra
 
+> **Actualizado el 24-11-2026 con la "Guía para que despeguen las redes" (v2, en el proyecto Marketing machine: `claude/valkyra-guia-redes-v2.md`).** Lo de esta sección manda sobre el resto del archivo cuando haya conflicto.
+
+## Formatos que funcionan (base: 2 vídeos orgánicos de IG que rompieron techo)
+Patrón común: **empieza en un momento que el espectador reconoce** (nunca en el producto) → habla en **segunda persona y con calma** ("tú", "te pasa", "no tienes que resolverlo todo de golpe") → **Valkyra llega al final, en 1–2 frases, como respuesta suave**. Acompañar, no sermonear. Es la mejor hipótesis que tenemos, no una ley: los datos de los lunes la confirman o la corrigen.
+Ojo: el reel de 135.323 del 06/11 fue **pagado**; no cuenta como prueba orgánica.
+
+### Formato A · Pausa guiada (`"format": "A"`)
+1. Gancho (0–3 s): el momento. "Cuando vuelven las ganas después de una discusión…"
+2. Validar (3–8 s): "Parece que no va a pasar. Es normal."
+3. Pausa guiada (8–20 s): "No tienes que resolverlo todo ahora. Respira despacio. Suelta los hombros. Vuelve a elegir." (Aquí SÍ se permite la respiración: es el corazón del formato.)
+4. Cierre suave (20–25 s): "Guárdalo para ese momento, o mándaselo a quien lo esté intentando. Y si quieres algo que te acompañe mientras cambias el gesto, Valkyra está en mi perfil."
+5. Pregunta (pantalla + caption): "¿Qué momento del día se te hace más difícil? Te leo."
+Momentos para variar: después de una discusión, a las 3 de la madrugada sin dormir, en un atasco, al salir del trabajo, el domingo por la tarde, después de una mala noticia, una boda o cena con fumadores, el primer día sin tabaco, el café de las 11, la sobremesa.
+
+### Formato B · Manifiesto (`"format": "B"`)
+1. Gancho: "Todo el mundo te dice [X]. Casi nadie te dice [Y]."
+2. Lista de momentos: frases cortas, una por línea en pantalla ("Después del café. Cuando necesitas una pausa. Después de un día complicado.").
+3. Giro: "No es solo una decisión. Es un gesto que llevas años repitiendo."
+4. Producto como respuesta: "Ahí entra Valkyra: algo físico que te recuerda por qué empezaste. No es magia. Es otra opción cuando llega ese momento."
+Ganchos: "…que lo dejes. Nadie te dice qué hacer con las manos." · "…cuántos días llevas. Nadie te pregunta cómo estás." · "…de la fuerza de voluntad. Nadie habla del café de las 11." · "…celebra el día 1. Nadie te avisa del día 4." (y nuevos del mismo tipo).
+
+### Prueba (`"format": "prueba"`)
+Un formato o tema distinto (relato en 1ª persona, mito, proceso, apoyo, kit con tiempos…). **Obligatorio** escribir en script.json `"hypothesis"`: qué se prueba, contra qué formato y qué resultado la daría por buena (p. ej. "relato 1ª persona vs B; vale si supera la mediana de B en guardados/1.000"). La antigua plantilla de consejos (gancho + 3 trucos + dato NHS + "comenta X") solo puede ir aquí y como máximo 1 vez por semana.
+
+## Calendario (1 vídeo al día, 18:00)
+| Día | Formato | Ejemplo |
+|---|---|---|
+| Lunes | A · Pausa guiada | Después de una discusión |
+| Martes | B · Manifiesto | "Nadie te dice qué hacer con las manos" |
+| Miércoles | A · Pausa guiada | A las 3 de la madrugada |
+| Jueves | Prueba | Formato o tema nuevo, con hipótesis |
+| Viernes | B · Manifiesto | "Nadie te avisa del día 4" |
+| Sábado | A · Pausa guiada | Cena o fiesta con fumadores |
+| Domingo | Prueba | Consejos prácticos (la antigua plantilla, como mucho aquí) |
+
+## Normas fijas
+- **Estilo visual alterno:** dos vídeos seguidos NUNCA comparten estilo (`"style": "cine"` = engine/template.html, `"style": "collage"` = engine/collage). Rota también duración (20–40 s) y escenas de fondo.
+- **El dato "las ganas fuertes duran unos 15 minutos" (NHS): como mucho en 1 de cada 5 vídeos.** Compruébalo con grep en los 4 vídeos anteriores antes de usarlo.
+- **Nunca abrir con el producto** ("Valkyra es un collar…", "esta cosita de aquí…"): son los que peor funcionan (190 visualizaciones).
+- **No prometer de más:** nada de "me curó" ni "cero ganas". Valkyra da otra opción en el momento difícil.
+- **Ortografía revisada** en voz, pantalla y caption ("propia", "acompañarte", "encontrarás", "discusión", "a mil").
+- **Pedir el envío**, no solo el guardado: "mándaselo a quien lo esté intentando".
+- **Reaprovechar ganadores:** cada vídeo ORGÁNICO que pase de 10.000 visualizaciones tiene al menos 5 variaciones con otros momentos (apuntarlo en aprendizajes.md como "ganador" con su id).
+
+## Checklist antes de programar
+- [ ] Los 3 primeros segundos muestran un momento reconocible, no el producto.
+- [ ] Habla en segunda persona y con calma.
+- [ ] Valkyra aparece solo al final, en una o dos frases.
+- [ ] Da un motivo para guardarlo o mandarlo a alguien.
+- [ ] No repite el dato de los 15 minutos si ya salió en los 4 vídeos anteriores.
+- [ ] Estilo visual distinto al del vídeo anterior.
+- [ ] Sin faltas de ortografía en texto ni subtítulos.
+
+---
+
+# (Anterior al 24-11-2026: sigue valiendo para temas, ganchos y medición, salvo donde choque con lo de arriba)
+
+
 **Objetivo:** vender sin vender. Cada vídeo tiene que ser lo más útil que esa persona vea hoy sobre dejar de fumar: algo que pueda aplicar esta misma tarde, que le quite culpa o miedo, o que le explique qué le está pasando. Si no lo guardaría o no se lo mandaría a alguien, no vale. Primero confianza, luego venta (desde la bio).
 
 **La pregunta antes de escribir cada guion:** ¿qué se lleva quien lo ve? Tiene que poder decirse en una frase ("qué hacer en los 15 minutos de ganas", "por qué el tercer día es el peor", "qué decir cuando te ofrecen un cigarro").
@@ -17,7 +75,7 @@
 
 `situacion` ya no es un pilar propio: describir el momento es solo la apertura de un `truco`, `kit` o `emocion`. Nunca un vídeo que solo describe y no da nada.
 
-## Calendario semanal (por cuenta)
+## Calendario semanal antiguo (SUSTITUIDO por el de arriba)
 | Día | am (09:00) | pm (18:00) |
 |---|---|---|
 | Lunes | `truco` (empezar la semana) | `emocion` |
