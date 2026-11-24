@@ -1,0 +1,24 @@
+{
+ "account": "oficial",
+ "slot": "pm",
+ "topic": "Plan para el piti de salir del curro: relato en 1ª persona (cerrar el portátil y fumar era mi «se acabó»; todos decían déjalo, nadie cómo cerrar el día); un solo consejo: inventarte otro final del curro (camiseta limpia, un temazo y 10 minutos andando) y, si aprietan, collar en mano; las ganas fuertes duran unos 15 minutos (NHS)",
+ "pillar": "kit",
+ "series": "plan-para-4",
+ "hook": "error",
+ "cta": "guardar",
+ "scenes": [
+  {"say": "Mi error al dejar el piti: no tenía plan para las siete.", "title": ["Mi error", "al dejar", "el *piti*"], "bg": {"type": "smoke"}, "zone": {"type": "moment", "label": "19:00 · CIERRO EL PORTÁTIL"}},
+  {"say": "Cerraba el portátil y ese piti era mi «se acabó».", "kicker": "Mi *ritual:*", "title": ["Era mi", "*se acabó*"], "zone": {"type": "note", "text": "Portátil cerrado = *piti*", "at": "piti"}},
+  {"say": "Todos me decían: déjalo. Nadie, cómo cerrar el día.", "title": ["Nadie me", "dijo *cómo*"], "bg": {"type": "night"}, "zone": {"type": "moment", "label": "19:05 · SALGO DEL CURRO"}},
+  {"say": "Así que me inventé otro «se acabó».", "kicker": "Mi *plan:*", "title": ["Otro", "*se acabó*"], "zone": {"type": "big", "text": "SIN PITI", "sub": "para salir del curro"}},
+  {"say": "Camiseta limpia, un temazo y diez minutos andando.", "kicker": "Mi nuevo *final:*", "title": ["Cambio", "de *escena*"], "zone": {"type": "chips", "items": [{"t": "Camiseta limpia", "at": "Camiseta"}, {"t": "Un temazo", "at": "temazo"}, {"t": "10 min andando", "at": "andando"}]}},
+  {"say": "Si aprietan, collar en mano. Duran unos quince minutos.", "title": ["Collar", "en *mano*"], "bg": {"type": "glow"}, "zone": {"type": "pendant"}},
+  {"say": "Según el NHS, luego bajan. Y llego a casa sin fumar.", "kicker": "Las ganas *bajan:*", "title": ["A casa", "*sin fumar*"], "zone": {"type": "timer", "from": 900, "label": "según el NHS"}},
+  {"say": "Síguenos y guárdalo para mañana a las siete.", "kicker": "Para *mañana:*", "title": ["*Guárdalo*"], "zone": {"type": "cta", "items": [{"icon": "follow", "t": "*Síguenos*", "at": "Síguenos"}, {"icon": "save", "t": "Guárdalo para las *19:00*", "at": "guárdalo"}]}}
+ ],
+ "caption": "Mi error al dejar el piti: no tenía plan para salir del curro 🚬 Cerraba el portátil y ese cigarro era mi «se acabó». Todos me decían «déjalo», pero nadie me dijo cómo cerrar el día sin él. Así que me inventé otro final: camiseta limpia, un temazo y 10 minutos andando. Y si aprietan, collar en mano: según el NHS, las ganas fuertes de fumar duran unos 15 minutos y luego bajan. Llego a casa sin fumar 💪 Guárdalo para mañana a las 7. ¿Cuál es tu «se acabó» del día? Cuéntamelo 👇",
+ "hashtags": ["#dejardefumar", "#dejarelpiti", "#sintabaco", "#ganasdefumar", "#planpara", "#valkyra"],
+ "cover": {"kicker": "Plan para el *piti*", "title": ["Salir del", "*curro*", "sin fumar"], "bg": {"type": "night"}},
+ "tiktok_title": "Plan para el piti de salir del curro",
+ "yt_title": "Dejar de fumar: plan para el cigarro de salir del trabajo"
+}

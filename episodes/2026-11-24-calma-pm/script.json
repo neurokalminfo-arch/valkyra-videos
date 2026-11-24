@@ -1,0 +1,74 @@
+{
+ "account": "calma",
+ "style": "collage",
+ "slot": "pm",
+ "topic": "El cigarro del disgusto (estrés de la tarde): tras un mal rato no quieres un cigarro, quieres parar; las ganas fuertes duran unos 15 minutos (NHS); plan minuto a minuto (1: sal de la escena, 5: agua despacio y suelta los hombros, 10: escribe qué te ha removido, 15: ya han bajado)",
+ "pillar": "kit",
+ "series": "kit-anti-ganas-4",
+ "hook": "contraintuitivo",
+ "cta": "guardar",
+ "scenes": [
+  {"say": "Tras un disgusto no quieres un cigarro. Quieres parar.", "bg": "terra", "els": [
+   {"t": "strip", "text": "KIT ANTI-GANAS #4", "x": 470, "y": 290, "rot": -3, "size": 56, "color": "ink"},
+   {"t": "strip", "text": "TRAS UN *DISGUSTO*", "x": 500, "y": 410, "rot": 2, "size": 70, "color": "paper"},
+   {"t": "big", "text": "NO ES EL", "x": 480, "y": 610, "size": 150, "rot": -3, "color": "paper"},
+   {"t": "big", "text": "*CIGARRO*", "x": 500, "y": 790, "size": 170, "rot": 2, "color": "mustard"},
+   {"t": "sticker", "obj": "cigarro", "x": 500, "y": 1060, "s": 1.1, "rot": -12, "anim": "smoke"},
+   {"t": "note", "text": "es que quieres parar", "x": 490, "y": 1280, "rot": -3, "size": 62, "color": "paper", "at": "Quieres"},
+   {"t": "scribble", "shape": "underline", "x": 490, "y": 1335, "w": 560, "h": 30, "color": "ink", "at": "parar", "dur": 0.4}
+  ]},
+  {"say": "Según el NHS, las ganas fuertes duran unos quince minutos.", "bg": "paper", "min": 0, "els": [
+   {"t": "sticker", "obj": "reloj", "x": 280, "y": 620, "s": 0.9, "rot": -8, "anim": "tick"},
+   {"t": "big", "text": "15", "x": 700, "y": 600, "size": 330, "rot": 4, "color": "terra", "at": "quince"},
+   {"t": "big", "text": "MIN", "x": 720, "y": 830, "size": 120, "rot": -3, "color": "ink", "at": "quince"},
+   {"t": "tag", "text": "Fuente: NHS (Reino Unido)", "x": 500, "y": 1000, "rot": 2, "at": "NHS"},
+   {"t": "strip", "text": "LAS GANAS DE *FUMAR*", "x": 500, "y": 1150, "rot": -2, "size": 64, "color": "ink", "at": "ganas"},
+   {"t": "note", "text": "este es tu plan →", "x": 480, "y": 1300, "rot": -3, "size": 60, "color": "terra", "at": "duran"}
+  ]},
+  {"say": "Minuto uno: sal de la escena, aunque sea al pasillo.", "bg": "sage", "min": 1, "els": [
+   {"t": "num", "text": "01", "x": 230, "y": 500, "rot": -6},
+   {"t": "big", "text": "SAL", "x": 640, "y": 500, "size": 190, "rot": 3, "color": "ink", "at": "sal"},
+   {"t": "strip", "text": "DE LA *ESCENA*", "x": 520, "y": 700, "rot": -2, "size": 66, "color": "paper", "at": "escena"},
+   {"t": "sticker", "obj": "huellas", "x": 500, "y": 960, "s": 1.0, "rot": 0, "anim": "walk", "at": "escena"},
+   {"t": "note", "text": "aunque sea al pasillo", "x": 500, "y": 1250, "rot": -2, "size": 62, "color": "ink", "at": "pasillo"}
+  ]},
+  {"say": "Minuto cinco: bebe agua despacio y suelta los hombros.", "bg": "mustard", "min": 5, "els": [
+   {"t": "num", "text": "05", "x": 230, "y": 500, "rot": 5},
+   {"t": "big", "text": "AGUA", "x": 640, "y": 500, "size": 170, "rot": -3, "color": "ink", "at": "agua"},
+   {"t": "sticker", "obj": "vaso", "x": 500, "y": 860, "s": 1.1, "rot": 6, "anim": "bob", "at": "agua"},
+   {"t": "strip", "text": "SUELTA LOS *HOMBROS*", "x": 500, "y": 1200, "rot": -3, "size": 64, "color": "paper", "at": "suelta"}
+  ]},
+  {"say": "Minuto diez: escribe qué te ha removido. Sácalo de ti.", "bg": "ink", "min": 10, "els": [
+   {"t": "num", "text": "10", "x": 230, "y": 500, "rot": -4},
+   {"t": "big", "text": "*ESCRIBE*", "x": 640, "y": 500, "size": 140, "rot": 2, "color": "paper", "at": "escribe"},
+   {"t": "sticker", "obj": "libreta", "x": 500, "y": 860, "s": 1.0, "rot": -10, "anim": "write", "at": "escribe"},
+   {"t": "note", "text": "¿qué te ha removido?", "x": 500, "y": 1150, "rot": -3, "size": 62, "color": "mustard", "at": "removido"},
+   {"t": "strip", "text": "SÁCALO DE *TI*", "x": 500, "y": 1290, "rot": 2, "size": 60, "color": "paper", "at": "Sácalo"}
+  ]},
+  {"say": "Minuto quince: las ganas han bajado. Y no has fumado.", "bg": "paper", "min": 15, "transition": "tear", "els": [
+   {"t": "big", "text": "15:00", "x": 500, "y": 430, "size": 220, "rot": -2, "color": "terra"},
+   {"t": "sticker", "obj": "roto", "x": 500, "y": 790, "s": 1.2, "rot": -6, "anim": "snap", "at": "bajado"},
+   {"t": "strip", "text": "HAN *BAJADO*", "x": 500, "y": 1060, "rot": 3, "size": 76, "color": "ink", "at": "bajado"},
+   {"t": "note", "text": "y no has fumado", "x": 470, "y": 1230, "rot": -3, "size": 70, "color": "terra", "at": "fumado"},
+   {"t": "scribble", "shape": "check", "x": 850, "y": 1200, "w": 120, "h": 110, "color": "sage", "at": "fumado", "dur": 0.35}
+  ]},
+  {"say": "Te has dado la pausa sin el humo. Eso es cuidarte.", "bg": "terra", "els": [
+   {"t": "strip", "text": "LA PAUSA SIN EL *HUMO*", "x": 500, "y": 400, "rot": -2, "size": 62, "color": "paper", "at": "pausa"},
+   {"t": "stamp", "text": "CUIDARTE", "x": 500, "y": 720, "rot": -9, "at": "cuidarte"},
+   {"t": "sticker", "obj": "collar", "x": 500, "y": 1060, "s": 1.1, "rot": 0, "anim": "swing"},
+   {"t": "note", "text": "eso es cuidarte", "x": 480, "y": 1290, "rot": -3, "size": 64, "color": "paper", "at": "cuidarte"}
+  ]},
+  {"say": "Síguenos y guárdalo para tu próximo mal día.", "bg": "sage", "cta": true, "els": [
+   {"t": "strip", "text": "PARA TU PRÓXIMO", "x": 500, "y": 340, "rot": -2, "size": 60, "color": "ink"},
+   {"t": "strip", "text": "*MAL DÍA*", "x": 520, "y": 460, "rot": 2, "size": 72, "color": "paper"},
+   {"t": "cta", "items": [{"icon": "follow", "text": "SÍGUENOS", "at": "Síguenos"}, {"icon": "save", "text": "GUÁRDALO", "at": "guárdalo"}], "x": 500, "y": 760},
+   {"t": "scribble", "shape": "arrow-right", "x": 770, "y": 1130, "w": 280, "h": 150, "color": "terra", "at": "mal", "dur": 0.5},
+   {"t": "note", "text": "kit anti-ganas #4", "x": 330, "y": 1260, "rot": -3, "size": 56, "color": "ink"}
+  ]}
+ ],
+ "caption": "Después de un disgusto, el cuerpo te pide un cigarro… pero lo que de verdad quieres es parar 🚬💛 Según el NHS, las ganas fuertes de fumar duran unos 15 minutos y luego bajan. Tu kit para el próximo mal rato: minuto 1, sal de la escena (aunque sea al pasillo). Minuto 5, agua despacio y suelta los hombros. Minuto 10, escribe qué te ha removido. Minuto 15: las ganas han bajado y no has fumado. Eso es cuidarte. Guárdalo para tu próximo mal día. ¿Qué disgusto te hace pensar siempre en un cigarro? Te leo 👇",
+ "hashtags": ["#dejardefumar", "#dejarelcigarro", "#sintabaco", "#ganasdefumar", "#kitantiganas", "#estres", "#valkyra"],
+ "cover": {"kicker": "Kit anti-ganas *#4*", "title": ["El cigarro", "del *disgusto*"]},
+ "tiktok_title": "El cigarro del disgusto: tu plan de 15 minutos",
+ "yt_title": "Ganas de fumar tras un disgusto: plan de 15 minutos"
+}
