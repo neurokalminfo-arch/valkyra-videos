@@ -8,16 +8,14 @@ Ojo: el reel de 135.323 del 06/11 fue **pagado**; no cuenta como prueba orgánic
 
 ### Formato A · Pausa guiada (`"format": "A"`)
 1. Gancho (0–3 s): el momento. "Cuando vuelven las ganas después de una discusión…"
-2. Validar (3–6 s): "Parece que no va a pasar. Es normal."
-2b. **CTA temprana (6–9 s):** "Si te ayudan este tipo de vídeos, dale a like y sígueme." (una frase corta, en voz y en pantalla)
-3. Pausa guiada (9–22 s): "No tienes que resolverlo todo ahora. Respira despacio. Suelta los hombros. Vuelve a elegir." (Aquí SÍ se permite la respiración: es el corazón del formato.)
+2. Validar (3–8 s): "Parece que no va a pasar. Es normal."
+3. Pausa guiada (8–20 s): "No tienes que resolverlo todo ahora. Respira despacio. Suelta los hombros. Vuelve a elegir." (Aquí SÍ se permite la respiración: es el corazón del formato.)
 4. Cierre suave (20–25 s): "Guárdalo para ese momento, o mándaselo a quien lo esté intentando. Y si quieres algo que te acompañe mientras cambias el gesto, Valkyra está en mi perfil."
 5. Pregunta (pantalla + caption): "¿Qué momento del día se te hace más difícil? Te leo."
 Momentos para variar: después de una discusión, a las 3 de la madrugada sin dormir, en un atasco, al salir del trabajo, el domingo por la tarde, después de una mala noticia, una boda o cena con fumadores, el primer día sin tabaco, el café de las 11, la sobremesa.
 
 ### Formato B · Manifiesto (`"format": "B"`)
 1. Gancho: "Todo el mundo te dice [X]. Casi nadie te dice [Y]."
-1b. **CTA temprana (justo después del gancho):** "Si te interesa este tipo de vídeo, dale a like." (una frase corta, en voz y en pantalla)
 2. Lista de momentos: frases cortas, una por línea en pantalla ("Después del café. Cuando necesitas una pausa. Después de un día complicado.").
 3. Giro: "No es solo una decisión. Es un gesto que llevas años repitiendo."
 4. Producto como respuesta: "Ahí entra Valkyra: algo físico que te recuerda por qué empezaste. No es magia. Es otra opción cuando llega ese momento."
@@ -38,7 +36,6 @@ Un formato o tema distinto (relato en 1ª persona, mito, proceso, apoyo, kit con
 | Domingo | Prueba | Consejos prácticos (la antigua plantilla, como mucho aquí) |
 
 ## Normas fijas
-- **CTA temprana OBLIGATORIA en todos los vídeos (decisión del usuario, 24-11-2026):** en cuanto queda claro de qué va el vídeo (después del gancho / la validación, hacia el segundo 5–9), una frase corta en voz y en pantalla: "Si te interesa este tipo de vídeo, dale a like" (variar: "…dale a like y sígueme", "…dale like para que te salgan más"). Se mantiene además el cierre del final (guardar / mandar / pregunta).
 - **Estilo visual alterno:** dos vídeos seguidos NUNCA comparten estilo (`"style": "cine"` = engine/template.html, `"style": "collage"` = engine/collage). Rota también duración (20–40 s) y escenas de fondo.
 - **El dato "las ganas fuertes duran unos 15 minutos" (NHS): como mucho en 1 de cada 5 vídeos.** Compruébalo con grep en los 4 vídeos anteriores antes de usarlo.
 - **Nunca abrir con el producto** ("Valkyra es un collar…", "esta cosita de aquí…"): son los que peor funcionan (190 visualizaciones).
@@ -48,7 +45,6 @@ Un formato o tema distinto (relato en 1ª persona, mito, proceso, apoyo, kit con
 - **Reaprovechar ganadores:** cada vídeo ORGÁNICO que pase de 10.000 visualizaciones tiene al menos 5 variaciones con otros momentos (apuntarlo en aprendizajes.md como "ganador" con su id).
 
 ## Checklist antes de programar
-- [ ] Tras explicar de qué va el vídeo (segundo 5–9) hay CTA temprana: "si te interesa este tipo de vídeo, dale a like".
 - [ ] Los 3 primeros segundos muestran un momento reconocible, no el producto.
 - [ ] Habla en segunda persona y con calma.
 - [ ] Valkyra aparece solo al final, en una o dos frases.
