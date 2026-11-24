@@ -22,7 +22,7 @@ Huecos: 20-11 pm (las 2 cuentas), 19-11 TikTok calma y 19-11 TikTok oficial NO s
 ## Pruebas en curso
 - Estilo collage frente a cine: repetir collage al menos 2 veces esta semana (kit y emocion) y comparar guardados/1.000 y salto 3 s.
 - Formato relato (ver regla 5) en @valkyra.oficial: ¿rompe el techo de ~750 hecho por la fábrica?
-- Series: kit-anti-ganas #1–#3, POV #1–#3, plan-para #1–#3. #3 de kit y #2 de plan no se publicaron. Sin efecto medible aún.
+- Series: kit-anti-ganas #1–#3, POV #1–#3 (serie cerrada el 24-11 por decisión del usuario), plan-para #1–#3. #3 de kit y #2 de plan no se publicaron. Sin efecto medible aún.
 
 ## Ajustes para esta semana
 - calma: 2 `kit` con tiempos/pasos muy concretos ("minuto 1, 5, 10", "las 3 primeras horas del día") en estilo collage, CTA guardar. Ideas: el cigarro del café minuto a minuto, la primera noche sin tabaco, qué hacer en los 15 min si estás en el trabajo.

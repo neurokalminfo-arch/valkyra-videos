@@ -33,7 +33,7 @@ Si `aprendizajes.md` dice que un pilar rinde mucho mejor, puede sustituir hasta 
 ## Series (para que vuelvan y nos sigan)
 Repite formatos reconocibles con nombre propio en el kicker de la primera escena y en la portada:
 - calma: "Kit anti-ganas #N" (`kit`), "Tu cuerpo sin tabaco: día N" (`proceso`), "Si hoy has fumado…" (`emocion`).
-- oficial: "POV: llevas N días sin fumar y…" (`proceso`/`emocion`), "Lo que nadie te cuenta de dejar el piti #N" (`mito`), "Plan para [momento]" (`kit`).
+- oficial: "Lo que nadie te cuenta de dejar el piti #N" (`mito`), "Plan para [momento]" (`kit`).
 Lleva el número de la serie en `"series": "kit-anti-ganas-3"` y súbelo cada vez.
 
 ## Ganchos (rotar el tipo; guardar `"hook"` en script.json)
@@ -44,7 +44,7 @@ El gancho es la primera escena y se ve completa desde el primer fotograma. Nombr
 - `error`: "El error que te hace volver al cigarro el tercer día."
 - `lista`: "3 cosas que hacer cuando te dan ganas de fumar."
 - `dato`: "A las 12 horas sin fumar tu sangre ya…" (solo con `datos.md`)
-- `pov` (oficial): "POV: llevas 3 días sin fumar y todo te molesta."
+- ~~`pov`~~: NO usar (decisión del usuario, 24-11-2026: no más vídeos POV en @valkyra.oficial).
 
 ## CTA (siempre seguirnos + UNA acción; rotar)
 - `guardar`: por defecto en `kit`, `truco` y `proceso` ("Guárdalo para cuando lleguen las ganas").

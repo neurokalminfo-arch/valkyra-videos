@@ -37,11 +37,11 @@ Cada ejecución crea 2 vídeos cortos (1080x1920, 25–35 s) y los deja programa
 
 ## Cuentas
 - **calma** (`"account": "calma"`): mujeres 30–60 que quieren dejar de fumar; ya lo intentaron, miedo a engordar, a recaer, a que las juzguen, van a mil. Tono cálido, cercano, de apoyo, frases bonitas que inspiren. Voz Eva Dorado. Paleta crema/terracota/salvia.
-- **oficial** (`"account": "oficial"`): protagonista chico joven que usa Valkyra en distintos momentos del día; consejos, inspiración y entretenimiento; tono informal y cercano, en primera persona ("tío", "a mí me pasaba"). Voz Carlos. Paleta oscura con ámbar. **Sin avatar ni personaje dibujado** (se retiró el 13-11-2026: quedaba infantil). Sitúa la historia con 1–2 etiquetas de momento del día (`zone.type: "moment"`, `"label": "08:10 · CAFÉ"`) y apóyate en las escenas de cine.
+- **oficial** (`"account": "oficial"`): protagonista chico joven que usa Valkyra en distintos momentos del día; consejos, inspiración y entretenimiento; tono informal y cercano, en primera persona ("tío", "a mí me pasaba"). Voz Carlos. Paleta oscura con ámbar. **Sin avatar ni personaje dibujado** (se retiró el 13-11-2026: quedaba infantil). **Nada de vídeos POV** (ni gancho `pov` ni serie "POV: llevas N días…"; decisión del usuario, 24-11-2026). Sitúa la historia con 1–2 etiquetas de momento del día (`zone.type: "moment"`, `"label": "08:10 · CAFÉ"`) y apóyate en las escenas de cine.
 
 ## Formato de script.json
 ```json
-{"account":"calma|oficial","slot":"am|pm","topic":"...","pillar":"kit|emocion|proceso|truco|mito|apoyo|producto","series":"kit-anti-ganas-3 (opcional)","hook":"pregunta|frase-identificacion|contraintuitivo|error|lista|dato|pov","cta":"guardar|compartir|comentar|perfil",
+{"account":"calma|oficial","slot":"am|pm","topic":"...","pillar":"kit|emocion|proceso|truco|mito|apoyo|producto","series":"kit-anti-ganas-3 (opcional)","hook":"pregunta|frase-identificacion|contraintuitivo|error|lista|dato","cta":"guardar|compartir|comentar|perfil",
  "scenes":[{"say":"texto que dice la voz","kicker":"frase pequeña con *acento en cursiva*","title":["LÍNEA 1","línea *acento*"],"zone":{...}}],
  "caption":"texto del post con emojis y pregunta final","hashtags":["#dejardefumar","..."],
  "cover":{"kicker":"frase pequeña","title":["2–3 líneas","con *acento*"]},
