@@ -32,6 +32,7 @@
 - Cada vídeo tiene que dejar algo útil que se pueda aplicar hoy (ver la pregunta de `estrategia.md`). Un vídeo que solo describe un momento sin dar nada no vale.
 - Momentos universales (café, primer cigarro, sobremesa, estrés, alcohol, noche, recaída); evita los de nicho.
 - Mañana (am): tono de empezar el día. Tarde (pm): cansancio, estrés, sobremesa, after-work, noche.
+- **CTA temprana obligatoria en TODOS los vídeos** (24-11-2026): en cuanto se ha explicado de qué va el vídeo (segundo 5–9), una escena corta con `zone.type: "cta"` (icono `like`, y opcional `follow`) y la voz: "Si te interesa este tipo de vídeo, dale a like" (variar la frase). Va además de la CTA final.
 - **CTA obligatoria en TODOS los vídeos**: la última escena pide, en la voz y en pantalla, que nos sigan + una acción concreta (like, comentar algo específico, guardar o compartir). Usa `zone.type: "cta"`. Varía la frase y la petición de comentario cada vez, y que tenga que ver con el tema (p. ej. "Comenta CAFÉ si es tu cigarro más difícil", "Guárdalo para mañana", "Mándaselo a quien lo esté dejando"). El caption también termina con una pregunta o petición para comentar.
 - Cada guion: 6–8 escenas cortas (≤ 55 caracteres de voz cada una), 22–30 s, 350–450 caracteres de voz en total (cuidado con los créditos de ElevenLabs). Lo útil antes del segundo 8. Nunca dos escenas seguidas sin `zone`.
 
