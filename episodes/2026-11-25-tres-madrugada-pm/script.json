@@ -1,0 +1,191 @@
+{
+ "account": "calma",
+ "slot": "pm",
+ "format": "A",
+ "style": "cine",
+ "topic": "Despertarte a las 3 de la madrugada con ganas de fumar: validar (a esa hora todo pesa más), pausa guiada de 3 pasos (respira despacio y suelta los hombros, pies en el suelo frío, agua despacio y vuelve a elegir sin tabaco) y Valkyra al final como algo en la mano",
+ "pillar": "kit",
+ "hook": "frase-identificacion",
+ "cta": "guardar",
+ "scenes": [
+  {
+   "say": "Son las tres de la madrugada y solo piensas en fumar.",
+   "title": [
+    "Las *3:00*",
+    "y ganas",
+    "de fumar"
+   ],
+   "bg": {
+    "type": "night"
+   },
+   "zone": {
+    "type": "moment",
+    "label": "03:00 · SIN DORMIR"
+   }
+  },
+  {
+   "say": "A esa hora todo pesa más. Es normal.",
+   "kicker": "A las *tres:*",
+   "title": [
+    "Todo pesa",
+    "*más*"
+   ],
+   "zone": {
+    "type": "note",
+    "text": "De noche las ganas *gritan* más",
+    "at": "normal"
+   }
+  },
+  {
+   "say": "No tienes que resolverlo todo ahora. Solo este rato.",
+   "title": [
+    "Solo",
+    "*este rato*"
+   ],
+   "bg": {
+    "type": "night",
+    "palm": false
+   },
+   "zone": {
+    "type": "moment",
+    "label": "03:02 · RESPIRA"
+   }
+  },
+  {
+   "say": "Respira despacio. Suelta los hombros.",
+   "kicker": "Pausa de *3 pasos:*",
+   "title": [
+    "Respira",
+    "*despacio*"
+   ],
+   "zone": {
+    "type": "steps",
+    "items": [
+     {
+      "n": "1",
+      "t": "Respira despacio",
+      "s": "Suelta los hombros",
+      "at": "Respira"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Apoya los pies en el suelo frío y nota dónde estás.",
+   "kicker": "Pausa de *3 pasos:*",
+   "title": [
+    "Pies en",
+    "el *suelo*"
+   ],
+   "zone": {
+    "type": "steps",
+    "items": [
+     {
+      "n": "1",
+      "t": "Respira despacio"
+     },
+     {
+      "n": "2",
+      "t": "Pies en el suelo frío",
+      "s": "Nota dónde estás",
+      "at": "Apoya"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Bebe agua despacio. Y vuelve a elegir: sin tabaco.",
+   "kicker": "Pausa de *3 pasos:*",
+   "title": [
+    "Vuelve a",
+    "*elegir*"
+   ],
+   "zone": {
+    "type": "steps",
+    "items": [
+     {
+      "n": "1",
+      "t": "Respira despacio"
+     },
+     {
+      "n": "2",
+      "t": "Pies en el suelo frío"
+     },
+     {
+      "n": "3",
+      "t": "Agua y vuelve a elegir",
+      "s": "Sin tabaco",
+      "at": "Bebe"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Si quieres algo en la mano, Valkyra está en mi perfil.",
+   "title": [
+    "Algo",
+    "en la *mano*"
+   ],
+   "bg": {
+    "type": "glow"
+   },
+   "zone": {
+    "type": "pendant"
+   }
+  },
+  {
+   "say": "Síguenos. Guárdalo o mándaselo a quien lo intente.",
+   "kicker": "¿Cuál es *tu* hora difícil?",
+   "title": [
+    "Para esa",
+    "*noche*"
+   ],
+   "zone": {
+    "type": "cta",
+    "items": [
+     {
+      "icon": "follow",
+      "t": "*Síguenos*",
+      "at": "Síguenos"
+     },
+     {
+      "icon": "save",
+      "t": "Guárdalo para las *3:00*",
+      "at": "Guárdalo"
+     },
+     {
+      "icon": "share",
+      "t": "Mándaselo a quien lo *intente*",
+      "at": "mándaselo"
+     }
+    ]
+   }
+  }
+ ],
+ "caption": "Son las tres de la madrugada, no duermes y solo piensas en fumar 🌙🚬 A esa hora todo pesa más, y es normal. No tienes que resolverlo todo ahora, solo este rato. Pausa de 3 pasos para esa noche: 1) respira despacio y suelta los hombros, 2) apoya los pies en el suelo frío y nota dónde estás, 3) bebe agua despacio y vuelve a elegir: sin tabaco. Guárdalo para esa noche o mándaselo a quien lo esté intentando 💛 Y si quieres algo que te acompañe en la mano mientras cambias el gesto, Valkyra está en mi perfil. ¿Qué momento del día (o de la noche) se te hace más difícil? Te leo 👇",
+ "hashtags": [
+  "#dejardefumar",
+  "#sintabaco",
+  "#insomnio",
+  "#ansiedadporfumar",
+  "#dejarelcigarro",
+  "#valkyra"
+ ],
+ "cover": {
+  "kicker": "Ganas de *fumar*",
+  "title": [
+   "A las",
+   "*3:00*",
+   "sin dormir"
+  ],
+  "bg": {
+   "type": "night"
+  },
+  "zone": {
+   "type": "moment",
+   "label": "PAUSA DE 3 PASOS"
+  }
+ },
+ "tiktok_title": "Ganas de fumar a las 3 de la madrugada: pausa de 3 pasos",
+ "yt_title": "Ganas de fumar a las 3 de la madrugada: pausa guiada"
+}
