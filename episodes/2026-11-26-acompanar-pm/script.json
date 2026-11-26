@@ -1,0 +1,487 @@
+{
+ "account": "calma",
+ "slot": "pm",
+ "format": "prueba",
+ "style": "collage",
+ "hypothesis": "Vídeo para quien acompaña (pilar apoyo, en 2ª persona dirigida a la pareja o familia de quien deja de fumar) frente a A y B. Vale si en IG supera la mediana de A y B de estas dos semanas en compartidos por 1.000 visualizaciones sin quedar por debajo en visualizaciones.",
+ "topic": "Tu pareja lleva tres días sin fumar y salta por todo: no es contra ti (según el NHS la irritabilidad al dejarlo es temporal); qué hacer para acompañar: no preguntarle cada día si ha fumado, preguntarle qué momento se le hace más difícil y quedarte en ese rato (paseo, té, charla); si fuma uno, sin sermones: no ha vuelto a empezar. Valkyra al final como algo que le acompañe",
+ "pillar": "apoyo",
+ "hook": "frase-identificacion",
+ "cta": "compartir",
+ "scenes": [
+  {
+   "say": "Tu pareja lleva tres días sin fumar y salta por todo.",
+   "bg": "terra",
+   "els": [
+    {
+     "t": "strip",
+     "text": "TU PAREJA LLEVA",
+     "x": 480,
+     "y": 300,
+     "rot": -3,
+     "size": 62,
+     "color": "ink"
+    },
+    {
+     "t": "big",
+     "text": "3 DÍAS",
+     "x": 490,
+     "y": 500,
+     "size": 190,
+     "rot": -2,
+     "color": "paper"
+    },
+    {
+     "t": "big",
+     "text": "SIN *FUMAR*",
+     "x": 500,
+     "y": 700,
+     "size": 150,
+     "rot": 2,
+     "color": "mustard"
+    },
+    {
+     "t": "sticker",
+     "obj": "cigarro",
+     "x": 500,
+     "y": 960,
+     "s": 1.0,
+     "rot": -12,
+     "anim": "smoke"
+    },
+    {
+     "t": "note",
+     "text": "y salta por todo",
+     "x": 480,
+     "y": 1210,
+     "rot": -3,
+     "size": 70,
+     "color": "paper",
+     "at": "salta"
+    },
+    {
+     "t": "scribble",
+     "shape": "underline",
+     "x": 480,
+     "y": 1270,
+     "w": 520,
+     "h": 30,
+     "color": "ink",
+     "at": "todo",
+     "dur": 0.35
+    }
+   ]
+  },
+  {
+   "say": "No es contra ti: según el NHS, esa irritabilidad pasa.",
+   "bg": "paper",
+   "els": [
+    {
+     "t": "big",
+     "text": "NO ES",
+     "x": 480,
+     "y": 420,
+     "size": 170,
+     "rot": -3,
+     "color": "ink"
+    },
+    {
+     "t": "big",
+     "text": "CONTRA *TI*",
+     "x": 500,
+     "y": 610,
+     "size": 150,
+     "rot": 2,
+     "color": "terra",
+     "at": "contra"
+    },
+    {
+     "t": "tag",
+     "text": "Fuente: NHS (Reino Unido)",
+     "x": 500,
+     "y": 800,
+     "rot": -2,
+     "at": "NHS"
+    },
+    {
+     "t": "strip",
+     "text": "DEJAR EL TABACO IRRITA",
+     "x": 500,
+     "y": 960,
+     "rot": 2,
+     "size": 60,
+     "color": "ink",
+     "at": "irritabilidad"
+    },
+    {
+     "t": "note",
+     "text": "y es temporal",
+     "x": 480,
+     "y": 1150,
+     "rot": -3,
+     "size": 72,
+     "color": "terra",
+     "at": "pasa"
+    },
+    {
+     "t": "scribble",
+     "shape": "check",
+     "x": 800,
+     "y": 1130,
+     "w": 110,
+     "h": 100,
+     "color": "sage",
+     "at": "pasa",
+     "dur": 0.35
+    }
+   ]
+  },
+  {
+   "say": "No le preguntes cada día si ha fumado.",
+   "bg": "sage",
+   "els": [
+    {
+     "t": "big",
+     "text": "*NO* LE",
+     "x": 500,
+     "y": 430,
+     "size": 170,
+     "rot": -3,
+     "color": "ink"
+    },
+    {
+     "t": "big",
+     "text": "PREGUNTES",
+     "x": 500,
+     "y": 610,
+     "size": 140,
+     "rot": 2,
+     "color": "ink",
+     "at": "preguntes"
+    },
+    {
+     "t": "strip",
+     "text": "¿HOY HAS *FUMADO*?",
+     "x": 500,
+     "y": 800,
+     "rot": -3,
+     "size": 70,
+     "color": "paper",
+     "strike": "fumado",
+     "at": "cada"
+    },
+    {
+     "t": "sticker",
+     "obj": "libreta",
+     "x": 500,
+     "y": 1060,
+     "s": 0.7,
+     "rot": 8,
+     "anim": "write"
+    },
+    {
+     "t": "note",
+     "text": "cada día, no",
+     "x": 480,
+     "y": 1290,
+     "rot": -2,
+     "size": 64,
+     "color": "ink",
+     "at": "día"
+    }
+   ]
+  },
+  {
+   "say": "Pregúntale qué momento se le hace más difícil.",
+   "bg": "mustard",
+   "els": [
+    {
+     "t": "big",
+     "text": "*SÍ*",
+     "x": 500,
+     "y": 420,
+     "size": 170,
+     "rot": 3,
+     "color": "terra"
+    },
+    {
+     "t": "big",
+     "text": "PREGÚNTALE",
+     "x": 500,
+     "y": 600,
+     "size": 130,
+     "rot": -2,
+     "color": "ink",
+     "at": "Pregúntale"
+    },
+    {
+     "t": "strip",
+     "text": "¿QUÉ MOMENTO",
+     "x": 480,
+     "y": 770,
+     "rot": 2,
+     "size": 66,
+     "color": "paper",
+     "at": "momento"
+    },
+    {
+     "t": "strip",
+     "text": "SE TE HACE *DIFÍCIL*?",
+     "x": 520,
+     "y": 880,
+     "rot": -2,
+     "size": 66,
+     "color": "ink",
+     "at": "difícil"
+    },
+    {
+     "t": "sticker",
+     "obj": "reloj",
+     "x": 500,
+     "y": 1170,
+     "s": 0.7,
+     "rot": -6,
+     "anim": "tick",
+     "at": "momento"
+    }
+   ]
+  },
+  {
+   "say": "Y en ese rato, quédate: un paseo, un té, una charla.",
+   "bg": "ink",
+   "els": [
+    {
+     "t": "strip",
+     "text": "EN ESE *RATO*",
+     "x": 480,
+     "y": 330,
+     "rot": -2,
+     "size": 64,
+     "color": "paper"
+    },
+    {
+     "t": "big",
+     "text": "*QUÉDATE*",
+     "x": 500,
+     "y": 540,
+     "size": 180,
+     "rot": 2,
+     "color": "mustard",
+     "at": "quédate"
+    },
+    {
+     "t": "sticker",
+     "obj": "huellas",
+     "x": 500,
+     "y": 850,
+     "s": 1.0,
+     "rot": 0,
+     "anim": "walk",
+     "at": "paseo"
+    },
+    {
+     "t": "note",
+     "text": "un paseo, un té, una charla",
+     "x": 500,
+     "y": 1180,
+     "rot": -3,
+     "size": 58,
+     "color": "paper",
+     "at": "paseo"
+    },
+    {
+     "t": "scribble",
+     "shape": "underline",
+     "x": 500,
+     "y": 1240,
+     "w": 620,
+     "h": 30,
+     "color": "terra",
+     "at": "charla",
+     "dur": 0.4
+    }
+   ]
+  },
+  {
+   "say": "Si fuma uno, sin sermones: no ha vuelto a empezar.",
+   "bg": "paper",
+   "transition": "tear",
+   "els": [
+    {
+     "t": "strip",
+     "text": "¿SE FUMA *UNO*?",
+     "x": 500,
+     "y": 330,
+     "rot": -2,
+     "size": 70,
+     "color": "ink"
+    },
+    {
+     "t": "big",
+     "text": "SIN SERMONES",
+     "x": 500,
+     "y": 520,
+     "size": 120,
+     "rot": 2,
+     "color": "terra",
+     "at": "sermones"
+    },
+    {
+     "t": "sticker",
+     "obj": "roto",
+     "x": 500,
+     "y": 800,
+     "s": 1.1,
+     "rot": -6,
+     "anim": "snap",
+     "at": "vuelto"
+    },
+    {
+     "t": "strip",
+     "text": "NO HA VUELTO",
+     "x": 480,
+     "y": 1050,
+     "rot": 3,
+     "size": 70,
+     "color": "ink",
+     "at": "vuelto"
+    },
+    {
+     "t": "strip",
+     "text": "A *EMPEZAR*",
+     "x": 520,
+     "y": 1160,
+     "rot": -2,
+     "size": 70,
+     "color": "ink",
+     "at": "empezar"
+    },
+    {
+     "t": "scribble",
+     "shape": "check",
+     "x": 830,
+     "y": 1150,
+     "w": 110,
+     "h": 100,
+     "color": "sage",
+     "at": "empezar",
+     "dur": 0.35
+    }
+   ]
+  },
+  {
+   "say": "Si quieres algo que le acompañe, Valkyra está en mi perfil.",
+   "bg": "terra",
+   "els": [
+    {
+     "t": "strip",
+     "text": "ALGO QUE LE *ACOMPAÑE*",
+     "x": 500,
+     "y": 380,
+     "rot": -2,
+     "size": 60,
+     "color": "paper",
+     "at": "acompañe"
+    },
+    {
+     "t": "sticker",
+     "obj": "collar",
+     "x": 500,
+     "y": 650,
+     "s": 1.0,
+     "rot": 0,
+     "anim": "swing"
+    },
+    {
+     "t": "stamp",
+     "text": "A SU LADO",
+     "x": 500,
+     "y": 1080,
+     "rot": -8,
+     "at": "acompañe"
+    },
+    {
+     "t": "note",
+     "text": "Valkyra · en mi perfil",
+     "x": 490,
+     "y": 1300,
+     "rot": -3,
+     "size": 62,
+     "color": "paper",
+     "at": "Valkyra"
+    }
+   ]
+  },
+  {
+   "say": "Síguenos. Y si lo estás dejando tú, mándaselo a los tuyos.",
+   "bg": "sage",
+   "cta": true,
+   "els": [
+    {
+     "t": "strip",
+     "text": "PARA QUIEN",
+     "x": 480,
+     "y": 340,
+     "rot": -2,
+     "size": 60,
+     "color": "ink"
+    },
+    {
+     "t": "strip",
+     "text": "TE *ACOMPAÑA*",
+     "x": 520,
+     "y": 460,
+     "rot": 2,
+     "size": 72,
+     "color": "paper"
+    },
+    {
+     "t": "cta",
+     "items": [
+      {
+       "icon": "follow",
+       "text": "SÍGUENOS",
+       "at": "Síguenos"
+      },
+      {
+       "icon": "share",
+       "text": "MÁNDASELO",
+       "at": "mándaselo"
+      }
+     ],
+     "x": 500,
+     "y": 760
+    },
+    {
+     "t": "scribble",
+     "shape": "arrow-right",
+     "x": 770,
+     "y": 1130,
+     "w": 280,
+     "h": 150,
+     "color": "terra",
+     "at": "tuyos",
+     "dur": 0.5
+    }
+   ]
+  }
+ ],
+ "caption": "Tu pareja lleva tres días sin fumar y salta por todo 🚬💛 No es contra ti: según el NHS, la irritabilidad al dejar el tabaco es temporal. Cómo acompañar sin agobiar: no le preguntes cada día si ha fumado; pregúntale qué momento se le hace más difícil y, en ese rato, quédate (un paseo, un té, una charla). Y si fuma uno, sin sermones: no ha vuelto a empezar. Si quieres algo que le acompañe mientras cambia el gesto, Valkyra está en mi perfil. Si lo estás dejando tú, mándaselo a los tuyos. ¿Qué es lo que más te ayuda (o te ayudaría) que hagan por ti? Te leo 👇",
+ "hashtags": [
+  "#dejardefumar",
+  "#dejarelcigarro",
+  "#sintabaco",
+  "#pareja",
+  "#apoyo",
+  "#valkyra"
+ ],
+ "cover": {
+  "kicker": "Tu pareja deja de *fumar*",
+  "title": [
+   "3 días",
+   "sin *fumar*"
+  ]
+ },
+ "tiktok_title": "Tu pareja deja de fumar y salta por todo: cómo acompañar",
+ "yt_title": "Cómo acompañar a tu pareja que deja de fumar"
+}
