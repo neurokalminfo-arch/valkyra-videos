@@ -4,6 +4,8 @@
 - Instagram **@neurokalm** (Reel) · TikTok **@valkyra.oficial** · TikTok **@neurokalm.oficial**.
 - **Prueba de 2 semanas (25-11 al 08-12-2026): el mismo vídeo en Instagram y en los dos TikTok.** Después se decide con datos si se mantiene o se vuelve a guiones por red. (YouTube Shorts: NO se publica, decisión del usuario del 19-11-2026.)
 
+> **Estilo visual desde el 27-11-2026: cómic (`"style": "comic"`, `engine/comic/SKILL.md`) en todos los vídeos, por decisión del usuario.** Si el texto de la tarea programada dice "estilo visual distinto al del episodio anterior (cine / collage)", eso ya no vale: manda esta línea. La variedad se consigue dentro del cómic (poses, fondos, objetos, composición).
+
 ## Pasos de cada ejecución (slot `pm` = 18:00, hora de Madrid)
 0. Lee `estrategia.md` (sobre todo la sección de arriba: formatos A/B/prueba, calendario, normas fijas y checklist), `datos.md` (los únicos números permitidos) y `aprendizajes.md`. Mira qué formato toca hoy.
 1. Lee lo ya publicado: `grep -h '"topic"\|"format"\|"style"\|"hook"' episodes/*/script.json | tail -40`. No repitas momento ni gancho de los últimos 30 días. **Estilo visual: siempre `"style": "comic"` (decisión del usuario del 27-11-2026: los vídeos de calma, con este estilo).** Varía dentro del cómic: poses, fondos de viñeta, objetos y composición distintos a los del último episodio. Si el dato de los 15 minutos salió en alguno de los 4 últimos episodios (`grep -l "15 minutos" episodes/*/script.json`), hoy no se usa.
