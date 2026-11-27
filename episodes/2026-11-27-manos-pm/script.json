@@ -1,0 +1,470 @@
+{
+ "account": "calma",
+ "slot": "pm",
+ "format": "B",
+ "style": "comic",
+ "topic": "Manifiesto: todos te dicen que dejes de fumar, nadie te dice qué hacer con las manos; momentos (después del café, cuando necesitas una pausa, después de un día complicado); giro: no es solo una decisión, es un gesto de años; algo útil: elige hoy qué harán tus manos en ese momento; Valkyra al final como algo para las manos, sin magia",
+ "pillar": "emocion",
+ "hook": "contraintuitivo",
+ "cta": "compartir",
+ "scenes": [
+  {
+   "say": "Todos te dicen que dejes de fumar.",
+   "caption": "Todos te dicen que dejes de *fumar*",
+   "layout": "full",
+   "panels": [
+    {
+     "bg": "speed",
+     "cy": 0.45,
+     "els": [
+      {
+       "t": "chica",
+       "x": 480,
+       "y": 1500,
+       "s": 1.15,
+       "pose": "head2",
+       "face": "worry"
+      },
+      {
+       "t": "bubble",
+       "text": "¡DÉJALO\nYA!",
+       "x": 200,
+       "y": 170,
+       "w": 330,
+       "h": 200,
+       "tail": [
+        60,
+        130
+       ]
+      },
+      {
+       "t": "bubble",
+       "text": "¡TÚ\nPUEDES!",
+       "x": 790,
+       "y": 230,
+       "w": 300,
+       "h": 190,
+       "tail": [
+        -90,
+        120
+       ]
+      },
+      {
+       "t": "bubble",
+       "text": "¡ES CUESTIÓN\nDE QUERER!",
+       "x": 760,
+       "y": 760,
+       "w": 380,
+       "h": 190,
+       "tail": [
+        -150,
+        -40
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Pero nadie te dice qué hacer con las manos.",
+   "caption": "Pero nadie te dice qué hacer con las *manos*",
+   "layout": "full",
+   "panels": [
+    {
+     "bg": "dots",
+     "from": "zoom",
+     "zy": 0.6,
+     "push": 0.1,
+     "els": [
+      {
+       "t": "chica",
+       "x": 540,
+       "y": 1560,
+       "s": 1.25,
+       "pose": "palms",
+       "face": "surprise"
+      },
+      {
+       "t": "mark",
+       "text": "?",
+       "x": 200,
+       "y": 330,
+       "at": "nadie"
+      },
+      {
+       "t": "mark",
+       "text": "?",
+       "x": 870,
+       "y": 260,
+       "rot": -12,
+       "s": 0.8,
+       "at": "hacer"
+      },
+      {
+       "t": "burst",
+       "text": "¿Y AHORA?",
+       "x": 760,
+       "y": 980,
+       "size": 90,
+       "color": "gold",
+       "at": "manos"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Después del café. Cuando necesitas una pausa.",
+   "caption": "Después del *café*. Cuando necesitas una *pausa*",
+   "layout": "stack",
+   "panels": [
+    {
+     "bg": "white",
+     "els": [
+      {
+       "t": "label",
+       "text": "08:10 · CAFÉ",
+       "x": 210,
+       "y": 70,
+       "size": 54,
+       "fill": "white"
+      },
+      {
+       "t": "cup",
+       "x": 260,
+       "y": 400,
+       "s": 1.0
+      },
+      {
+       "t": "cig",
+       "x": 600,
+       "y": 455,
+       "s": 0.78,
+       "face": "sly",
+       "arms": "wave"
+      },
+      {
+       "t": "bubble",
+       "text": "¿UNO CON\nEL CAFÉ?",
+       "x": 800,
+       "y": 150,
+       "w": 280,
+       "h": 180,
+       "tail": [
+        -120,
+        70
+       ]
+      }
+     ]
+    },
+    {
+     "bg": "speed",
+     "at": "Cuando",
+     "els": [
+      {
+       "t": "label",
+       "text": "11:00 · PAUSA",
+       "x": 220,
+       "y": 70,
+       "size": 54,
+       "fill": "white"
+      },
+      {
+       "t": "chica",
+       "x": 290,
+       "y": 1170,
+       "s": 0.95,
+       "pose": "worry",
+       "face": "sad"
+      },
+      {
+       "t": "cig",
+       "x": 700,
+       "y": 620,
+       "s": 0.85,
+       "face": "sly",
+       "arms": "hips",
+       "at": "necesitas"
+      },
+      {
+       "t": "bubble",
+       "text": "¿UNA\nPAUSITA?",
+       "x": 790,
+       "y": 140,
+       "w": 300,
+       "h": 180,
+       "tail": [
+        -60,
+        110
+       ],
+       "at": "pausa"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Después de un día complicado.",
+   "caption": "Después de un día *complicado*",
+   "layout": "full",
+   "panels": [
+    {
+     "bg": "dark",
+     "from": "right",
+     "els": [
+      {
+       "t": "eyes",
+       "n": 6
+      },
+      {
+       "t": "label",
+       "text": "20:30 · MAL DÍA",
+       "x": 250,
+       "y": 70,
+       "size": 54,
+       "fill": "white"
+      },
+      {
+       "t": "chica",
+       "x": 360,
+       "y": 1520,
+       "s": 1.1,
+       "pose": "cover",
+       "face": "sad"
+      },
+      {
+       "t": "cig",
+       "x": 770,
+       "y": 1000,
+       "s": 1.0,
+       "face": "sly",
+       "arms": "up",
+       "at": "complicado"
+      },
+      {
+       "t": "bubble",
+       "text": "¿UNO,\nY YA?",
+       "x": 770,
+       "y": 330,
+       "w": 300,
+       "h": 190,
+       "tail": [
+        0,
+        130
+       ],
+       "at": "complicado"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "No es solo una decisión. Es un gesto de años.",
+   "caption": "No es solo una ~decisión~. Es un *gesto* de años",
+   "layout": "full",
+   "panels": [
+    {
+     "bg": "speed",
+     "cx": 0.3,
+     "cy": 0.5,
+     "els": [
+      {
+       "t": "chica",
+       "x": 330,
+       "y": 1520,
+       "s": 1.15,
+       "pose": "think",
+       "face": "surprise"
+      },
+      {
+       "t": "burst",
+       "text": "¡AH!",
+       "x": 200,
+       "y": 200,
+       "size": 100,
+       "at": "gesto"
+      },
+      {
+       "t": "label",
+       "text": "UN GESTO",
+       "x": 740,
+       "y": 420,
+       "size": 84,
+       "at": "gesto"
+      },
+      {
+       "t": "label",
+       "text": "DE AÑOS",
+       "x": 760,
+       "y": 560,
+       "size": 84,
+       "rot": 3,
+       "fill": "white",
+       "at": "años"
+      },
+      {
+       "t": "arrow",
+       "x": 700,
+       "y": 700,
+       "len": 230,
+       "rot": 150,
+       "at": "años"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Elige hoy qué harán tus manos cuando llegue ese momento.",
+   "caption": "Elige *hoy* qué harán tus manos cuando llegue ese momento",
+   "layout": "stack",
+   "panels": [
+    {
+     "bg": "sky",
+     "rise": true,
+     "sx": 0.35,
+     "els": [
+      {
+       "t": "cal",
+       "x": 780,
+       "y": 220,
+       "s": 0.75,
+       "text": "HOY",
+       "at": "hoy"
+      }
+     ]
+    },
+    {
+     "bg": "white",
+     "at": "manos",
+     "els": [
+      {
+       "t": "chica",
+       "x": 320,
+       "y": 1150,
+       "s": 1.0,
+       "pose": "hips",
+       "face": "determined"
+      },
+      {
+       "t": "cig",
+       "x": 720,
+       "y": 620,
+       "s": 0.85,
+       "face": "scared",
+       "arms": "shrug",
+       "exit": "momento"
+      },
+      {
+       "t": "burst",
+       "text": "¡FIUU!",
+       "x": 760,
+       "y": 200,
+       "size": 90,
+       "at": "momento"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Ahí entra Valkyra: algo para tus manos. No es magia.",
+   "caption": "Ahí entra *Valkyra*: algo para tus manos. No es magia",
+   "layout": "full",
+   "panels": [
+    {
+     "bg": "gold",
+     "cy": 0.6,
+     "from": "zoom",
+     "els": [
+      {
+       "t": "chica",
+       "x": 540,
+       "y": 1500,
+       "s": 1.15,
+       "pose": "hold",
+       "face": "calm"
+      },
+      {
+       "t": "label",
+       "text": "VALKYRA",
+       "x": 540,
+       "y": 120,
+       "size": 96,
+       "font": "Bangers",
+       "at": "Valkyra"
+      },
+      {
+       "t": "label",
+       "text": "NO ES MAGIA",
+       "x": 740,
+       "y": 900,
+       "size": 56,
+       "rot": 4,
+       "fill": "white",
+       "at": "magia"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Síguenos y mándaselo a quien lo esté dejando.",
+   "caption": "Síguenos y mándaselo a quien lo esté *dejando*",
+   "layout": "full",
+   "panels": [
+    {
+     "bg": "dots",
+     "els": [
+      {
+       "t": "chica",
+       "x": 230,
+       "y": 1500,
+       "s": 1.05,
+       "pose": "point",
+       "face": "smile",
+       "flip": false,
+       "collar": true
+      },
+      {
+       "t": "cta",
+       "x": 630,
+       "y": 330,
+       "w": 540,
+       "items": [
+        {
+         "icon": "follow",
+         "text": "SÍGUENOS",
+         "at": "Síguenos"
+        },
+        {
+         "icon": "share",
+         "text": "MÁNDASELO",
+         "at": "mándaselo"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "caption": "Todos te dicen que dejes de fumar. Casi nadie te dice qué hacer con las manos 🚬✋ Después del café. Cuando necesitas una pausa. Después de un día complicado. No es solo una decisión: es un gesto que llevas años repitiendo. Por eso, elige hoy qué harán tus manos en ese momento. Y si quieres algo que te acompañe mientras cambias el gesto, Valkyra está en mi perfil. No es magia: es otra opción cuando llega ese momento. Mándaselo a quien lo esté dejando 💛 ¿Cuál es tu momento más difícil: el café, la pausa o el final del día? Te leo 👇",
+ "hashtags": [
+  "#dejardefumar",
+  "#dejarelcigarro",
+  "#sintabaco",
+  "#ganasdefumar",
+  "#habitos",
+  "#valkyra"
+ ],
+ "cover": {
+  "kicker": "Dejar de *fumar*",
+  "title": [
+   "¿Y las",
+   "*manos*?"
+  ]
+ },
+ "tiktok_title": "Todos te dicen que dejes de fumar. Nadie te dice qué hacer con las manos",
+ "yt_title": "Dejar de fumar: ¿qué hago con las manos?"
+}

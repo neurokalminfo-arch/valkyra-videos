@@ -82,9 +82,11 @@ def sfx(k):
     if k == "cut":   x = noise(.18); t = np.arange(len(x)) / SR; return bp(x, 400, 3500) * np.sin(np.pi * t / .18) * .35
     if k == "pop":
         n = int(.09 * SR); t = np.arange(n) / SR; return np.sin(2 * np.pi * np.cumsum(300 + 9000 * t) / SR) * env(n, .001, .03)
+    if k == "type":  # tecla de máquina (estilo cómic)
+        x = noise(.04); return mixl(bp(x, 2000, 6000) * env(len(x), .0005, .008) * 1.5, bp(noise(.03), 300, 900) * env(int(.03 * SR), .001, .01))
     return np.zeros(10)
 fx = np.zeros(N)
-GAIN = {"tape": .35, "slam": .55, "marker": .25, "stick": .5, "stamp": .8, "snap": .7, "rip": .7, "cut": .45, "pop": .5}
+GAIN = {"tape": .35, "slam": .55, "marker": .25, "stick": .5, "stamp": .8, "snap": .7, "rip": .7, "cut": .45, "pop": .5, "type": .25}
 for e in events: add(fx, sfx(e["k"]), e["t"] + LEAD, GAIN.get(e["k"], .4))
 
 # ---------- voz + ducking ----------

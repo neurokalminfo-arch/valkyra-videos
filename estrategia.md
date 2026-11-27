@@ -36,7 +36,7 @@ Un formato o tema distinto (relato en 1ª persona, mito, proceso, apoyo, kit con
 | Domingo | Prueba | Consejos prácticos (la antigua plantilla, como mucho aquí) |
 
 ## Normas fijas
-- **Estilo visual alterno:** dos vídeos seguidos NUNCA comparten estilo (`"style": "cine"` = engine/template.html, `"style": "collage"` = engine/collage). Rota también duración (20–40 s) y escenas de fondo.
+- **Estilo visual: cómic** (`"style": "comic"`, engine/comic; decisión del usuario del 27-11-2026, sustituye a la alternancia cine/collage). Dentro del cómic, cada vídeo cambia poses, fondos, objetos y composición respecto al anterior. Rota también la duración (20–40 s).
 - **El dato "las ganas fuertes duran unos 15 minutos" (NHS): como mucho en 1 de cada 5 vídeos.** Compruébalo con grep en los 4 vídeos anteriores antes de usarlo.
 - **Nunca abrir con el producto** ("Valkyra es un collar…", "esta cosita de aquí…"): son los que peor funcionan (190 visualizaciones).
 - **No prometer de más:** nada de "me curó" ni "cero ganas". Valkyra da otra opción en el momento difícil.
@@ -50,7 +50,7 @@ Un formato o tema distinto (relato en 1ª persona, mito, proceso, apoyo, kit con
 - [ ] Valkyra aparece solo al final, en una o dos frases.
 - [ ] Da un motivo para guardarlo o mandarlo a alguien.
 - [ ] No repite el dato de los 15 minutos si ya salió en los 4 vídeos anteriores.
-- [ ] Estilo visual distinto al del vídeo anterior.
+- [ ] Estilo cómic, con poses, fondos y objetos distintos a los del vídeo anterior.
 - [ ] Sin faltas de ortografía en texto ni subtítulos.
 
 ---

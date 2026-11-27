@@ -7,7 +7,7 @@ const prev = process.argv[3] === '--preview' ? process.argv[4].split(',').map(Nu
 const coverMode = process.argv[3] === '--cover';
 let script = JSON.parse(fs.readFileSync(path.join(ep, 'script.json')));
 let timing = JSON.parse(fs.readFileSync(path.join(ep, 'timing.json')));
-if (coverMode && script.style !== 'collage') { // portada: una sola escena con el texto de 'cover' (o la primera escena)
+if (coverMode && !['collage', 'comic'].includes(script.style)) { // portada: una sola escena con el texto de 'cover' (o la primera escena)
   const c = script.cover || script.scenes[0];
   const zone = c.zone !== undefined ? c.zone : { type: 'pendant' };
   script = { ...script, cover: true, scenes: [{ kicker: c.kicker, title: c.title, zone, bg: c.bg !== undefined ? c.bg : (script.account === 'oficial' ? { type: 'night' } : undefined) }] };
@@ -19,12 +19,12 @@ const FPS = 30, LEAD = 0.3, dur = timing.duration + LEAD;
   const b = await chromium.launch();
   const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
   await p.addInitScript(d => { window.DATA = d; }, { script, timing });
-  const collage = script.style === 'collage';
-  await p.goto('file://' + path.join(__dirname, collage ? 'collage/template.html' : 'template.html'));
+  const collage = ['collage', 'comic'].includes(script.style); // los dos usan eventos + banda sonora de collage/audio.py
+  await p.goto('file://' + path.join(__dirname, script.style === 'comic' ? 'comic/template.html' : collage ? 'collage/template.html' : 'template.html'));
   await p.evaluate(() => document.fonts.ready);
   if (collage) { await p.evaluate(() => window.READY); fs.writeFileSync(path.join(ep, 'events.json'), JSON.stringify(await p.evaluate(() => window.EVENTS))); }
   if (coverMode) {
-    await p.evaluate(c => { document.body.classList.add('cover'); render(c ? c : 20); }, collage ? Math.min(3.6, timing.scenes[0].end_speech - 0.2) : 0);
+    await p.evaluate(c => { document.body.classList.add('cover'); render(c ? c : 20); }, collage ? (script.cover && script.cover.t !== undefined ? script.cover.t : Math.min(3.6, timing.scenes[0].end_speech - 0.2)) : 0);
     await p.screenshot({ path: path.join(ep, 'cover.jpg'), type: 'jpeg', quality: 90 });
     await b.close(); console.log('ok', path.join(ep, 'cover.jpg')); return;
   }
