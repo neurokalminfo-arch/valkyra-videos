@@ -1,0 +1,400 @@
+{
+ "account": "calma",
+ "slot": "pm",
+ "format": "A",
+ "style": "comic",
+ "topic": "Cena de sábado con amigos fumadores: todos salen a fumar y te quedas en la mesa con las ganas; validar (parece que no va a pasar, es normal), pausa guiada (no tienes que resolverlo todo ahora, respira despacio, suelta los hombros, bebe agua, vuelve a elegir: esta noche, sin tabaco); Valkyra al final como algo en la mano; guárdalo para tu próxima cena",
+ "pillar": "kit",
+ "hook": "frase-identificacion",
+ "cta": "guardar",
+ "scenes": [
+  {
+   "say": "La cena va genial y tus amigos salen a fumar.",
+   "caption": "La cena va genial y tus amigos salen a *fumar*",
+   "layout": "full",
+   "panels": [
+    {
+     "bg": "dots",
+     "els": [
+      {
+       "t": "label",
+       "text": "SÁBADO · 22:30 · CENA",
+       "x": 540,
+       "y": 80,
+       "size": 56,
+       "fill": "white"
+      },
+      {
+       "t": "chica",
+       "x": 330,
+       "y": 1520,
+       "s": 1.1,
+       "pose": "stand",
+       "face": "smile",
+       "look": 1
+      },
+      {
+       "t": "glass",
+       "x": 800,
+       "y": 1090,
+       "s": 0.95
+      },
+      {
+       "t": "bubble",
+       "text": "¿SALIMOS\nA FUMAR?",
+       "x": 560,
+       "y": 260,
+       "w": 340,
+       "h": 200,
+       "tail": [
+        170,
+        60
+       ]
+      },
+      {
+       "t": "cig",
+       "x": 820,
+       "y": 620,
+       "s": 0.55,
+       "face": "happy",
+       "arms": "wave",
+       "walk": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Te quedas en la mesa y llegan las ganas.",
+   "caption": "Te quedas en la mesa y llegan las *ganas*",
+   "layout": "split",
+   "panels": [
+    {
+     "bg": "white",
+     "els": [
+      {
+       "t": "chica",
+       "x": 270,
+       "y": 1450,
+       "s": 0.95,
+       "pose": "stand",
+       "face": "worry",
+       "look": 1
+      },
+      {
+       "t": "mark",
+       "text": "!",
+       "x": 380,
+       "y": 280,
+       "at": "ganas"
+      }
+     ]
+    },
+    {
+     "bg": "speed",
+     "at": "llegan",
+     "cx": 0.5,
+     "cy": 0.45,
+     "els": [
+      {
+       "t": "cig",
+       "x": 270,
+       "y": 900,
+       "s": 0.95,
+       "face": "sly",
+       "arms": "hips",
+       "hop": true
+      },
+      {
+       "t": "bubble",
+       "text": "¿UNO\nCORTITO?",
+       "x": 270,
+       "y": 260,
+       "w": 300,
+       "h": 190,
+       "tail": [
+        0,
+        130
+       ],
+       "at": "ganas"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Parece que no va a pasar. Es normal.",
+   "caption": "Parece que no va a pasar. Es *normal*",
+   "layout": "full",
+   "panels": [
+    {
+     "bg": "white",
+     "from": "zoom",
+     "push": 0.08,
+     "els": [
+      {
+       "t": "chica",
+       "x": 540,
+       "y": 1560,
+       "s": 1.25,
+       "pose": "shock",
+       "face": "sad"
+      },
+      {
+       "t": "bubble",
+       "kind": "thought",
+       "text": "¿Y SI NO\nSE ME PASA?",
+       "x": 760,
+       "y": 280,
+       "w": 330,
+       "h": 210,
+       "tail": [
+        -140,
+        110
+       ]
+      },
+      {
+       "t": "label",
+       "text": "ES NORMAL",
+       "x": 280,
+       "y": 300,
+       "size": 80,
+       "rot": -4,
+       "at": "normal"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "No tienes que resolverlo todo ahora. Respira despacio.",
+   "caption": "No tienes que resolverlo todo ahora. *Respira* despacio",
+   "layout": "full",
+   "panels": [
+    {
+     "bg": "sky",
+     "sx": 0.75,
+     "hy": 0.55,
+     "from": "down",
+     "push": 0.04,
+     "els": [
+      {
+       "t": "chica",
+       "x": 400,
+       "y": 1560,
+       "s": 1.2,
+       "pose": "stand",
+       "face": "calm"
+      },
+      {
+       "t": "label",
+       "text": "DESPACIO",
+       "x": 730,
+       "y": 760,
+       "size": 72,
+       "rot": 3,
+       "fill": "white",
+       "at": "despacio"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Suelta los hombros. Bebe un poco de agua.",
+   "caption": "Suelta los *hombros*. Bebe un poco de *agua*",
+   "layout": "split",
+   "panels": [
+    {
+     "bg": "dots",
+     "els": [
+      {
+       "t": "chica",
+       "x": 270,
+       "y": 1450,
+       "s": 0.95,
+       "pose": "stand",
+       "face": "calm"
+      },
+      {
+       "t": "arrow",
+       "x": 100,
+       "y": 560,
+       "len": 140,
+       "rot": 90,
+       "at": "hombros"
+      },
+      {
+       "t": "arrow",
+       "x": 440,
+       "y": 560,
+       "len": 140,
+       "rot": 90,
+       "at": "hombros"
+      }
+     ]
+    },
+    {
+     "bg": "white",
+     "at": "Bebe",
+     "from": "right",
+     "els": [
+      {
+       "t": "glass",
+       "x": 270,
+       "y": 900,
+       "s": 1.0,
+       "fill": "water"
+      },
+      {
+       "t": "label",
+       "text": "AGUA",
+       "x": 270,
+       "y": 260,
+       "size": 80,
+       "at": "agua"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Y vuelve a elegir: esta noche, sin tabaco.",
+   "caption": "Y vuelve a *elegir*: esta noche, sin ~tabaco~",
+   "layout": "full",
+   "panels": [
+    {
+     "bg": "speed",
+     "cx": 0.7,
+     "cy": 0.5,
+     "els": [
+      {
+       "t": "chica",
+       "x": 330,
+       "y": 1520,
+       "s": 1.1,
+       "pose": "stop",
+       "face": "determined"
+      },
+      {
+       "t": "cig",
+       "x": 780,
+       "y": 1000,
+       "s": 1.0,
+       "face": "scared",
+       "arms": "up",
+       "snap": "tabaco"
+      },
+      {
+       "t": "burst",
+       "text": "¡CRAC!",
+       "x": 780,
+       "y": 330,
+       "size": 100,
+       "color": "red",
+       "at": "tabaco"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Si quieres algo en la mano, Valkyra está en mi perfil.",
+   "caption": "Si quieres algo en la mano, *Valkyra* está en mi perfil",
+   "layout": "full",
+   "panels": [
+    {
+     "bg": "gold",
+     "cy": 0.6,
+     "from": "zoom",
+     "els": [
+      {
+       "t": "chica",
+       "x": 540,
+       "y": 1500,
+       "s": 1.15,
+       "pose": "hold",
+       "face": "smile"
+      },
+      {
+       "t": "label",
+       "text": "VALKYRA",
+       "x": 540,
+       "y": 120,
+       "size": 96,
+       "font": "Bangers",
+       "at": "Valkyra"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Síguenos y guárdalo para tu próxima cena.",
+   "caption": "Síguenos y *guárdalo* para tu próxima cena",
+   "layout": "full",
+   "panels": [
+    {
+     "bg": "white",
+     "els": [
+      {
+       "t": "chica",
+       "x": 230,
+       "y": 1500,
+       "s": 1.05,
+       "pose": "wave",
+       "face": "happy",
+       "collar": true
+      },
+      {
+       "t": "cta",
+       "x": 630,
+       "y": 330,
+       "w": 540,
+       "items": [
+        {
+         "icon": "follow",
+         "text": "SÍGUENOS",
+         "at": "Síguenos"
+        },
+        {
+         "icon": "save",
+         "text": "GUÁRDALO",
+         "at": "guárdalo"
+        }
+       ]
+      },
+      {
+       "t": "label",
+       "text": "¿TU MOMENTO MÁS DIFÍCIL?",
+       "x": 600,
+       "y": 840,
+       "size": 42,
+       "rot": -3,
+       "fill": "white",
+       "at": "cena"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "caption": "La cena va genial, tus amigos salen a fumar y tú te quedas en la mesa con las ganas 🍷🚬 Parece que no va a pasar. Es normal. No tienes que resolverlo todo ahora: respira despacio, suelta los hombros, bebe un poco de agua y vuelve a elegir. Esta noche, sin tabaco. Y si quieres algo que te acompañe en la mano mientras cambias el gesto, Valkyra está en mi perfil. Guárdalo para tu próxima cena o mándaselo a quien lo esté intentando 💛 ¿Qué momento del día se te hace más difícil? Te leo 👇",
+ "hashtags": [
+  "#dejardefumar",
+  "#dejarelcigarro",
+  "#sintabaco",
+  "#ganasdefumar",
+  "#findesemana",
+  "#valkyra"
+ ],
+ "cover": {
+  "kicker": "Dejar de *fumar*",
+  "title": [
+   "Cena con",
+   "*fumadores*"
+  ]
+ },
+ "tiktok_title": "Cuando tus amigos salen a fumar en la cena y tú te quedas con las ganas",
+ "yt_title": "Dejar de fumar: la cena con amigos fumadores"
+}

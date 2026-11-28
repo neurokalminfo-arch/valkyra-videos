@@ -332,6 +332,12 @@ function cup(ctx, e, t, ta) { const p = clamp((t - ta) / .25); if (p <= 0) retur
   ctx.beginPath(); ctx.moveTo(-100, -140); ctx.lineTo(100, -140); ctx.lineTo(88, 10); ctx.quadraticCurveTo(0, 30, -88, 10); ctx.closePath(); ol(ctx, P.white, 7);
   ctx.save(); ctx.clip(); ctx.globalAlpha = .3; ctx.fillStyle = DOTSF; ctx.fillRect(30, -150, 80, 200); ctx.restore();
   ctx.beginPath(); ctx.ellipse(0, -140, 100, 20, 0, 0, 6.28); ol(ctx, '#5B4636', 6); ctx.beginPath(); ctx.ellipse(0, 18, 170, 26, 0, 0, 6.28); ctx.globalCompositeOperation = 'destination-over'; ol(ctx, P.white, 6); ctx.restore(); }
+function glass(ctx, e, t, ta) { const p = clamp((t - ta) / .25); if (p <= 0) return; ctx.save(); ctx.translate(e.x, e.y); const s = (e.s || 1) * eOutBack(p); ctx.scale(s, s); const wine = e.fill !== 'water';
+  ctx.beginPath(); ctx.ellipse(0, 0, 95, 20, 0, 0, 6.28); ol(ctx, P.white, 7); ctx.beginPath(); ctx.rect(-9, -150, 18, 150); ol(ctx, P.white, 6);
+  ctx.beginPath(); ctx.moveTo(-85, -380); ctx.quadraticCurveTo(-95, -170, 0, -150); ctx.quadraticCurveTo(95, -170, 85, -380); ctx.closePath(); ol(ctx, P.white, 7);
+  ctx.save(); ctx.beginPath(); ctx.moveTo(-85, -380); ctx.quadraticCurveTo(-95, -170, 0, -150); ctx.quadraticCurveTo(95, -170, 85, -380); ctx.closePath(); ctx.clip(); const lv = -270 + Math.sin(t * 2) * 4;
+  ctx.fillStyle = wine ? '#6E2A2F' : '#DCE9EE'; ctx.fillRect(-120, lv, 240, 140); ctx.globalAlpha = wine ? .35 : .25; ctx.fillStyle = DOTSF; ctx.fillRect(20, lv, 80, 140); ctx.globalAlpha = 1; ctx.beginPath(); ctx.moveTo(-100, lv); ctx.lineTo(100, lv); ctx.strokeStyle = P.ink; ctx.lineWidth = 5; ctx.stroke(); ctx.restore();
+  ctx.beginPath(); ctx.moveTo(-55, -350); ctx.quadraticCurveTo(-62, -250, -40, -200); ctx.strokeStyle = 'rgba(255,255,255,.9)'; ctx.lineWidth = 10; ctx.lineCap = 'round'; ctx.stroke(); ctx.restore(); }
 function textEl(ctx, e, t, ta) { const p = clamp((t - ta) / .2); if (p <= 0) return; ctx.save(); ctx.translate(e.x, e.y); ctx.rotate((e.rot || 0) * Math.PI / 180); ctx.globalAlpha = p; const fs = e.size || 60; ctx.font = `${fs}px ${e.font || CAPF}`;
   ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; (e.text.split('\n')).forEach((l, k) => { if (e.outline) { ctx.lineWidth = 10; ctx.strokeStyle = P.ink; ctx.lineJoin = 'round'; ctx.strokeText(l, 0, k * fs * 1.1); } ctx.fillStyle = e.color === 'gold' ? P.gold : (e.color === 'white' ? P.white : P.ink); ctx.fillText(l, 0, k * fs * 1.1); }); ctx.restore(); }
 function ctaBtns(ctx, e, t, i) { e.items.forEach((it, k) => { const ta = wordT(i, it.at), p = clamp((t - ta) / .25); if (p <= 0) return; const y = e.y + k * 190, s = eOutBack(p);
@@ -364,6 +370,7 @@ function drawEl(ctx, i, e, n, t, pn) {
   else if (e.t === 'eyes') eyes(ctx, e, t, ta, pn);
   else if (e.t === 'text') textEl(ctx, e, t, ta);
   else if (e.t === 'cup') cup(ctx, e, t, ta);
+  else if (e.t === 'glass') glass(ctx, e, t, ta);
   else if (e.t === 'pendant') { if (t < ta) return; const p = eOutBack(clamp((t - ta) / .35)); pendant(ctx, e.x, e.y, (e.s || 1) * p, t, e.glow !== false); }
   else if (e.t === 'cta') ctaBtns(ctx, e, t, i);
 }
