@@ -23,7 +23,7 @@ Referencia que pidió el usuario: viñetas de cómic sobre papel crema, línea n
   - `burst` · onomatopeya en estrella (`¡PARA!`, `¡FIUU!`, `¡AH!`): `text, x, y, size, rot, color: "red"|"gold", fill: "gold"`.
   - `label` · cartel dorado (o `fill: "white"`): `text, x, y, size, rot, font` (p. ej. "08:10 · CAFÉ" para situar el momento).
   - `mark` · `?` o `!` grande. `arrow` · flecha dorada (`len, rot, w`). `hand` · mano dorada de "para" (`s`).
-  - `checks` · cuadrícula de días tachados (`cols, rows, n` hechos, `crack` índice que se rompe en `crackAt`). `cal` · calendario (`text: "HOY"`, `flip: "MAÑANA"`, `flipAt`). `flag` · bandera (`text`). `cup` · taza de café humeante. `eyes` · ojos en la oscuridad (en `bg: "dark"`). `pendant` · el colgante de Valkyra suelto, con brillo. `text` · texto suelto.
+  - `checks` · cuadrícula de días tachados (`cols, rows, n` hechos, `crack` índice que se rompe en `crackAt`). `cal` · calendario (`text: "HOY"`, `flip: "MAÑANA"`, `flipAt`). `flag` · bandera (`text`). `cup` · taza de café humeante. `glass` · copa (vino por defecto; `fill: "water"` = agua). `eyes` · ojos en la oscuridad (en `bg: "dark"`). `pendant` · el colgante de Valkyra suelto, con brillo. `text` · texto suelto.
   - `cta` · botones finales: `items: [{icon: follow|like|comment|save|share, text, at}]`, `x, y, w`.
   - `at` = palabra de la voz en la que aparece. Sin `at`, los personajes y objetos entran con su viñeta y los bocadillos, carteles y onomatopeyas saltan justo después.
 
